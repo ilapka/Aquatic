@@ -32,7 +32,7 @@ Material:
     - _Glossiness: 0.631
     - _Metallic: 0.16
     - _NormalStrength1: 0.17
-    - _NormalStrength2: 0.0000000026815172
+    - _NormalStrength2: 3.9449583e-18
     m_Colors:
     - _Color: {r: 0, g: 0.7246165, b: 1, a: 1}
     - _FlowDirection1: {r: -0.4, g: 0, b: 0, a: 0}
