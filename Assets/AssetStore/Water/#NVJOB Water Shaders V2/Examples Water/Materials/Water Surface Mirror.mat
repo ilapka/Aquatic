@@ -218,7 +218,7 @@ Material:
     - _Saturation: 1
     - _Shininess: 0.157
     - _SmoothnessTextureChannel: 0
-    - _SoftFactor: 0.1
+    - _SoftFactor: 0.218
     - _SpecularHighlights: 1
     - _Speed: 0.5
     - _SpeedX: 0.1
