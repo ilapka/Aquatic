@@ -4,8 +4,7 @@ using UnityEngine;
 
 namespace Components
 {
-    public struct MovableComponent
+    public struct ForwardMovableComponent
     {
-        public Transform Transform;
     }
 }

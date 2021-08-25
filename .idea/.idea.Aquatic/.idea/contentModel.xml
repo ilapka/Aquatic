@@ -393,6 +393,8 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
+            <e p="DiveMovableComponent.cs" t="Include" />
+            <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
           </e>

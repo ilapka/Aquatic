@@ -11,25 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/InputEventComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/InputComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/InputEventComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/InputComponent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MaterialComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MaterialComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/MaterialData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/MaterialData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/MaterialSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/MaterialSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,12 +29,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/MaterialsData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/MaterialComponent.cs" />
@@ -57,12 +44,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/InputEventComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/InputComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DiveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/DiveMoveComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +108,7 @@
       <workItem from="1629211385848" duration="1000" />
       <workItem from="1629903476557" duration="1601000" />
       <workItem from="1629905294807" duration="1760000" />
-      <workItem from="1629907251585" duration="2907000" />
+      <workItem from="1629907251585" duration="4663000" />
     </task>
     <servers />
   </component>
