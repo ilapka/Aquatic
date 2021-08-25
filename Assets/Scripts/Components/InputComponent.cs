@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Components
 {
-    public struct InputEventComponent
+    public struct InputComponent
     {
-        public bool isTouching;
+        public bool IsTouch;
     }
 }

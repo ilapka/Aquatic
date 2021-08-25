@@ -17,14 +17,14 @@ namespace Systems
             var player = _world.NewEntity();
 
             ref var movableComponent = ref player.Get<MovableComponent>();
-            player.Get<InputEventComponent>();
+            player.Get<InputComponent>();
 
             var playerPrefab = Object.Instantiate(_playerData.playerPrefab, _playerData.spawnPosition, Quaternion.identity);
 
-            movableComponent.transform = playerPrefab.transform;
-            movableComponent.rigidbody = playerPrefab.GetComponent<Rigidbody>();
-            movableComponent.maxMoveSpeed = _playerData.maxSpeed;
-            movableComponent.acceleration = _playerData.acceleration;
+            movableComponent.Transform = playerPrefab.transform;
+            movableComponent.Rigidbody = playerPrefab.GetComponent<Rigidbody>();
+            movableComponent.MaxMoveSpeed = _playerData.maxSpeed;
+            movableComponent.Acceleration = _playerData.acceleration;
             
             playerPrefab.SetActive(true);
         }

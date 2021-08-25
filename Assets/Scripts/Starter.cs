@@ -4,6 +4,7 @@ using Systems;
 using Leopotam.Ecs;
 using System.Collections;
 using System.Collections.Generic;
+using Components;
 using UnityEngine;
 
 public class Starter : MonoBehaviour
@@ -15,7 +16,6 @@ public class Starter : MonoBehaviour
 
     [Header("Data")]
     [SerializeField] private PlayerData playerData;
-    [SerializeField] private MaterialData materialData;
 
     private void Start()
     {
@@ -24,25 +24,17 @@ public class Starter : MonoBehaviour
         _updateSystems = new EcsSystems(_world);
         _fixedUpdateSystem = new EcsSystems(_world);
 
-        #region Update systems
-        _updateSystems.Add(new PlayerSpawnSystem());
-        _updateSystems.Add(new InputSystem());
-        _updateSystems.Add(new MaterialSystem());
-        #endregion
-
-        #region FixedUpdate systems
-        _fixedUpdateSystem.Add(new MoveSystem());
-        #endregion
+        _updateSystems
+            .Add(new PlayerSpawnSystem())
+            .Add(new InputSystem());
         
-        #region Data
+        _fixedUpdateSystem
+            .Add(new DiveMoveSystem());
+        
         _updateSystems.Inject(playerData);
-        _updateSystems.Inject(materialData);
-        #endregion
 
-        #region Init
         _updateSystems.Init();
         _fixedUpdateSystem.Init();
-        #endregion
     }
 
   

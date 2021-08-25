@@ -6,25 +6,22 @@ using Components;
 
 namespace Systems
 {
-    public class InputSystem : IEcsRunSystem
+    public class InputSystem : IEcsInitSystem, IEcsRunSystem
     {
-        //Filter find all entities, that contain InputEventComponent
-        private EcsFilter<InputEventComponent> _inputEventFilter = null;
+        private EcsWorld _world = null;
+        private EcsFilter<InputComponent> _inputFilter = null;
+        
+        public void Init()
+        {
+            _world.NewEntity().Get<InputComponent>();
+        }
 
         public void Run()
         {
-            var isTouching = Input.GetMouseButton(0);
-
-            foreach (var i in _inputEventFilter)
+            foreach (var i in _inputFilter)
             {
-                #region Example GetEntity
-                //entity that contains WeaponComponent.
-                ref var entity = ref _inputEventFilter.GetEntity(i);
-                #endregion
-
-                //Get1 will return link to attached "InputEventComponent".
-                ref var inputEvent = ref _inputEventFilter.Get1(i);
-                inputEvent.isTouching = isTouching;
+                var inputComponent = _inputFilter.Get1(i);
+                inputComponent.IsTouch = Input.GetMouseButton(0);
             }
         }
     }

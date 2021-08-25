@@ -6,11 +6,11 @@ namespace Components
 {
     public struct MovableComponent
     {
-        public Transform transform;
-        public Rigidbody rigidbody;
-        public float maxMoveSpeed;
-        public float acceleration;
-        public float currentSpeed;
-        public bool isMoving;
+        public Transform Transform;
+        public Rigidbody Rigidbody;
+        public float MaxMoveSpeed;
+        public float Acceleration;
+        public float CurrentSpeed;
+        public bool IsMoving;
     }
 }
