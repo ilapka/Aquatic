@@ -10,7 +10,6 @@ using UnityEngine;
 public class Starter : MonoBehaviour
 {
     private EcsWorld _world;
-    
     private EcsSystems _updateSystems;
     private EcsSystems _fixedUpdateSystem;
 
@@ -19,6 +18,8 @@ public class Starter : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("Start");
+        
         _world = new EcsWorld();
 
         _updateSystems = new EcsSystems(_world);
@@ -27,17 +28,17 @@ public class Starter : MonoBehaviour
         _updateSystems
             .Add(new PlayerSpawnSystem())
             .Add(new InputSystem());
-        
+
         _fixedUpdateSystem
-            .Add(new DiveMoveSystem());
+            .Add(new ForwardMoveSystem());
+
         
         _updateSystems.Inject(playerData);
 
         _updateSystems.Init();
         _fixedUpdateSystem.Init();
     }
-
-  
+    
     private void Update()
     {
         _updateSystems.Run();

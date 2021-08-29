@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using Data;
+using UnityEngine;
 
 namespace Components
 {
-    public class DiveMovableComponent 
+    public struct DiveMovableComponent
     {
+        public DiveMoveData DiveMoveData;
     }
 }

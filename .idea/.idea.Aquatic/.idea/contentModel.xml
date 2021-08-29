@@ -399,7 +399,12 @@
             <e p="MovableComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
+            <e p="DiveMoveData.cs" t="Include" />
+            <e p="ForwardMoveData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
+          </e>
+          <e p="Information" t="Include">
+            <e p="PlayerInformation.cs" t="Include" />
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
