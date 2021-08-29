@@ -14,11 +14,37 @@ namespace Systems
 
         public void Run()
         {
+            var isTouch = false;
+            
+            foreach (var i in _inputEventFilter)
+            {
+                isTouch = _inputEventFilter.Get1(i).IsTouch;
+            }
+            
             foreach (var i in _diveMoveFilter)
             {
-                var movableComponent = _diveMoveFilter.Get1(i);
+                ref var movableComponent = ref _diveMoveFilter.Get1(i);
                 var diveMovableComponent = _diveMoveFilter.Get2(i);
+
+                var movableRigidbody = movableComponent.Rigidbody;
+                var diveMoveData = diveMovableComponent.DiveMoveData;
+
+                Vector3 offset;
+                    
+                if (isTouch)
+                {
+                    offset = Vector3.Normalize(diveMoveData.diveDirection) *
+                             (diveMoveData.divingSpeed * Time.fixedTime);
+                }
+                else
+                {
+                    if(movableRigidbody.position.y >= diveMovableComponent.StartYPosition)
+                        return;
+                    
+                    offset = Vector3.Normalize(-diveMoveData.diveDirection) * (diveMoveData.surfacingSpeed * Time.fixedTime);
+                }
                 
+                movableComponent.MoveOffset += offset;
             }
         }
     }

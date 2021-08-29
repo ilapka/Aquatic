@@ -25,6 +25,7 @@ namespace Systems
             movableComponent.Rigidbody = playerInformation.playerRigidBody;
             forwardMovableComponent.ForwardMoveData = _playerData.playerForwardMoveData;
             diveMovableComponent.DiveMoveData = _playerData.playerDiveMoveData;
+            diveMovableComponent.StartYPosition = playerInformation.transform.position.y;
             
             playerInformation.gameObject.SetActive(true);
         }

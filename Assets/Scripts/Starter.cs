@@ -18,8 +18,6 @@ public class Starter : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Start");
-        
         _world = new EcsWorld();
 
         _updateSystems = new EcsSystems(_world);
@@ -30,9 +28,11 @@ public class Starter : MonoBehaviour
             .Add(new InputSystem());
 
         _fixedUpdateSystem
-            .Add(new ForwardMoveSystem());
+            .Add(new ForwardMoveSystem())
+            .Add(new DiveMoveSystem())
+            .Add(new MoveSystem());
 
-        
+
         _updateSystems.Inject(playerData);
 
         _updateSystems.Init();

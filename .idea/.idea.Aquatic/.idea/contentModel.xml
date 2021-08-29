@@ -411,6 +411,7 @@
             <e p="DiveMoveSystem.cs" t="Include" />
             <e p="ForwardMoveSystem.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
+            <e p="MoveSystem.cs" t="Include" />
             <e p="PlayerSpawnSystem.cs" t="Include" />
           </e>
         </e>

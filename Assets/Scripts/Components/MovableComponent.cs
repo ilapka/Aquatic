@@ -6,7 +6,7 @@ namespace Components
 {
     public struct MovableComponent
     {
-        //public Transform Transform;
         public Rigidbody Rigidbody;
+        public Vector3 MoveOffset;
     }
 }

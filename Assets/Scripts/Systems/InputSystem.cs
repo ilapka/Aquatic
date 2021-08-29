@@ -20,7 +20,7 @@ namespace Systems
         {
             foreach (var i in _inputFilter)
             {
-                var inputComponent = _inputFilter.Get1(i);
+                ref var inputComponent = ref _inputFilter.Get1(i);
                 inputComponent.IsTouch = Input.GetMouseButton(0);
             }
         }

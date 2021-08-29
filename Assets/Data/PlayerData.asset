@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInformationPrefab: {fileID: 8334109645751342126, guid: 6302c9afe9a188141b486d5aa71820de, type: 3}
   playerForwardMoveData: {fileID: 11400000, guid: 0cf9a5bb48f023b4c8c9e3e3281dcd10, type: 2}
-  playerDiveMoveData: {fileID: 0}
+  playerDiveMoveData: {fileID: 11400000, guid: 1d84bbac870acaa44b7aa4add7317d34, type: 2}
