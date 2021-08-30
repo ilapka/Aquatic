@@ -1,10 +1,8 @@
-﻿using Leopotam.Ecs;
-using Components;
-using System.Collections;
-using System.Collections.Generic;
+﻿using Components;
+using Leopotam.Ecs;
 using UnityEngine;
 
-namespace Systems
+namespace Systems.Movement
 {
     public class DiveMoveSystem : IEcsRunSystem
     {

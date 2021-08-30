@@ -4,6 +4,7 @@ using Systems;
 using Leopotam.Ecs;
 using System.Collections;
 using System.Collections.Generic;
+using Systems.Movement;
 using Components;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class Starter : MonoBehaviour
 
     [Header("Data")]
     [SerializeField] private PlayerData playerData;
+    [SerializeField] private LevelListData levelList;
 
     private void Start()
     {
@@ -33,7 +35,9 @@ public class Starter : MonoBehaviour
             .Add(new MoveSystem());
 
 
-        _updateSystems.Inject(playerData);
+        _updateSystems
+            .Inject(playerData)
+            .Inject(levelList);
 
         _updateSystems.Init();
         _fixedUpdateSystem.Init();

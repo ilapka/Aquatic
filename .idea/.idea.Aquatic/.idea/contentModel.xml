@@ -401,17 +401,23 @@
           <e p="Data" t="Include">
             <e p="DiveMoveData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
+            <e p="LevelData.cs" t="Include" />
+            <e p="LevelListData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
           </e>
           <e p="Information" t="Include">
+            <e p="LocationInformation.cs" t="Include" />
+            <e p="PipePartInformation.cs" t="Include" />
             <e p="PlayerInformation.cs" t="Include" />
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
-            <e p="DiveMoveSystem.cs" t="Include" />
-            <e p="ForwardMoveSystem.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
-            <e p="MoveSystem.cs" t="Include" />
+            <e p="Movement" t="Include">
+              <e p="DiveMoveSystem.cs" t="Include" />
+              <e p="ForwardMoveSystem.cs" t="Include" />
+              <e p="MoveSystem.cs" t="Include" />
+            </e>
             <e p="PlayerSpawnSystem.cs" t="Include" />
           </e>
         </e>
