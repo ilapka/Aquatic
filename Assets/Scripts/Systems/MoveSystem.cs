@@ -15,11 +15,20 @@ namespace Systems
             foreach (var i in _moveFilter)
             {
                 ref var movableComponent = ref _moveFilter.Get1(i);
-                var movableRigidbody = movableComponent.Rigidbody;
+                var movableTransform = movableComponent.Transform;
                 ref var moveOffset = ref movableComponent.MoveOffset;
                 
-                movableRigidbody.MovePosition(movableRigidbody.transform.position + moveOffset);
-                
+                if (movableComponent.LocalSpaceMoving)
+                {
+                    movableTransform.localPosition = Vector3.MoveTowards(movableTransform.localPosition,
+                        movableTransform.localPosition + moveOffset, Time.fixedTime);
+                }
+                else
+                {
+                    movableTransform.position = Vector3.MoveTowards(movableTransform.position,
+                        movableTransform.position + moveOffset, Time.fixedTime);
+                }
+
                 moveOffset = Vector3.zero;
             }
         }

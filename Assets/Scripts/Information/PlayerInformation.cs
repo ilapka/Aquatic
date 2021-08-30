@@ -2,9 +2,12 @@
 
 namespace Information
 {
-    public class PlayerContainerInformation : MonoBehaviour
+    public class PlayerInformation : MonoBehaviour
     {
-        public Rigidbody playerContainerRigidBody;
-        public Rigidbody playerBoatRigidbody;
+        public Transform playerContainerTransform;
+        public Transform playerBoatTransform;
+        
+        //public Rigidbody playerContainerRigidBody;
+        //public Rigidbody playerBoatRigidbody;
     }
 }

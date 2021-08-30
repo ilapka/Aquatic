@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a6ade02d584e340a78d575a0d6d6da, type: 3}
   m_Name: PlayerForwardMoveData
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.05
   direction: {x: -1, y: 0, z: 0}

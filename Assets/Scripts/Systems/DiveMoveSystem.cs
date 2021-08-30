@@ -26,22 +26,21 @@ namespace Systems
                 ref var movableComponent = ref _diveMoveFilter.Get1(i);
                 var diveMovableComponent = _diveMoveFilter.Get2(i);
 
-                var movableRigidbody = movableComponent.Rigidbody;
+                var movableTransform = movableComponent.Transform;
                 var diveMoveData = diveMovableComponent.DiveMoveData;
 
                 Vector3 offset;
                     
                 if (isTouch)
                 {
-                    offset = Vector3.Normalize(diveMoveData.diveDirection) *
-                             (diveMoveData.divingSpeed * Time.fixedTime);
+                    offset = Vector3.Normalize(diveMoveData.diveDirection) * diveMoveData.divingSpeed;
                 }
                 else
                 {
-                    if(movableRigidbody.position.y >= diveMovableComponent.StartYPosition)
+                    if(movableTransform.position.y >= diveMovableComponent.StartYPosition)
                         return;
                     
-                    offset = Vector3.Normalize(-diveMoveData.diveDirection) * (diveMoveData.surfacingSpeed * Time.fixedTime);
+                    offset = Vector3.Normalize(-diveMoveData.diveDirection) * diveMoveData.surfacingSpeed;
                 }
                 
                 movableComponent.MoveOffset += offset;

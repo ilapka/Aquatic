@@ -18,7 +18,7 @@ namespace Systems
                 var forwardMoveComponent = _forwardMoveFilter.Get2(i);
                 var forwardMoveData = forwardMoveComponent.ForwardMoveData;
                 
-                var offset = Vector3.Normalize(forwardMoveData.direction) * (forwardMoveData.speed * Time.fixedTime);
+                var offset = Vector3.Normalize(forwardMoveData.direction) * forwardMoveData.speed;
                 
                 movableComponent.MoveOffset += offset;
             }

@@ -11,17 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerDiveMoveData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerDiveMoveData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PlayerForwardMoveData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PlayerForwardMoveData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player_v1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player_v1.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Information/PlayerInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Information/PlayerInformation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,18 +56,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ForwardMoveData1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/ForwardMoveData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Information/PlayerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Information/PlayerContainerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Information/PlayerInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" />
       </list>
     </option>
   </component>
@@ -124,6 +126,8 @@
       <workItem from="1630257822477" duration="438000" />
       <workItem from="1630258714464" duration="5229000" />
       <workItem from="1630273702322" duration="2593000" />
+      <workItem from="1630314745715" duration="2225000" />
+      <workItem from="1630332967154" duration="4193000" />
     </task>
     <servers />
   </component>
@@ -160,5 +164,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="248" y="212" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1629909960024" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1630335816531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1630335816531" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1630336781487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630336781487" />
   </component>
 </project>

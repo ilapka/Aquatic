@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Components;
 using Data;
+using Information;
 
 namespace Systems
 {
@@ -14,20 +15,46 @@ namespace Systems
 
         public void Init()
         {
-            var player = _world.NewEntity();
-
-            ref var movableComponent = ref player.Get<MovableComponent>();
-            ref var forwardMovableComponent =  ref player.Get<ForwardMovableComponent>();
-            ref var diveMovableComponent = ref player.Get<DiveMovableComponent>();
-
             var playerInformation = Object.Instantiate(_playerData.playerInformationPrefab);
             
-            movableComponent.Rigidbody = playerInformation.playerRigidBody;
-            forwardMovableComponent.ForwardMoveData = _playerData.playerForwardMoveData;
-            diveMovableComponent.DiveMoveData = _playerData.playerDiveMoveData;
-            diveMovableComponent.StartYPosition = playerInformation.transform.position.y;
+            CreatePlayerContainerEntity(playerInformation);
+            CreatePlayerBoatEntity(playerInformation);
             
             playerInformation.gameObject.SetActive(true);
+        }
+
+        private void CreatePlayerContainerEntity(PlayerInformation playerInformation)
+        {
+            var playerContainer = _world.NewEntity();
+            var playerContainerMovable = new MovableComponent()
+            {
+                Transform = playerInformation.playerContainerTransform
+            };
+            var playerContainerForwardMovable = new ForwardMovableComponent()
+            {
+                ForwardMoveData = _playerData.playerForwardMoveData
+            };
+            playerContainer
+                .Replace(playerContainerMovable)
+                .Replace(playerContainerForwardMovable);
+        }
+        
+        private void CreatePlayerBoatEntity(PlayerInformation playerInformation)
+        {
+            var playerBoat = _world.NewEntity();
+            var playerBoatMovable = new MovableComponent()
+            {
+                Transform = playerInformation.playerBoatTransform,
+                LocalSpaceMoving = true
+            };
+            var playerBoatDiveMovable = new DiveMovableComponent()
+            {
+                DiveMoveData = _playerData.playerDiveMoveData,
+                StartYPosition = playerInformation.transform.position.y
+            };
+            playerBoat
+                .Replace(playerBoatMovable)
+                .Replace(playerBoatDiveMovable);
         }
     }
 }

@@ -28,8 +28,8 @@ public class Starter : MonoBehaviour
             .Add(new InputSystem());
 
         _fixedUpdateSystem
-            .Add(new ForwardMoveSystem())
             .Add(new DiveMoveSystem())
+            .Add(new ForwardMoveSystem())
             .Add(new MoveSystem());
 
 
