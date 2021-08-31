@@ -12,11 +12,34 @@
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/LICENSE.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/Leopotam.Ecs.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/Leopotam.Ecs.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/Leopotam.Ecs.csproj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/README.md.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/package.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsEntity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsEntity.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsFilter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsFilter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsHelpers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsHelpers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsWorld.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsWorld.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +52,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Information/PlayerInformation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Information/LocationInformation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -136,6 +157,7 @@
       <workItem from="1630332967154" duration="4788000" />
       <workItem from="1630349452843" duration="2991000" />
       <workItem from="1630357812715" duration="3046000" />
+      <workItem from="1630406124368" duration="41000" />
     </task>
     <servers />
   </component>
