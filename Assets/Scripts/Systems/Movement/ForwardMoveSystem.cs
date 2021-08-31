@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Systems.Movement
 {
-    public class ForwardMoveSystem : IEcsRunSystem
+    public sealed class ForwardMoveSystem : IEcsRunSystem
     {
-        private EcsFilter<MovableComponent, ForwardMovableComponent> _forwardMoveFilter = null;
+        private readonly EcsFilter<MovableComponent, ForwardMovableComponent> _forwardMoveFilter = null;
 
         public void Run()
         {

@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace Systems.Movement
 {
-    public class DiveMoveSystem : IEcsRunSystem
+    public sealed class DiveMoveSystem : IEcsRunSystem
     {
-        private EcsFilter<InputComponent> _inputEventFilter = null;
-        private EcsFilter<MovableComponent, DiveMovableComponent> _diveMoveFilter = null;
+        private readonly EcsFilter<InputComponent> _inputEventFilter = null;
+        private readonly EcsFilter<MovableComponent, DiveMovableComponent> _diveMoveFilter = null;
 
 
         public void Run()

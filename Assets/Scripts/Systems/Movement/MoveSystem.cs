@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Systems.Movement
 {
-    public class MoveSystem : IEcsRunSystem
+    public sealed class MoveSystem : IEcsRunSystem
     {
-        private EcsFilter<MovableComponent> _moveFilter = null;
+        private readonly EcsFilter<MovableComponent> _moveFilter = null;
 
         public void Run()
         {

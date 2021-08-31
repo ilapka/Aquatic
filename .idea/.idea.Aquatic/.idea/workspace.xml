@@ -12,34 +12,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/LICENSE.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/Leopotam.Ecs.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/Leopotam.Ecs.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/Leopotam.Ecs.csproj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/README.md.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/package.json.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsEntity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsFilter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsFilter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsHelpers.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsHelpers.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsWorld.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Storage/ecs-master/src/EcsWorld.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/NewBehaviourScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/NewBehaviourScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +34,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProgressData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/89/28e46297/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/b3/e0f274a7/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -77,25 +66,34 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Information/PlayerContainerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ForwardMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Information/PlayerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DiveMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Information/PipePartInformation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Information/LocationInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelData1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelListData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameProgressData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveDataSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveSystem1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" />
       </list>
     </option>
   </component>
@@ -158,6 +156,8 @@
       <workItem from="1630349452843" duration="2991000" />
       <workItem from="1630357812715" duration="3046000" />
       <workItem from="1630406124368" duration="41000" />
+      <workItem from="1630406377805" duration="1553000" />
+      <workItem from="1630424544975" duration="7251000" />
     </task>
     <servers />
   </component>

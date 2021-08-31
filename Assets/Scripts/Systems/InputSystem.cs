@@ -6,10 +6,10 @@ using Components;
 
 namespace Systems
 {
-    public class InputSystem : IEcsInitSystem, IEcsRunSystem
+    public sealed class InputSystem : IEcsInitSystem, IEcsRunSystem
     {
-        private EcsWorld _world = null;
-        private EcsFilter<InputComponent> _inputFilter = null;
+        private readonly EcsWorld _world = null;
+        private readonly EcsFilter<InputComponent> _inputFilter = null;
         
         public void Init()
         {

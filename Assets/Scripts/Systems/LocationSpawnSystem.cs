@@ -8,10 +8,10 @@ using Information;
 
 namespace Systems
 {
-    public class LocationSpawnSystem : IEcsInitSystem
+    public sealed class LocationSpawnSystem : IEcsInitSystem
     {
-        private EcsWorld _world = null;
-        private LevelListData _levelListData = null;
+        private readonly EcsWorld _world = null;
+        private readonly LevelListData _levelListData = null;
 
         public void Init()
         {

@@ -8,10 +8,10 @@ using Information;
 
 namespace Systems
 {
-    public class PlayerSpawnSystem : IEcsInitSystem
+    public sealed class PlayerSpawnSystem : IEcsInitSystem
     {
-        private EcsWorld _world = null;
-        private PlayerBoatData _playerBoatData = null;
+        private readonly EcsWorld _world = null;
+        private readonly PlayerBoatData _playerBoatData = null;
 
         public void Init()
         {

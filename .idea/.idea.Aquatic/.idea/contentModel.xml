@@ -382,7 +382,7 @@
           <e p="Components" t="Include">
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
-              <e p="NewBehaviourScript.cs" t="Include" />
+              <e p="SaveDataEvent.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
@@ -391,9 +391,11 @@
           <e p="Data" t="Include">
             <e p="DiveMoveData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
+            <e p="GameProgressData.cs" t="Include" />
             <e p="LevelData.cs" t="Include" />
             <e p="LevelListData.cs" t="Include" />
             <e p="PlayerBoatData.cs" t="Include" />
+            <e p="SavingSettings.cs" t="Include" />
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
@@ -405,6 +407,10 @@
               <e p="MoveSystem.cs" t="Include" />
             </e>
             <e p="PlayerSpawnSystem.cs" t="Include" />
+            <e p="Saving" t="Include">
+              <e p="LoadFileSystem.cs" t="Include" />
+              <e p="SaveFileSystem.cs" t="Include" />
+            </e>
           </e>
           <e p="UnityComponents" t="Include">
             <e p="LocationInformation.cs" t="Include" />
