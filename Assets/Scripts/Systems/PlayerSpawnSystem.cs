@@ -11,11 +11,11 @@ namespace Systems
     public class PlayerSpawnSystem : IEcsInitSystem
     {
         private EcsWorld _world = null;
-        private PlayerData _playerData = null;
+        private PlayerBoatData _playerBoatData = null;
 
         public void Init()
         {
-            var playerInformation = Object.Instantiate(_playerData.playerInformationPrefab);
+            var playerInformation = Object.Instantiate(_playerBoatData.playerInformationPrefab);
             
             CreatePlayerContainerEntity(playerInformation);
             CreatePlayerBoatEntity(playerInformation);
@@ -32,7 +32,7 @@ namespace Systems
             };
             var playerContainerForwardMovable = new ForwardMovableComponent()
             {
-                ForwardMoveData = _playerData.playerForwardMoveData
+                ForwardMoveData = _playerBoatData.playerForwardMoveData
             };
             playerContainer
                 .Replace(playerContainerMovable)
@@ -49,7 +49,7 @@ namespace Systems
             };
             var playerBoatDiveMovable = new DiveMovableComponent()
             {
-                DiveMoveData = _playerData.playerDiveMoveData,
+                DiveMoveData = _playerBoatData.playerDiveMoveData,
                 StartYPosition = playerInformation.transform.position.y
             };
             playerBoat

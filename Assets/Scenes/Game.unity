@@ -1924,7 +1924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9004c75ee18d24c9aa437ee05f3795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: bef29219e2d292c4bb24149625c31a62, type: 2}
+  playerBoatData: {fileID: 11400000, guid: bef29219e2d292c4bb24149625c31a62, type: 2}
+  levelList: {fileID: 11400000, guid: 52704b25d0b3f9c4ea714934b57b0393, type: 2}
 --- !u!1001 &1273985166
 PrefabInstance:
   m_ObjectHideFlags: 0

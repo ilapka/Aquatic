@@ -4,8 +4,8 @@ using UnityEngine.Serialization;
 
 namespace Data
 {
-    [CreateAssetMenu(fileName = "PlayerData",menuName = "Aquatic/Player Data")]
-    public class PlayerData : ScriptableObject
+    [CreateAssetMenu(fileName = "PlayerBoatData",menuName = "Aquatic/Player Boat Data")]
+    public class PlayerBoatData : ScriptableObject
     {
         public PlayerInformation playerInformationPrefab;
         public ForwardMoveData playerForwardMoveData;

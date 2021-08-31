@@ -15,7 +15,7 @@ public class Starter : MonoBehaviour
     private EcsSystems _fixedUpdateSystem;
 
     [Header("Data")]
-    [SerializeField] private PlayerData playerData;
+    [SerializeField] private PlayerBoatData playerBoatData;
     [SerializeField] private LevelListData levelList;
 
     private void Start()
@@ -36,7 +36,7 @@ public class Starter : MonoBehaviour
 
 
         _updateSystems
-            .Inject(playerData)
+            .Inject(playerBoatData)
             .Inject(levelList);
 
         _updateSystems.Init();
