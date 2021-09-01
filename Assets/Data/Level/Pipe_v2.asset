@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6273ecd2b46440942add15f810f7c657, type: 3}
   m_Name: Pipe_v2
   m_EditorClassIdentifier: 
+  generateDistance: 10

@@ -1,3 +1,4 @@
+using Data;
 using UnityComponents;
 
 namespace Components.Events
@@ -5,5 +6,6 @@ namespace Components.Events
     public struct LocationSpawnEvent
     {
         public LocationInformation LocationInformation;
+        public PipeGenerationData PipeGenerationData;
     }
 }

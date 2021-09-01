@@ -424,7 +424,7 @@
           </e>
           <e p="UnityComponents" t="Include">
             <e p="LocationInformation.cs" t="Include" />
-            <e p="PipePartInformation.cs" t="Include" />
+            <e p="PipeRingInformation.cs" t="Include" />
             <e p="PlayerInformation.cs" t="Include" />
           </e>
         </e>

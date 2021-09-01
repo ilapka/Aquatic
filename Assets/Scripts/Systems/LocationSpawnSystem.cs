@@ -52,7 +52,11 @@ namespace Systems
             _secondLocationPart = locationInformation.secondEnvironmentPart;
             _extendablePartDistance = Mathf.Abs(_firstLocationPart.position.x - _secondLocationPart.position.x);
 
-            var locationSpawnEvent = new LocationSpawnEvent(){ LocationInformation = locationInformation};
+            var locationSpawnEvent = new LocationSpawnEvent()
+            {
+                LocationInformation = locationInformation,
+                PipeGenerationData = levelStruct.pipeGenerationData
+            };
             _world.NewEntity().Replace(locationSpawnEvent);
         }
 
