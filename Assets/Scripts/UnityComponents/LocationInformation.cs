@@ -1,12 +1,15 @@
 ﻿using System.Collections.Generic;
+using Data;
 using UnityEngine;
 
-namespace Information
+namespace UnityComponents
 {
     public class LocationInformation : MonoBehaviour
     {
-        public Transform playerSpawnPosition;
-        public Transform pipePartsContainer;
-        public List<Transform> extendableEnvironmentParts;
+        public Transform playerSpawnPoint;
+        public Transform pipeRingsContainer;
+        [Header("Extendable environment parts")]
+        public Transform firstEnvironmentPart;
+        public Transform secondEnvironmentPart;
     }
 }

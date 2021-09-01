@@ -11,9 +11,9 @@ namespace Systems.Saving
     public sealed class LevelValueSystem : IEcsInitSystem ,IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
-        private readonly GameProgressData _gameProgressData;
+        private readonly GameProgressData _gameProgressData = null;
 
-        private readonly EcsFilter<LevelUpEvent> _levelUpFilter;
+        private readonly EcsFilter<LevelUpEvent> _levelUpFilter = null;
 
         public void Init()
         {

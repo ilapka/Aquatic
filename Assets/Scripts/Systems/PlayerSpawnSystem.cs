@@ -3,29 +3,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Components;
+using Components.Events;
 using Data;
-using Information;
+using UnityComponents;
 
 namespace Systems
 {
-    public sealed class PlayerSpawnSystem : IEcsInitSystem
+    public sealed class PlayerSpawnSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
         private readonly PlayerBoatData _playerBoatData = null;
+        private readonly EcsFilter<LocationSpawnEvent> _locationSpawnEvent = null;
 
-        public void Init()
+        private bool _playerSpawned;
+
+        public void Run()
         {
-            var playerInformation = Object.Instantiate(_playerBoatData.playerInformationPrefab);
+            if(_playerSpawned) return;
+
+            foreach (var i in _locationSpawnEvent)
+            {
+                var spawnPosition = _locationSpawnEvent.Get1(i).LocationInformation.playerSpawnPoint.position;
+                var playerInformation = Object.Instantiate(_playerBoatData.playerInformationPrefab, spawnPosition, Quaternion.identity);
             
-            CreatePlayerContainerEntity(playerInformation);
-            CreatePlayerBoatEntity(playerInformation);
+                CreatePlayerContainerEntity(playerInformation);
+                CreatePlayerBoatEntity(playerInformation);
             
-            playerInformation.gameObject.SetActive(true);
+                playerInformation.gameObject.SetActive(true);
+
+                _playerSpawned = true;
+            }
         }
 
         private void CreatePlayerContainerEntity(PlayerInformation playerInformation)
         {
             var playerContainer = _world.NewEntity();
+            var playerComponent = new PlayerComponent()
+            {
+                PlayerInformation = playerInformation
+            };
             var playerContainerMovable = new MovableComponent()
             {
                 Transform = playerInformation.playerContainerTransform
@@ -36,7 +52,8 @@ namespace Systems
             };
             playerContainer
                 .Replace(playerContainerMovable)
-                .Replace(playerContainerForwardMovable);
+                .Replace(playerContainerForwardMovable)
+                .Replace(playerComponent);
         }
         
         private void CreatePlayerBoatEntity(PlayerInformation playerInformation)

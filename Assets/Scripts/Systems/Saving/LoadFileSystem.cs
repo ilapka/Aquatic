@@ -11,8 +11,8 @@ namespace Systems.Saving
     {
         private readonly EcsWorld _world = null;
         
-        private readonly SavingSettings _savingSettings;
-        private readonly GameProgressData _gameProgressData;
+        private readonly SavingSettings _savingSettings = null;
+        private readonly GameProgressData _gameProgressData = null;
 
         public void Init()
         {

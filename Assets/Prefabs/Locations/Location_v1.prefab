@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5073056430580816676}
   m_Layer: 0
-  m_Name: PipePartsContainer
+  m_Name: PipeRingsContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,11 +557,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7991c123753b114d9b28fa474f4228c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpawnPosition: {fileID: 5315981070267244968}
-  pipePartsContainer: {fileID: 5073056430580816676}
-  extendableEnvironmentParts:
-  - {fileID: 5073056432611618097}
-  - {fileID: 5073056430608785346}
+  playerSpawnPoint: {fileID: 5315981070267244968}
+  pipeRingsContainer: {fileID: 5073056430580816676}
+  firstEnvironmentPart: {fileID: 5073056432611618097}
+  secondEnvironmentPart: {fileID: 5073056430608785346}
 --- !u!1 &5073056432492242312
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +827,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6322828481379483631, guid: 763a1cd4e643ee7488c145bb911795da, type: 3}
       propertyPath: m_Name
-      value: GoldenPipePart
+      value: GoldenPipeRing
       objectReference: {fileID: 0}
     - target: {fileID: 6698228880440354133, guid: 763a1cd4e643ee7488c145bb911795da, type: 3}
       propertyPath: m_LocalPosition.x

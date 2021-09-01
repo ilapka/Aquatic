@@ -1,13 +1,10 @@
 ﻿using UnityEngine;
 
-namespace Information
+namespace UnityComponents
 {
     public class PlayerInformation : MonoBehaviour
     {
         public Transform playerContainerTransform;
         public Transform playerBoatTransform;
-        
-        //public Rigidbody playerContainerRigidBody;
-        //public Rigidbody playerBoatRigidbody;
     }
 }

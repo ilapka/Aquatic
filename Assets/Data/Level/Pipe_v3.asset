@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7a6ade02d584e340a78d575a0d6d6da, type: 3}
-  m_Name: PlayerForwardMoveData
+  m_Script: {fileID: 11500000, guid: 6273ecd2b46440942add15f810f7c657, type: 3}
+  m_Name: Pipe_v3
   m_EditorClassIdentifier: 
-  speed: 0.3
-  direction: {x: -1, y: 0, z: 0}

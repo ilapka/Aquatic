@@ -45,12 +45,14 @@ public class Starter : MonoBehaviour
 #endif
 
         _updateSystems
-            .Add(new PlayerSpawnSystem())
             .Add(new InputSystem())
             .Add(new LocationSpawnSystem())
+            .Add(new PlayerSpawnSystem())
         
             .Inject(playerBoatData)
             .Inject(levelList)
+            
+            .OneFrame<LocationSpawnEvent>()
         
             .Init();
 

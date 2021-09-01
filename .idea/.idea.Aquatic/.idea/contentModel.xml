@@ -383,20 +383,22 @@
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="LevelUpEvent.cs" t="Include" />
+              <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
+            <e p="PlayerComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
             <e p="DiveMoveData.cs" t="Include" />
             <e p="EncryptionData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
             <e p="GameProgressData.cs" t="Include" />
-            <e p="LevelData.cs" t="Include" />
             <e p="LevelListData.cs" t="Include" />
+            <e p="PipeGenerationData.cs" t="Include" />
             <e p="PlayerBoatData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
           </e>
@@ -412,6 +414,7 @@
               <e p="ForwardMoveSystem.cs" t="Include" />
               <e p="MoveSystem.cs" t="Include" />
             </e>
+            <e p="PipeRingsGenerationSystem.cs" t="Include" />
             <e p="PlayerSpawnSystem.cs" t="Include" />
             <e p="Saving" t="Include">
               <e p="LevelValueSystem.cs" t="Include" />
