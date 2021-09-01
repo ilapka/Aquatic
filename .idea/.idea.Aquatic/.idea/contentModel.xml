@@ -382,7 +382,9 @@
           <e p="Components" t="Include">
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
+              <e p="LevelUpEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
+              <e p="UpdateLevelValueEvent.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
@@ -412,6 +414,7 @@
             </e>
             <e p="PlayerSpawnSystem.cs" t="Include" />
             <e p="Saving" t="Include">
+              <e p="LevelValueSystem.cs" t="Include" />
               <e p="LoadFileSystem.cs" t="Include" />
               <e p="SaveFileSystem.cs" t="Include" />
             </e>

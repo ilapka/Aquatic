@@ -13,12 +13,14 @@
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/JsonData/GameProgressData.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/JsonData/GameProgressData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/JsonData/GameProgressData.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/JsonData/GameProgressData.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/JsonData/GameProgressDataEncrypted.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/JsonData/GameProgressDataEncrypted.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/SaveSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/SaveSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProgressData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProgressData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -45,10 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MaterialsData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/MaterialComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/MaterialSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/MaterialData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/InputEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/InputEventComponent.cs" />
@@ -76,25 +76,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelListData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameProgressData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/InputSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveDataSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveSystem1.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/EncryptionData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/GameProgressData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" />
       </list>
     </option>
   </component>
@@ -159,7 +164,7 @@
       <workItem from="1630406124368" duration="41000" />
       <workItem from="1630406377805" duration="1553000" />
       <workItem from="1630424544975" duration="8771000" />
-      <workItem from="1630484573339" duration="3520000" />
+      <workItem from="1630484573339" duration="6865000" />
     </task>
     <servers />
   </component>

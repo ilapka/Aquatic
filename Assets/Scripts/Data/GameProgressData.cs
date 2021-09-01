@@ -6,6 +6,6 @@ namespace Data
     [CreateAssetMenu(fileName = "GameProgressData",menuName = "Aquatic/SavingData/GameProgressData")]
     public class GameProgressData : ScriptableObject
     {
-        public int levelNumber;
+        public int levelValue;
     }
 }

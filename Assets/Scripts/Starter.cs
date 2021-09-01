@@ -47,6 +47,7 @@ public class Starter : MonoBehaviour
         _updateSystems
             .Add(new PlayerSpawnSystem())
             .Add(new InputSystem())
+            .Add(new LocationSpawnSystem())
         
             .Inject(playerBoatData)
             .Inject(levelList)
@@ -63,11 +64,14 @@ public class Starter : MonoBehaviour
         _savedDataSystem
             .Add(new SaveFileSystem())
             .Add(new LoadFileSystem())
+            .Add(new LevelValueSystem())
             
             .Inject(savingSettings)
             .Inject(gameProgressData)
             
             .OneFrame<SaveDataEvent>()
+            .OneFrame<LevelUpEvent>()
+            .OneFrame<UpdateLevelValueEvent>()
             
             .Init();
     }

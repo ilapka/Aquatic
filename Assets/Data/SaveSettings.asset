@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:Data:SaveSettingsData
   pathToSaving: Data/JsonData
   dataFileName: GameProgressData
-  encryptFiles: 1
+  encryptFiles: 0
   encryptPostfix: Encrypted
