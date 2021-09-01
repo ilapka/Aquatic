@@ -8,6 +8,7 @@ using Systems.Movement;
 using Systems.Saving;
 using Components;
 using Components.Events;
+using Managers;
 using UnityEngine;
 
 public class Starter : MonoBehaviour
@@ -21,12 +22,15 @@ public class Starter : MonoBehaviour
     [SerializeField] private PlayerBoatData playerBoatData;
     [SerializeField] private LevelListData levelList;
     [SerializeField] private SavingSettings savingSettings;
+    [SerializeField] private EncryptionData encryptionData;
 
     [Header("Saved Data")]
     [SerializeField] private GameProgressData gameProgressData; 
 
     private void Start()
     {
+        InitializeManagers();
+        
         _world = new EcsWorld();
         _updateSystems = new EcsSystems(_world);
         _fixedUpdateSystem = new EcsSystems(_world);
@@ -67,7 +71,12 @@ public class Starter : MonoBehaviour
             
             .Init();
     }
-    
+
+    private void InitializeManagers()
+    {
+        EncryptionManager.Init(encryptionData);
+    }
+
     private void Update()
     {
         _updateSystems.Run();

@@ -1927,6 +1927,7 @@ MonoBehaviour:
   playerBoatData: {fileID: 11400000, guid: bef29219e2d292c4bb24149625c31a62, type: 2}
   levelList: {fileID: 11400000, guid: 52704b25d0b3f9c4ea714934b57b0393, type: 2}
   savingSettings: {fileID: 11400000, guid: f9b8edf3b1dc4da429d955e93228bb9c, type: 2}
+  encryptionData: {fileID: 11400000, guid: 8a41c802076aab743bb6bc9b88d865b4, type: 2}
   gameProgressData: {fileID: 11400000, guid: 1f98c27526ede3648b59d8c24d93e183, type: 2}
 --- !u!1001 &1273985166
 PrefabInstance:

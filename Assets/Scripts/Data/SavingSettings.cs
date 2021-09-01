@@ -9,5 +9,6 @@ namespace Data
         public string pathToSaving;
         public string dataFileName;
         public bool encryptFiles;
+        public string encryptPostfix = "Encrypted";
     }
 }

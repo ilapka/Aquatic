@@ -390,12 +390,16 @@
           </e>
           <e p="Data" t="Include">
             <e p="DiveMoveData.cs" t="Include" />
+            <e p="EncryptionData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
             <e p="GameProgressData.cs" t="Include" />
             <e p="LevelData.cs" t="Include" />
             <e p="LevelListData.cs" t="Include" />
             <e p="PlayerBoatData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="EncryptionManager.cs" t="Include" />
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
