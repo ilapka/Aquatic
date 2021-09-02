@@ -10,7 +10,7 @@ namespace Data
     public struct LevelStruct
     {
         public LocationInformation levelInformation;
-        public PipeGenerationData pipeGenerationData;
+        public RingsGenerationData ringsGenerationSettings;
     }
     
     [CreateAssetMenu(fileName = "LevelListData",menuName = "Aquatic/Level List Data")]

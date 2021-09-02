@@ -14,13 +14,9 @@ namespace Systems
         private readonly EcsWorld _world = null;
         private readonly PlayerBoatData _playerBoatData = null;
         private readonly EcsFilter<LocationSpawnEvent> _locationSpawnEvent = null;
-
-        private bool _playerSpawned;
-
+        
         public void Run()
         {
-            if(_playerSpawned) return;
-
             foreach (var i in _locationSpawnEvent)
             {
                 var spawnPosition = _locationSpawnEvent.Get1(i).LocationInformation.playerSpawnPoint.position;
@@ -30,8 +26,6 @@ namespace Systems
                 CreatePlayerBoatEntity(playerInformation);
             
                 playerInformation.gameObject.SetActive(true);
-
-                _playerSpawned = true;
             }
         }
 

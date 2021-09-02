@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelList:
   - levelInformation: {fileID: 5073056432434445212, guid: d8bdbf1a5cc7d1b4494b524fada2e635, type: 3}
-    pipeGenerationData: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}
+    ringsGenerationSettings: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}
   - levelInformation: {fileID: 5073056432434445212, guid: d8bdbf1a5cc7d1b4494b524fada2e635, type: 3}
-    pipeGenerationData: {fileID: 11400000, guid: f7557049142c9d44da9f14e01a780753, type: 2}
+    ringsGenerationSettings: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}
   - levelInformation: {fileID: 5073056432434445212, guid: d8bdbf1a5cc7d1b4494b524fada2e635, type: 3}
-    pipeGenerationData: {fileID: 11400000, guid: f1fd99ef563dbd044bd00f1a737140fc, type: 2}
+    ringsGenerationSettings: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}

@@ -6,6 +6,6 @@ namespace Components.Events
     public struct LocationSpawnEvent
     {
         public LocationInformation LocationInformation;
-        public PipeGenerationData PipeGenerationData;
+        public RingsGenerationData RingsGenerationData;
     }
 }

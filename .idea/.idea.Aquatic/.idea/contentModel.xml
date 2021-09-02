@@ -389,6 +389,7 @@
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
+            <e p="LocationPartsComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
           </e>
@@ -398,8 +399,9 @@
             <e p="ForwardMoveData.cs" t="Include" />
             <e p="GameProgressData.cs" t="Include" />
             <e p="LevelListData.cs" t="Include" />
-            <e p="PipeGenerationData.cs" t="Include" />
             <e p="PlayerBoatData.cs" t="Include" />
+            <e p="RingsGenerationData.cs" t="Include" />
+            <e p="RingsListData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
           </e>
           <e p="Managers" t="Include">
@@ -422,7 +424,11 @@
               <e p="SaveFileSystem.cs" t="Include" />
             </e>
           </e>
+          <e p="Types" t="Include">
+            <e p="PipeRingType.cs" t="Include" />
+          </e>
           <e p="UnityComponents" t="Include">
+            <e p="DestructiblePipeRingInformation.cs" t="Include" />
             <e p="LocationInformation.cs" t="Include" />
             <e p="PipeRingInformation.cs" t="Include" />
             <e p="PlayerInformation.cs" t="Include" />

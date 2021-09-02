@@ -10,6 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6273ecd2b46440942add15f810f7c657, type: 3}
-  m_Name: Pipe_v2
+  m_Name: GenerationRingSettings
   m_EditorClassIdentifier: 
-  generateDistance: 10
+  ringsListData: {fileID: 11400000, guid: 5ee7efd0441223043b1fad576df4b1f8, type: 2}
+  generationDistanceFromPlayer: 15
+  generationRingSettings:
+  - pipeRingType: 0
+    weightOfChanceToSpawn: 2.03
+    maxCountInRow: 3
+    minCountInRow: 2
+  - pipeRingType: 1
+    weightOfChanceToSpawn: 7.69
+    maxCountInRow: 3
+    minCountInRow: 2

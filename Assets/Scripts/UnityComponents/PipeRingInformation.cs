@@ -7,6 +7,5 @@ namespace UnityComponents
     {
         public Transform startPoint;
         public Transform endPoint;
-        public List<Rigidbody> bodyParts;
     }
 }

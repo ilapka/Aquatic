@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989490f96e75a3c469fd260582b08fe0, type: 3}
+  m_Name: RingsList
+  m_EditorClassIdentifier: 
+  pipeRingsList:
+  - ringType: 0
+    pipeRingInformation: {fileID: 8915875433773929601, guid: 763a1cd4e643ee7488c145bb911795da, type: 3}
+  - ringType: 1
+    pipeRingInformation: {fileID: 8915875433773929601, guid: 2dfd297bda6c84c45a7787657d3211c7, type: 3}
