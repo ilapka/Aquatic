@@ -6,9 +6,8 @@ namespace Data
     [CreateAssetMenu(fileName = "SaveSettingsData",menuName = "Aquatic/Save Settings Data")]
     public class SavingSettings : ScriptableObject
     {
-        public string pathToSaving;
-        public string dataFileName;
-        public bool encryptFiles;
-        public string encryptPostfix = "Encrypted";
+        public string pathToFile;
+        public string pathToEncryptFile;
+        public bool encrypt;
     }
 }

@@ -1,10 +1,7 @@
-using System.IO;
-using System.Security.Cryptography;
+using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
-using Managers;
-using UnityEngine;
 
 namespace Systems.Saving
 {
@@ -14,10 +11,13 @@ namespace Systems.Saving
         private readonly GameProgressData _gameProgressData = null;
 
         private readonly EcsFilter<LevelUpEvent> _levelUpFilter = null;
+        private readonly EcsFilter<SavingComponent> _savingFilter = null;
 
         public void Init()
         {
-            UpdateLevelValue();
+            var startEntity = _world.NewEntity();
+            startEntity.Get<StartGameEvent>(); //TODO <------------------- переместить в гейм стейт систему, работающую с UI
+            startEntity.Get<UpdateLevelValueEvent>().CurrentLevel = _gameProgressData.levelValue;
         }
         
         public void Run()
@@ -25,15 +25,12 @@ namespace Systems.Saving
             foreach (var i in _levelUpFilter)
             {
                 _gameProgressData.levelValue++;
-                _world.NewEntity().Get<SaveDataEvent>();
-                UpdateLevelValue();
+                foreach (var j in _savingFilter)
+                {
+                    _savingFilter.GetEntity(j).Get<SaveDataEvent>();
+                }
+                _world.NewEntity().Get<UpdateLevelValueEvent>().CurrentLevel = _gameProgressData.levelValue;
             }
-        }
-
-        private void UpdateLevelValue()
-        {
-            var uodateEvent = new UpdateLevelValueEvent(){ CurrentLevel = _gameProgressData.levelValue};
-            _world.NewEntity().Replace(uodateEvent);
         }
     }
 }

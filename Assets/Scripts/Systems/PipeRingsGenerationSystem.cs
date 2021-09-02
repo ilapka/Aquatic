@@ -15,77 +15,49 @@ namespace Systems
     public sealed class PipeRingsGenerationSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
-        private readonly LevelListData _levelListData = null;
-
-        private readonly EcsFilter<LocationSpawnEvent> _locationSpawnEvent = null;
-        private readonly EcsFilter<PlayerComponent> _playerFilter  = null;
-
-        private Transform _pipeRingContainer;
-        private Vector3 _edgePoint;
-        private RingsGenerationData _ringsGenerationData;
-        private bool _initialized;
+        private readonly EcsFilter<LocationComponent, PipeComponent, PlayerComponent> _locationFilter  = null;
 
         public void Run()
         {
-            if(!_initialized)
-            { 
-                foreach (var i in _locationSpawnEvent)
-                {
-                    _ringsGenerationData = _locationSpawnEvent.Get1(i).RingsGenerationData;
-                    _pipeRingContainer = _locationSpawnEvent.Get1(i).LocationInformation.pipeRingsContainer;
-                    _edgePoint = _pipeRingContainer.position;
-
-                    //определяем какой тип кольца и какая длинна далее:
-                    //GenerateRings();
-                    
-                    _initialized = true;
-                }
-            }
-
-            foreach (var i in _playerFilter)
+            foreach (var i in _locationFilter)
             {
-                var playerTransform = _playerFilter.Get1(i).PlayerInformation.transform;
+                var ringsGenerationData = _locationFilter.Get1(i).RingsGenerationData;
+                var ringsContainer = _locationFilter.Get1(i).LocationInformation.pipeRingsContainer;
+                ref var pipeComponent = ref _locationFilter.Get2(i);
+                var playerTransform = _locationFilter.Get3(i).PlayerInformation.transform;
                 
-                if (playerTransform.position.x <= _edgePoint.x - _ringsGenerationData.generationDistanceFromPlayer)
+                if (playerTransform.position.x - ringsGenerationData.generationDistanceFromPlayer <= pipeComponent.LastRingEdge.x)
                 {
-                    //определяем какой тип кольца и какая длинна далее:
-                    //GenerateRings();
+                    var ringSettings = GetRandomRing(ringsGenerationData.generationRingSettings);
+                    var prefab = ringsGenerationData.ringsListData.pipeRingsList
+                        .Find(ring => ring.ringType == ringSettings.pipeRingType).pipeRingInformation;
+
+                    var count = Random.Range(ringSettings.minCountInRow, ringSettings.maxCountInRow);
+                    
+                    for (int j = 0; j < count; j++)
+                    {
+                        var ringInformation = Object.Instantiate(prefab, pipeComponent.LastRingEdge, prefab.transform.rotation, ringsContainer);
+
+                        pipeComponent.LastRingEdge = ringInformation.endPoint.position;
+                    }
                 }
             }
         }
-
-        private void GenerateRandomRings()
-        {
-            //var type = GetRandomRingType();
-        }
-
-        private PipeRingType GetRandomRingType(List<GenerationRingSetting> ringSettings)
+        private GenerationRingSetting GetRandomRing(List<GenerationRingSetting> ringSettings)
         {
             var maxRandomWeight = 0f;
-            var randomType = PipeRingType.Default;
+            GenerationRingSetting randomRing = default;
 
             foreach (var ring in ringSettings)
             {
                 if (Random.Range(0f, ring.weightOfChanceToSpawn) >= maxRandomWeight)
                 {
                     maxRandomWeight = ring.weightOfChanceToSpawn;
-                    randomType = ring.pipeRingType;
+                    randomRing = ring;
                 }
             }
             
-            return randomType;
-        }
-
-        private void SpawnRings(PipeRingType ringType, int count, Transform ringsContainer, RingsListData ringsListData)
-        {
-            var prefab = ringsListData.pipeRingsList.Find(ring => ring.ringType == ringType).pipeRingInformation;
-            
-            for (int i = 0; i < count; i++)
-            {
-                var ringInformation = Object.Instantiate(prefab, _edgePoint, Quaternion.identity, ringsContainer);
-
-                _edgePoint = ringInformation.endPoint.position;
-            }
+            return randomRing;
         }
     }
 }

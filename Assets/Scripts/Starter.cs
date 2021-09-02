@@ -47,11 +47,14 @@ public class Starter : MonoBehaviour
         _updateSystems
             .Add(new InputSystem())
             .Add(new LocationSpawnSystem())
+            .Add(new LocationExtendSystem())
             .Add(new PlayerSpawnSystem())
+            .Add(new PipeRingsGenerationSystem())
         
             .Inject(playerBoatData)
             .Inject(levelList)
             
+            .OneFrame<StartGameEvent>()
             .OneFrame<LocationSpawnEvent>()
         
             .Init();

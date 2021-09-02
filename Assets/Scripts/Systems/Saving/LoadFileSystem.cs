@@ -1,4 +1,5 @@
 using System.IO;
+using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
@@ -16,17 +17,20 @@ namespace Systems.Saving
 
         public void Init()
         {
-            var postfix = _savingSettings.encryptFiles ? _savingSettings.encryptPostfix : "";
-            var path = $"{Application.dataPath}/{_savingSettings.pathToSaving}/{_savingSettings.dataFileName}{postfix}.json";
+            var pathInside = _savingSettings.encrypt ? _savingSettings.pathToEncryptFile : _savingSettings.pathToFile;
+            var path = Application.dataPath + pathInside;
+
+            var savingEntity = _world.NewEntity();
+            savingEntity.Get<SavingComponent>().FilePath = path;
 
             if (!File.Exists(path))
             {
-                _world.NewEntity().Get<SaveDataEvent>();
+                savingEntity.Get<SaveDataEvent>();
                 return;
             }
             
             var dataToLoad = File.ReadAllText(path);
-            if (_savingSettings.encryptFiles)
+            if (_savingSettings.encrypt)
             {
                 dataToLoad = EncryptionManager.AESDecryption(dataToLoad);
             }

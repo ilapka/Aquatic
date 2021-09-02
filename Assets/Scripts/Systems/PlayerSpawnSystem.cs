@@ -13,7 +13,7 @@ namespace Systems
     {
         private readonly EcsWorld _world = null;
         private readonly PlayerBoatData _playerBoatData = null;
-        private readonly EcsFilter<LocationSpawnEvent> _locationSpawnEvent = null;
+        private readonly EcsFilter<LocationComponent, LocationSpawnEvent> _locationSpawnEvent = null;
         
         public void Run()
         {
@@ -21,6 +21,7 @@ namespace Systems
             {
                 var spawnPosition = _locationSpawnEvent.Get1(i).LocationInformation.playerSpawnPoint.position;
                 var playerInformation = Object.Instantiate(_playerBoatData.playerInformationPrefab, spawnPosition, Quaternion.identity);
+                _locationSpawnEvent.GetEntity(i).Get<PlayerComponent>().PlayerInformation = playerInformation;
             
                 CreatePlayerContainerEntity(playerInformation);
                 CreatePlayerBoatEntity(playerInformation);
@@ -53,6 +54,10 @@ namespace Systems
         private void CreatePlayerBoatEntity(PlayerInformation playerInformation)
         {
             var playerBoat = _world.NewEntity();
+            var playerComponent = new PlayerComponent()
+            {
+                PlayerInformation = playerInformation
+            };
             var playerBoatMovable = new MovableComponent()
             {
                 Transform = playerInformation.playerBoatTransform,
@@ -65,7 +70,8 @@ namespace Systems
             };
             playerBoat
                 .Replace(playerBoatMovable)
-                .Replace(playerBoatDiveMovable);
+                .Replace(playerBoatDiveMovable)
+                .Replace(playerComponent);
         }
     }
 }

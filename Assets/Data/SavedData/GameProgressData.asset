@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83954ff1fe2cf924db63ba3f0a07cc85, type: 3}
   m_Name: GameProgressData
   m_EditorClassIdentifier: 
-  levelNumber: 16
+  levelValue: 10

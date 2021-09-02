@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c714670acd51d1e4ea254f35b9607554, type: 3}
   m_Name: SaveSettings
   m_EditorClassIdentifier: Assembly-CSharp:Data:SaveSettingsData
-  pathToSaving: Data/JsonData
-  dataFileName: GameProgressData
-  encryptFiles: 0
-  encryptPostfix: Encrypted
+  pathToFile: /Data/Json/GameProgress.json
+  pathToEncryptFile: /Data/Json/EncryptedGameProgress.json
+  encrypt: 0

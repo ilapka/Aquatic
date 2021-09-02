@@ -1,7 +1,7 @@
 namespace Components.Events
 {
-    public struct SaveDataEvent
+    public struct StartGameEvent
     {
-
+        
     }
 }
