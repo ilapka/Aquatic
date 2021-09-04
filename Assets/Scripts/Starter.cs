@@ -53,12 +53,14 @@ public class Starter : MonoBehaviour
             .Add(new SpawnPlayerSystem())
             .Add(new GenerationPipeRingsSystem())
             .Add(new ClearRubbishSystem())
+            .Add(new DestroyableObjectsSystem())
 
             .Inject(playerBoatData)
             .Inject(levelList)
 
             .OneFrame<StartGameEvent>()
             .OneFrame<LocationSpawnEvent>()
+            .OneFrame<AddNewDestroyableObjectEvent>()
 
             .Init();
 

@@ -590,7 +590,7 @@ internal class NVWaterMaterials : MaterialEditor
 [CustomEditor(typeof(NVWaterShaders))]
 [CanEditMultipleObjects]
 
-public class NVWaterShaderEditor : Editor
+public class NVWaterShaderEditor : UnityEditor.Editor
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

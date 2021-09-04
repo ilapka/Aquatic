@@ -382,11 +382,12 @@
           <e p="Components" t="Include">
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
+              <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
+              <e p="StartGameEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
-              <e p="UpdateLevelValueEvent1.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="ForwardMovableComponent1.cs" t="Include" />
@@ -410,12 +411,16 @@
             <e p="RingsListData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
           </e>
+          <e p="Editors" t="Include">
+            <e p="TagsLayersEnumBuilder.cs" t="Include" />
+          </e>
           <e p="Managers" t="Include">
             <e p="EncryptionManager.cs" t="Include" />
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
             <e p="ClearRubbishSystem.cs" t="Include" />
+            <e p="DestroyableObjectsSystem.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
             <e p="Location" t="Include">
               <e p="ExtendLocationSystem.cs" t="Include" />
@@ -437,7 +442,10 @@
             <e p="SpawnPlayerSystem.cs" t="Include" />
           </e>
           <e p="Types" t="Include">
+            <e p="Layers.cs" t="Include" />
             <e p="PipeRingType.cs" t="Include" />
+            <e p="TagEnum.cs" t="Include" />
+            <e p="Tags.cs" t="Include" />
           </e>
           <e p="UnityComponents" t="Include">
             <e p="DestroyableObject.cs" t="Include" />

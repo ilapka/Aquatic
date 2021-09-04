@@ -330,7 +330,7 @@ internal class NVDSkyDemoMaterials : MaterialEditor
 [CustomEditor(typeof(DynamicSkyForDemo))]
 [CanEditMultipleObjects]
 
-public class DynamicSkyForDemoEditor : Editor
+public class DynamicSkyForDemoEditor : UnityEditor.Editor
 {
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

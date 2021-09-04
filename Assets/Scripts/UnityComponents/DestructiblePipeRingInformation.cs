@@ -3,8 +3,9 @@ using UnityEngine;
 
 namespace UnityComponents
 {
+    [RequireComponent(typeof(DestroyableObject))]
     public class DestructiblePipeRingInformation : PipeRingInformation
     {
-        public List<Rigidbody> bodyParts;
+        public DestroyableObject destroyableInstance;
     }
 }

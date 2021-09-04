@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using Components;
+using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using UnityComponents;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
@@ -37,18 +39,33 @@ namespace Systems.PipeRing
                         for (int k = 0; k < count; k++)
                         {
                             var ringInformation = Object.Instantiate(prefab, pipeComponent.LastRingEdge, prefab.transform.rotation, ringsContainer);
-
-                            foreach (var m in _rubbishFilter)
-                            {
-                                _rubbishFilter.Get1(m).RubbishList.Add(ringInformation.rubbishInstance);
-                            }
-                    
                             pipeComponent.LastRingEdge = ringInformation.endPoint.position;
+
+                            SubscribeRubbish(ringInformation);
+                            SubscribeDestructible(ringInformation);
                         }
                     }
                 }
             }
         }
+
+        private void SubscribeRubbish(PipeRingInformation ringInformation)
+        {
+            foreach (var m in _rubbishFilter)
+            {
+                _rubbishFilter.Get1(m).RubbishList.Add(ringInformation.rubbishInstance);
+            }
+        }
+        
+        private void SubscribeDestructible(PipeRingInformation ringInformation)
+        {
+            if (ringInformation is DestructiblePipeRingInformation destructiblePipeRingInformation)
+            {
+                _world.NewEntity().Get<AddNewDestroyableObjectEvent>().DestroyableObjects =
+                    destructiblePipeRingInformation.destroyableInstance;
+            }
+        } 
+
         private GenerationRingSetting GetRandomRing(List<GenerationRingSetting> ringSettings)
         {
             var maxRandomWeight = 0f;
