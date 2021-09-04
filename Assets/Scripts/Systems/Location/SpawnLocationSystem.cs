@@ -1,14 +1,13 @@
-﻿using System;
-using Components;
+﻿using Components;
 using Components.Events;
-using Leopotam.Ecs;
 using Data;
+using Leopotam.Ecs;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Systems
+namespace Systems.Location
 {
-    public sealed class LocationSpawnSystem : IEcsRunSystem
+    public sealed class SpawnLocationSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
         private readonly LevelListData _levelListData = null;
@@ -24,8 +23,6 @@ namespace Systems
 
         private void SpawnLocation(int levelValue)
         {
-             
-
             var locationIndex = levelValue % _levelListData.levelList.Count;
             var levelStruct = _levelListData.levelList[locationIndex];
             var locationInformation = Object.Instantiate(levelStruct.levelInformation);
@@ -47,6 +44,8 @@ namespace Systems
             {
                 LastRingEdge = locationInformation.pipeRingsContainer.position,
             };
+            
+            //var destroyableObectsComponent
             
             var locationSpawnEvent = new LocationSpawnEvent() { };
             

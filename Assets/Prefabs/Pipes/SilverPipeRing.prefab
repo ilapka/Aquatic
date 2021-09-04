@@ -668,6 +668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6698228880440354133}
   - component: {fileID: 8915875433773929601}
+  - component: {fileID: 6849764313684274685}
   m_Layer: 0
   m_Name: SilverPipeRing
   m_TagString: Untagged
@@ -706,6 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startPoint: {fileID: 7482011541361159760}
   endPoint: {fileID: 6878791523540124449}
+  rubbishInstance: {fileID: 6849764313684274685}
   bodyParts:
   - {fileID: 6077572768742010788}
   - {fileID: 5816110441767754940}
@@ -715,6 +717,19 @@ MonoBehaviour:
   - {fileID: 2336376328586331034}
   - {fileID: 6378210441198890579}
   - {fileID: 4933421819954905214}
+--- !u!114 &6849764313684274685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6322828481379483631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5223813a2ef3342aec5401265498b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceFromPlayerToRemove: 20
 --- !u!1 &7505443527459148341
 GameObject:
   m_ObjectHideFlags: 0

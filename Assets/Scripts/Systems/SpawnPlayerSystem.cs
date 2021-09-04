@@ -1,6 +1,4 @@
 ﻿using Leopotam.Ecs;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Components;
 using Components.Events;
@@ -9,7 +7,7 @@ using UnityComponents;
 
 namespace Systems
 {
-    public sealed class PlayerSpawnSystem : IEcsRunSystem
+    public sealed class SpawnPlayerSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
         private readonly PlayerBoatData _playerBoatData = null;
@@ -21,7 +19,6 @@ namespace Systems
             {
                 var spawnPosition = _locationSpawnEvent.Get1(i).LocationInformation.playerSpawnPoint.position;
                 var playerInformation = Object.Instantiate(_playerBoatData.playerInformationPrefab, spawnPosition, Quaternion.identity);
-                _locationSpawnEvent.GetEntity(i).Get<PlayerComponent>().PlayerInformation = playerInformation;
             
                 CreatePlayerContainerEntity(playerInformation);
                 CreatePlayerBoatEntity(playerInformation);
@@ -54,10 +51,6 @@ namespace Systems
         private void CreatePlayerBoatEntity(PlayerInformation playerInformation)
         {
             var playerBoat = _world.NewEntity();
-            var playerComponent = new PlayerComponent()
-            {
-                PlayerInformation = playerInformation
-            };
             var playerBoatMovable = new MovableComponent()
             {
                 Transform = playerInformation.playerBoatTransform,
@@ -70,8 +63,7 @@ namespace Systems
             };
             playerBoat
                 .Replace(playerBoatMovable)
-                .Replace(playerBoatDiveMovable)
-                .Replace(playerComponent);
+                .Replace(playerBoatDiveMovable);
         }
     }
 }

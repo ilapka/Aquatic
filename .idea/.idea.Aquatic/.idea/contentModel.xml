@@ -389,12 +389,14 @@
               <e p="UpdateLevelValueEvent1.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
+            <e p="ForwardMovableComponent1.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
             <e p="LocationComponent.cs" t="Include" />
             <e p="LocationPartsComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
             <e p="PipeComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
+            <e p="RubbishComponent.cs" t="Include" />
             <e p="SavingComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
@@ -413,30 +415,37 @@
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
+            <e p="ClearRubbishSystem.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
-            <e p="LocationExtendSystem.cs" t="Include" />
-            <e p="LocationSpawnSystem.cs" t="Include" />
+            <e p="Location" t="Include">
+              <e p="ExtendLocationSystem.cs" t="Include" />
+              <e p="SpawnLocationSystem.cs" t="Include" />
+            </e>
             <e p="Movement" t="Include">
               <e p="DiveMoveSystem.cs" t="Include" />
               <e p="ForwardMoveSystem.cs" t="Include" />
               <e p="MoveSystem.cs" t="Include" />
             </e>
-            <e p="PipeRingsGenerationSystem.cs" t="Include" />
-            <e p="PlayerSpawnSystem.cs" t="Include" />
+            <e p="PipeRing" t="Include">
+              <e p="GenerationPipeRingsSystem.cs" t="Include" />
+            </e>
             <e p="Saving" t="Include">
               <e p="LevelValueSystem.cs" t="Include" />
               <e p="LoadFileSystem.cs" t="Include" />
               <e p="SaveFileSystem.cs" t="Include" />
             </e>
+            <e p="SpawnPlayerSystem.cs" t="Include" />
           </e>
           <e p="Types" t="Include">
             <e p="PipeRingType.cs" t="Include" />
           </e>
           <e p="UnityComponents" t="Include">
+            <e p="DestroyableObject.cs" t="Include" />
             <e p="DestructiblePipeRingInformation.cs" t="Include" />
             <e p="LocationInformation.cs" t="Include" />
             <e p="PipeRingInformation.cs" t="Include" />
             <e p="PlayerInformation.cs" t="Include" />
+            <e p="RubbishInformation.cs" t="Include" />
           </e>
         </e>
       </e>

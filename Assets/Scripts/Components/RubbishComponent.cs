@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
-using Data;
 using UnityComponents;
 using UnityEngine;
 
 namespace Components
 {
-    public struct PipeComponent
+    public struct RubbishComponent
     {
-        public Vector3 LastRingEdge;
+        public List<RubbishInformation> RubbishList;
     }
 }

@@ -4,7 +4,9 @@ using Systems;
 using Leopotam.Ecs;
 using System.Collections;
 using System.Collections.Generic;
+using Systems.Location;
 using Systems.Movement;
+using Systems.PipeRing;
 using Systems.Saving;
 using Components;
 using Components.Events;
@@ -46,17 +48,18 @@ public class Starter : MonoBehaviour
 
         _updateSystems
             .Add(new InputSystem())
-            .Add(new LocationSpawnSystem())
-            .Add(new LocationExtendSystem())
-            .Add(new PlayerSpawnSystem())
-            .Add(new PipeRingsGenerationSystem())
-        
+            .Add(new SpawnLocationSystem())
+            .Add(new ExtendLocationSystem())
+            .Add(new SpawnPlayerSystem())
+            .Add(new GenerationPipeRingsSystem())
+            .Add(new ClearRubbishSystem())
+
             .Inject(playerBoatData)
             .Inject(levelList)
-            
+
             .OneFrame<StartGameEvent>()
             .OneFrame<LocationSpawnEvent>()
-        
+
             .Init();
 
         _fixedUpdateSystem

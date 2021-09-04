@@ -7,5 +7,6 @@ namespace UnityComponents
     {
         public Transform startPoint;
         public Transform endPoint;
+        public RubbishInformation rubbishInstance;
     }
 }
