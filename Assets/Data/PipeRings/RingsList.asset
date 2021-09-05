@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RingsList
   m_EditorClassIdentifier: 
   pipeRingsList:
-  - ringType: 0
-    pipeRingInformation: {fileID: 8915875433773929601, guid: 763a1cd4e643ee7488c145bb911795da, type: 3}
   - ringType: 1
+    pipeRingInformation: {fileID: 8915875433773929601, guid: 763a1cd4e643ee7488c145bb911795da, type: 3}
+  - ringType: 2
     pipeRingInformation: {fileID: 8915875433773929601, guid: 2dfd297bda6c84c45a7787657d3211c7, type: 3}

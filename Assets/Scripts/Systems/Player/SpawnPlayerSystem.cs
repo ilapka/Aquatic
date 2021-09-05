@@ -54,12 +54,11 @@ namespace Systems
             var playerBoatMovable = new MovableComponent()
             {
                 Transform = playerInformation.playerBoatTransform,
-                LocalSpaceMoving = true
             };
             var playerBoatDiveMovable = new DiveMovableComponent()
             {
                 DiveMoveData = _playerBoatData.playerDiveMoveData,
-                StartYPosition = playerInformation.transform.position.y
+                StartLocalPosition = playerInformation.transform.localPosition
             };
             playerBoat
                 .Replace(playerBoatMovable)

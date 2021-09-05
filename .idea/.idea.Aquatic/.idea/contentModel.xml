@@ -383,6 +383,7 @@
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
+              <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
@@ -429,17 +430,19 @@
             <e p="Movement" t="Include">
               <e p="DiveMoveSystem.cs" t="Include" />
               <e p="ForwardMoveSystem.cs" t="Include" />
-              <e p="MoveSystem.cs" t="Include" />
             </e>
             <e p="PipeRing" t="Include">
               <e p="GenerationPipeRingsSystem.cs" t="Include" />
+            </e>
+            <e p="Player" t="Include">
+              <e p="BoatStateSystem.cs" t="Include" />
+              <e p="SpawnPlayerSystem.cs" t="Include" />
             </e>
             <e p="Saving" t="Include">
               <e p="LevelValueSystem.cs" t="Include" />
               <e p="LoadFileSystem.cs" t="Include" />
               <e p="SaveFileSystem.cs" t="Include" />
             </e>
-            <e p="SpawnPlayerSystem.cs" t="Include" />
           </e>
           <e p="Types" t="Include">
             <e p="Layers.cs" t="Include" />

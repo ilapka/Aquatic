@@ -12,36 +12,38 @@ namespace Systems.Movement
 
         public void Run()
         {
-            var isTouch = false;
-            
             foreach (var i in _inputEventFilter)
             {
-                isTouch = _inputEventFilter.Get1(i).IsTouch;
-            }
-            
-            foreach (var i in _diveMoveFilter)
-            {
-                ref var movableComponent = ref _diveMoveFilter.Get1(i);
-                var diveMovableComponent = _diveMoveFilter.Get2(i);
-
-                var movableTransform = movableComponent.Transform;
-                var diveMoveData = diveMovableComponent.DiveMoveData;
-
-                Vector3 offset;
-                    
-                if (isTouch)
-                {
-                    offset = Vector3.Normalize(diveMoveData.diveDirection) * diveMoveData.divingSpeed;
-                }
-                else
-                {
-                    if(movableTransform.position.y >= diveMovableComponent.StartYPosition)
-                        return;
-                    
-                    offset = Vector3.Normalize(-diveMoveData.diveDirection) * diveMoveData.surfacingSpeed;
-                }
+                var isTouch = _inputEventFilter.Get1(i).IsTouch;
                 
-                movableComponent.MoveOffset += offset;
+                foreach (var j in _diveMoveFilter)
+                {
+                    ref var movableTransform = ref _diveMoveFilter.Get1(j).Transform;
+                    var diveMovableComponent = _diveMoveFilter.Get2(j);
+                    var diveMoveData = diveMovableComponent.DiveMoveData;
+
+                    Vector3 destinationPoint;
+                    var localPosition = movableTransform.localPosition;
+
+                    if (isTouch)
+                    {
+                        if (movableTransform.localPosition.y - diveMovableComponent.StartLocalPosition.y <= diveMoveData.maxDepth)
+                        {
+                            return;
+                        }
+                        destinationPoint = new Vector3(localPosition.x, diveMovableComponent.StartLocalPosition.y + diveMoveData.maxDepth, localPosition.z);
+                    }
+                    else
+                    {
+                        if (movableTransform.localPosition.y >= diveMovableComponent.StartLocalPosition.y)
+                        {
+                            return;
+                        }
+                        destinationPoint = new Vector3(localPosition.x, diveMovableComponent.StartLocalPosition.y, localPosition.z);
+                    }
+                    movableTransform.localPosition = Vector3.Lerp(movableTransform.localPosition,
+                        destinationPoint, Time.deltaTime * diveMoveData.divingSpeed);
+                }
             }
         }
     }

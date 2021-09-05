@@ -3,6 +3,7 @@ using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using Types;
 using UnityComponents;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
@@ -42,7 +43,7 @@ namespace Systems.PipeRing
                             pipeComponent.LastRingEdge = ringInformation.endPoint.position;
 
                             SubscribeRubbish(ringInformation);
-                            SubscribeDestructible(ringInformation);
+                            SubscribeDestroyable(ringInformation, ringSettings.pipeRingType);
                         }
                     }
                 }
@@ -57,12 +58,16 @@ namespace Systems.PipeRing
             }
         }
         
-        private void SubscribeDestructible(PipeRingInformation ringInformation)
+        private void SubscribeDestroyable(PipeRingInformation ringInformation, PipeRingType pipeRingType)
         {
             if (ringInformation is DestructiblePipeRingInformation destructiblePipeRingInformation)
             {
-                _world.NewEntity().Get<AddNewDestroyableObjectEvent>().DestroyableObjects =
-                    destructiblePipeRingInformation.destroyableInstance;
+                var addNewDestroyableEvent = new AddNewDestroyableObjectEvent()
+                {
+                    DestroyableObjects = destructiblePipeRingInformation.destroyableInstance,
+                    PipeRingType = pipeRingType
+                };
+                _world.NewEntity().Replace(addNewDestroyableEvent);
             }
         } 
 

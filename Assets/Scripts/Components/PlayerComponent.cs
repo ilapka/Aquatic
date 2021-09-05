@@ -7,5 +7,6 @@ namespace Components
     public struct PlayerComponent
     {
         public PlayerInformation PlayerInformation;
+        public bool InContactWithPipe;
     }
 }

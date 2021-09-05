@@ -195,6 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerContainerTransform: {fileID: 1079399760148107890}
   playerBoatTransform: {fileID: 7275420263015018238}
+  playerAnimator: {fileID: 443175409}
 --- !u!1 &1568231135203423527
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +207,7 @@ GameObject:
   - component: {fileID: 7275420263015018238}
   - component: {fileID: 355668626}
   - component: {fileID: 355668627}
+  - component: {fileID: 443175409}
   m_Layer: 0
   m_Name: PlayerBoat_v1
   m_TagString: Player
@@ -260,6 +262,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &443175409
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568231135203423527}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 941a78294ef48084abe37f4082ada66e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1079399758999875325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -655,6 +676,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7259399234512279165, guid: 8ce9455b1080bbc41a3a2b7c67787eaa, type: 3}
+    - {fileID: 7259399234512279164, guid: 8ce9455b1080bbc41a3a2b7c67787eaa, type: 3}
+    - {fileID: 7259399234512279136, guid: 8ce9455b1080bbc41a3a2b7c67787eaa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ce9455b1080bbc41a3a2b7c67787eaa, type: 3}
 --- !u!4 &7657348039641058405 stripped
 Transform:
@@ -1002,7 +1025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 714c92a7cb413804d97a1a9e80cc1b8a, type: 3}
       propertyPath: m_Name
-      value: SeparetedVice
+      value: SeparetedClamps
       objectReference: {fileID: 0}
     - target: {fileID: 2956002246265779959, guid: 714c92a7cb413804d97a1a9e80cc1b8a, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1047,7 +1070,7 @@ PrefabInstance:
     - target: {fileID: 7377232601833686094, guid: 714c92a7cb413804d97a1a9e80cc1b8a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: e06ef3289144e304581114f35dafa2f7, type: 2}
     - target: {fileID: 7377232601833686094, guid: 714c92a7cb413804d97a1a9e80cc1b8a, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -1055,7 +1078,7 @@ PrefabInstance:
     - target: {fileID: 8786026483216297460, guid: 714c92a7cb413804d97a1a9e80cc1b8a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: e06ef3289144e304581114f35dafa2f7, type: 2}
     - target: {fileID: 8786026483216297460, guid: 714c92a7cb413804d97a1a9e80cc1b8a, type: 3}
       propertyPath: m_CastShadows
       value: 0

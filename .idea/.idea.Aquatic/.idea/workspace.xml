@@ -14,25 +14,30 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Characters/Cartoon Heroes/Scripts/SetCharacter/Editor/SetCharacterEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Characters/Cartoon Heroes/Scripts/SetCharacter/Editor/SetCharacterEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/Editor/NVWaterMaterials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/Editor/NVWaterMaterials.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/Example Scenes/Environment/#NVJOB Assets/Dynamic Sky (For Demo)/Editor/NVDSkyDemoMaterials.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/Example Scenes/Environment/#NVJOB Assets/Dynamic Sky (For Demo)/Editor/NVDSkyDemoMaterials.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipes/GoldenPipeRing.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipes/GoldenPipeRing.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipes/SilverPipeRing.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipes/SilverPipeRing.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings/GenerationRingSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeRings/GenerationRingSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings/RingsList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeRings/RingsList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Player/PlayerDiveMoveData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Player/PlayerDiveMoveData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Player/PlayerForwardMoveData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Player/PlayerForwardMoveData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BasePipeMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BasePipeMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/GoldenPipeRing.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/GoldenPipeRing.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/SilverPipeRing.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/SilverPipeRing.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/PlayerComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/PlayerComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/DestroyableObjectsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/DestroyableObjectsSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/GenerationPipeRingsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/GenerationPipeRingsSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SpawnPlayerSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SpawnPlayerSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestroyableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestroyableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestructiblePipeRingInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestructiblePipeRingInformation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PipeRingInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PipeRingInformation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +59,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/DestroyableObjectsSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,18 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/SavePathComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/SavingPathComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/SavingComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent1.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LocationExtendSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LocationSpawnEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/LocationComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerSpawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LocationSpawnSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRingsGenerationSystem.cs" />
@@ -108,7 +102,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/RubbishInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/RubbishComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SpawnPlayerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/ExtendLocationSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/ClearRubbishSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PipeRingInformation.cs" />
@@ -121,12 +114,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Types/Tags.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editors/TagsLayersEnumBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectsEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/GenerationPipeRingsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DestructableObjectsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DestructibleObjectsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/MoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/MovableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/DiveMoveData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SpawnPlayerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/DiveMoveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestroyableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/GenerationPipeRingsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/DestroyableObjectExplodedEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplodedDestroyableObjectEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/PlayerComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/BoatStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/DestroyableObjectsSystem.cs" />
       </list>
     </option>
@@ -142,6 +148,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Games" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -201,6 +208,8 @@
       <workItem from="1630675923518" duration="26000" />
       <workItem from="1630760123086" duration="5916000" />
       <workItem from="1630777860389" duration="6475000" />
+      <workItem from="1630834446202" duration="1217000" />
+      <workItem from="1630838225818" duration="8639000" />
     </task>
     <servers />
   </component>
@@ -249,6 +258,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="577" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1630525775489" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1630844249153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630844249153" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1630336781487">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

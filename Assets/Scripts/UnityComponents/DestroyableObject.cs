@@ -11,6 +11,7 @@ namespace UnityComponents
         [HideInInspector] public UnityEvent<DestroyableObject, Collider> triggerEvent;
         
         public TagEnum triggerTag;
+        public float bodyPartLifeTime = 5f;
         public List<Rigidbody> bodyParts;
 
         private void OnTriggerEnter(Collider other)

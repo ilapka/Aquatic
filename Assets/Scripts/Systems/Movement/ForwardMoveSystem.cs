@@ -12,13 +12,14 @@ namespace Systems.Movement
         {
             foreach (var i in _forwardMoveFilter)
             {
-                ref var movableComponent = ref _forwardMoveFilter.Get1(i);
+                ref var movableTransform = ref  _forwardMoveFilter.Get1(i).Transform;
                 var forwardMoveComponent = _forwardMoveFilter.Get2(i);
                 var forwardMoveData = forwardMoveComponent.ForwardMoveData;
                 
-                var offset = Vector3.Normalize(forwardMoveData.direction) * forwardMoveData.speed;
+                var offset = Vector3.Normalize(forwardMoveData.direction);
                 
-                movableComponent.MoveOffset += offset;
+                movableTransform.position = Vector3.MoveTowards(movableTransform.position,
+                    movableTransform.position + offset, Time.deltaTime * forwardMoveData.speed);
             }
         }
     }

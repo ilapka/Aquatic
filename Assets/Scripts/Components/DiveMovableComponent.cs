@@ -5,7 +5,7 @@ namespace Components
 {
     public struct DiveMovableComponent
     {
-        public float StartYPosition;
+        public Vector3 StartLocalPosition;
         public DiveMoveData DiveMoveData;
     }
 }

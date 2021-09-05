@@ -15,11 +15,11 @@ MonoBehaviour:
   ringsListData: {fileID: 11400000, guid: 5ee7efd0441223043b1fad576df4b1f8, type: 2}
   generationDistanceFromPlayer: 15
   generationRingSettings:
-  - pipeRingType: 0
+  - pipeRingType: 1
     weightOfChanceToSpawn: 2.03
     maxCountInRow: 3
     minCountInRow: 2
-  - pipeRingType: 1
+  - pipeRingType: 2
     weightOfChanceToSpawn: 7.69
     maxCountInRow: 3
     minCountInRow: 2

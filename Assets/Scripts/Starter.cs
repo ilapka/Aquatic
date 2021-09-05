@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Systems.Location;
 using Systems.Movement;
 using Systems.PipeRing;
+using Systems.Player;
 using Systems.Saving;
 using Components;
 using Components.Events;
@@ -17,7 +18,6 @@ public class Starter : MonoBehaviour
 {
     private EcsWorld _world;
     private EcsSystems _updateSystems;
-    private EcsSystems _fixedUpdateSystem;
     private EcsSystems _savedDataSystem;
     
     [Header("General Data")]
@@ -35,18 +35,18 @@ public class Starter : MonoBehaviour
         
         _world = new EcsWorld();
         _updateSystems = new EcsSystems(_world);
-        _fixedUpdateSystem = new EcsSystems(_world);
         _savedDataSystem = new EcsSystems(_world);
         
 
 #if UNITY_EDITOR
         Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create(_world);
         Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_updateSystems);
-        Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_fixedUpdateSystem);
         Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_savedDataSystem);
 #endif
 
         _updateSystems
+            .Add(new DiveMoveSystem())
+            .Add(new ForwardMoveSystem())
             .Add(new InputSystem())
             .Add(new SpawnLocationSystem())
             .Add(new ExtendLocationSystem())
@@ -54,6 +54,7 @@ public class Starter : MonoBehaviour
             .Add(new GenerationPipeRingsSystem())
             .Add(new ClearRubbishSystem())
             .Add(new DestroyableObjectsSystem())
+            .Add(new BoatStateSystem())
 
             .Inject(playerBoatData)
             .Inject(levelList)
@@ -61,13 +62,7 @@ public class Starter : MonoBehaviour
             .OneFrame<StartGameEvent>()
             .OneFrame<LocationSpawnEvent>()
             .OneFrame<AddNewDestroyableObjectEvent>()
-
-            .Init();
-
-        _fixedUpdateSystem
-            .Add(new DiveMoveSystem())
-            .Add(new ForwardMoveSystem())
-            .Add(new MoveSystem())
+            .OneFrame<ExplosionDestroyableObjectEvent>()
 
             .Init();
 
@@ -96,16 +91,11 @@ public class Starter : MonoBehaviour
         _updateSystems.Run();
         _savedDataSystem.Run();
     }
-
-    private void FixedUpdate()
-    {
-        _fixedUpdateSystem.Run();
-    }
+    
 
     private void OnDestroy()
     {
         _updateSystems.Destroy();
-        _fixedUpdateSystem.Destroy();
         _savedDataSystem.Destroy();
         _world.Destroy();
     }
