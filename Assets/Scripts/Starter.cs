@@ -18,7 +18,7 @@ public class Starter : MonoBehaviour
 {
     private EcsWorld _world;
     private EcsSystems _updateSystems;
-    private EcsSystems _savedDataSystem;
+    private EcsSystems _savedDataSystem;    
     
     [Header("General Data")]
     [SerializeField] private PlayerBoatData playerBoatData;
@@ -70,6 +70,7 @@ public class Starter : MonoBehaviour
             .Add(new SaveFileSystem())
             .Add(new LoadFileSystem())
             .Add(new LevelValueSystem())
+            .Add(new WalletSystem())
             
             .Inject(savingSettings)
             .Inject(gameProgressData)
@@ -77,6 +78,9 @@ public class Starter : MonoBehaviour
             .OneFrame<SaveDataEvent>()
             .OneFrame<LevelUpEvent>()
             .OneFrame<UpdateLevelValueEvent>()
+            .OneFrame<AddMoneyEvent>()
+            .OneFrame<UpdateMoneyValueEvent>()
+            .OneFrame<SpendMoneyEvent>()
             
             .Init();
     }

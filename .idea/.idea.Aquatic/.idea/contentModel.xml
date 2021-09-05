@@ -382,13 +382,16 @@
           <e p="Components" t="Include">
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
+              <e p="AddMoneyEvent.cs" t="Include" />
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
+              <e p="SpendMoneyEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
+              <e p="UpdateMoneyValueEvent.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="ForwardMovableComponent1.cs" t="Include" />
@@ -423,6 +426,7 @@
             <e p="ClearRubbishSystem.cs" t="Include" />
             <e p="DestroyableObjectsSystem.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
+            <e p="LevelProgressSystem.cs" t="Include" />
             <e p="Location" t="Include">
               <e p="ExtendLocationSystem.cs" t="Include" />
               <e p="SpawnLocationSystem.cs" t="Include" />
@@ -442,6 +446,12 @@
               <e p="LevelValueSystem.cs" t="Include" />
               <e p="LoadFileSystem.cs" t="Include" />
               <e p="SaveFileSystem.cs" t="Include" />
+              <e p="WalletSystem.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="LevelProgressUISystem.cs" t="Include" />
+              <e p="MoneyUISystem.cs" t="Include" />
+              <e p="PopUpRewardSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Types" t="Include">

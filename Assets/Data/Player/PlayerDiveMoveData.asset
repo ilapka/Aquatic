@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 941ce7020983fe340aa40d2ea839fb7c, type: 3}
   m_Name: PlayerDiveMoveData
   m_EditorClassIdentifier: 
-  divingSpeed: 10
-  maxDepth: -7
+  divingSpeed: 20
+  maxDepth: -6.5

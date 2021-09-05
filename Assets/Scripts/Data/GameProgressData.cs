@@ -7,5 +7,6 @@ namespace Data
     public class GameProgressData : ScriptableObject
     {
         public int levelValue;
+        public int playerMoney;
     }
 }
