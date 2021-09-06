@@ -18,7 +18,7 @@ namespace Data
     [CreateAssetMenu(fileName = "RingsGenerationData",menuName = "Aquatic/Rings Generation Data")]
     public class RingsGenerationData : ScriptableObject
     {
-        public RingsListData ringsListData;
+        public RingsListData ringsList;
         public float generationDistanceFromPlayer;
         public List<GenerationRingSetting> generationRingSettings;
     }

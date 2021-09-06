@@ -2,13 +2,14 @@ using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Systems.Saving
 {
     public sealed class WalletSystem : IEcsInitSystem ,IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
-        private readonly GameProgressData _gameProgressData = null;
+        private readonly GameProgressSavedData _gameProgressData = null;
         
         private readonly EcsFilter<SpendMoneyEvent> _spendMoneyFilter = null;
         private readonly EcsFilter<AddMoneyEvent> _addMoneyFilter = null;

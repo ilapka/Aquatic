@@ -31,11 +31,11 @@ namespace Systems.PipeRing
             
                     if (playerTransform.position.x - ringsGenerationData.generationDistanceFromPlayer <= pipeComponent.LastRingEdge.x)
                     {
-                        var ringSettings = GetRandomRing(ringsGenerationData.generationRingSettings);
-                        var prefab = ringsGenerationData.ringsListData.pipeRingsList
-                            .Find(ring => ring.ringType == ringSettings.pipeRingType).pipeRingInformation;
+                        var generationSettings = GetRandomRing(ringsGenerationData.generationRingSettings);
+                        var ringSettings = ringsGenerationData.ringsList.pipeRingsList.Find(ring => ring.ringType == generationSettings.pipeRingType);
+                        var prefab = ringSettings.pipeRingInformation;
 
-                        var count = Random.Range(ringSettings.minCountInRow, ringSettings.maxCountInRow);
+                        var count = Random.Range(generationSettings.minCountInRow, generationSettings.maxCountInRow);
                 
                         for (int k = 0; k < count; k++)
                         {
@@ -43,7 +43,7 @@ namespace Systems.PipeRing
                             pipeComponent.LastRingEdge = ringInformation.endPoint.position;
 
                             SubscribeRubbish(ringInformation);
-                            SubscribeDestroyable(ringInformation, ringSettings.pipeRingType);
+                            SubscribeDestroyable(ringInformation, ringSettings);
                         }
                     }
                 }
@@ -58,34 +58,34 @@ namespace Systems.PipeRing
             }
         }
         
-        private void SubscribeDestroyable(PipeRingInformation ringInformation, PipeRingType pipeRingType)
+        private void SubscribeDestroyable(PipeRingInformation ringInformation, PipeRingStruct pipeRingSettings)
         {
             if (ringInformation is DestructiblePipeRingInformation destructiblePipeRingInformation)
             {
                 var addNewDestroyableEvent = new AddNewDestroyableObjectEvent()
                 {
                     DestroyableObjects = destructiblePipeRingInformation.destroyableInstance,
-                    PipeRingType = pipeRingType
+                    PipeRingSettings = pipeRingSettings
                 };
                 _world.NewEntity().Replace(addNewDestroyableEvent);
             }
         } 
 
-        private GenerationRingSetting GetRandomRing(List<GenerationRingSetting> ringSettings)
+        private GenerationRingSetting GetRandomRing(List<GenerationRingSetting> generationRingsSettings)
         {
             var maxRandomWeight = 0f;
-            GenerationRingSetting randomRing = default;
+            GenerationRingSetting randomGenerationRingSetting = default;
 
-            foreach (var ring in ringSettings)
+            foreach (var generationRingSetting in generationRingsSettings)
             {
-                if (Random.Range(0f, ring.weightOfChanceToSpawn) >= maxRandomWeight)
+                if (Random.Range(0f, generationRingSetting.weightOfChanceToSpawn) >= maxRandomWeight)
                 {
-                    maxRandomWeight = ring.weightOfChanceToSpawn;
-                    randomRing = ring;
+                    maxRandomWeight = generationRingSetting.weightOfChanceToSpawn;
+                    randomGenerationRingSetting = generationRingSetting;
                 }
             }
             
-            return randomRing;
+            return randomGenerationRingSetting;
         }
     }
 }

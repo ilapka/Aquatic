@@ -11,6 +11,8 @@ namespace Data
     {
         public PipeRingType ringType;
         public PipeRingInformation pipeRingInformation;
+        public int reward;
+        public UITextInformation popupTextPrefab;
     }
 
     [CreateAssetMenu(fileName = "RingsListData", menuName = "Aquatic/Rings List Data")]

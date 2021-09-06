@@ -5,5 +5,6 @@
         Default,
         Golden,
         Silver,
+        Brilliant,
     }
 }

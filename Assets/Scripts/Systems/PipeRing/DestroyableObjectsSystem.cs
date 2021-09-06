@@ -1,10 +1,11 @@
 using Components.Events;
+using Data;
 using Leopotam.Ecs;
 using Types;
 using UnityComponents;
 using UnityEngine;
 
-namespace Systems
+namespace Systems.PipeRing
 {
     public sealed class DestroyableObjectsSystem : IEcsRunSystem
     {
@@ -16,16 +17,16 @@ namespace Systems
             foreach (var i in _addNewObjectFilter)
             {
                 var destroyableObject = _addNewObjectFilter.Get1(i).DestroyableObjects;
-                var pipeRingType = _addNewObjectFilter.Get1(i).PipeRingType;
+                var pipeRingSettings = _addNewObjectFilter.Get1(i).PipeRingSettings;
                 destroyableObject.triggerEvent.AddListener((DestroyableObject destroyableObj, Collider collider) =>
                     {
-                        TriggerEnter(destroyableObj, collider, pipeRingType);
+                        TriggerEnter(destroyableObj, collider, pipeRingSettings);
                     }
                 );
             }
         }
 
-        private void TriggerEnter(DestroyableObject destroyableObject, Collider collider, PipeRingType pipeRingType)
+        private void TriggerEnter(DestroyableObject destroyableObject, Collider collider, PipeRingStruct pipeRingSettings)
         {
             if (collider.transform.CompareTag(destroyableObject.triggerTag.ToString()))
             {
@@ -37,9 +38,9 @@ namespace Systems
                     Object.Destroy(bodyPart.gameObject, destroyableObject.bodyPartLifeTime);
                     
                     bodyPart.isKinematic = false;
-
-                    _world.NewEntity().Get<ExplosionDestroyableObjectEvent>().PipeRingType = pipeRingType;
                 }
+
+                _world.NewEntity().Get<ExplosionDestroyableObjectEvent>().PipeRingSettings = pipeRingSettings;
 
                 Object.Destroy(destroyableObject.gameObject);
             }

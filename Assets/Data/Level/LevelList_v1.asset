@@ -15,7 +15,10 @@ MonoBehaviour:
   levelList:
   - levelInformation: {fileID: 5073056432434445212, guid: d8bdbf1a5cc7d1b4494b524fada2e635, type: 3}
     ringsGenerationSettings: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}
+    levelData: {fileID: 11400000, guid: e59e85e3ee36bf74cad580f90a150507, type: 2}
   - levelInformation: {fileID: 5073056432434445212, guid: d8bdbf1a5cc7d1b4494b524fada2e635, type: 3}
     ringsGenerationSettings: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}
+    levelData: {fileID: 11400000, guid: e59e85e3ee36bf74cad580f90a150507, type: 2}
   - levelInformation: {fileID: 5073056432434445212, guid: d8bdbf1a5cc7d1b4494b524fada2e635, type: 3}
     ringsGenerationSettings: {fileID: 11400000, guid: 9db125f951390204a825cce6f686d415, type: 2}
+    levelData: {fileID: 11400000, guid: e59e85e3ee36bf74cad580f90a150507, type: 2}

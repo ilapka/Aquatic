@@ -9,6 +9,7 @@ using Systems.Movement;
 using Systems.PipeRing;
 using Systems.Player;
 using Systems.Saving;
+using Systems.UI;
 using Components;
 using Components.Events;
 using Managers;
@@ -18,16 +19,18 @@ public class Starter : MonoBehaviour
 {
     private EcsWorld _world;
     private EcsSystems _updateSystems;
-    private EcsSystems _savedDataSystem;    
+    private EcsSystems _savedDataSystem;
+    private EcsSystems _uiSystems;
     
     [Header("General Data")]
     [SerializeField] private PlayerBoatData playerBoatData;
     [SerializeField] private LevelListData levelList;
+    [SerializeField] private UIData uiData;
     [SerializeField] private SavingSettings savingSettings;
     [SerializeField] private EncryptionData encryptionData;
 
     [Header("Saved Data")]
-    [SerializeField] private GameProgressData gameProgressData; 
+    [SerializeField] private GameProgressSavedData gameProgressData; 
 
     private void Start()
     {
@@ -36,12 +39,14 @@ public class Starter : MonoBehaviour
         _world = new EcsWorld();
         _updateSystems = new EcsSystems(_world);
         _savedDataSystem = new EcsSystems(_world);
+        _uiSystems = new EcsSystems(_world);
         
 
 #if UNITY_EDITOR
         Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create(_world);
         Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_updateSystems);
         Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_savedDataSystem);
+        Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_uiSystems);
 #endif
 
         _updateSystems
@@ -55,14 +60,10 @@ public class Starter : MonoBehaviour
             .Add(new ClearRubbishSystem())
             .Add(new DestroyableObjectsSystem())
             .Add(new BoatStateSystem())
+            .Add(new LevelProgressSystem())
 
             .Inject(playerBoatData)
             .Inject(levelList)
-
-            .OneFrame<StartGameEvent>()
-            .OneFrame<LocationSpawnEvent>()
-            .OneFrame<AddNewDestroyableObjectEvent>()
-            .OneFrame<ExplosionDestroyableObjectEvent>()
 
             .Init();
 
@@ -74,6 +75,22 @@ public class Starter : MonoBehaviour
             
             .Inject(savingSettings)
             .Inject(gameProgressData)
+            
+            .Init();
+        
+        _uiSystems
+            .Add(new CanvasSystem())
+            .Add(new LevelProgressUISystem())
+            .Add(new MoneyUISystem())
+            .Add(new PopUpRewardSystem())
+            
+            .Inject(uiData)
+            
+            .OneFrame<StartGameEvent>()
+            .OneFrame<LocationSpawnEvent>()
+            .OneFrame<AddNewDestroyableObjectEvent>()
+            .OneFrame<ExplosionDestroyableObjectEvent>()
+            .OneFrame<LevelCompleteEvent>()
             
             .OneFrame<SaveDataEvent>()
             .OneFrame<LevelUpEvent>()
@@ -94,13 +111,14 @@ public class Starter : MonoBehaviour
     {
         _updateSystems.Run();
         _savedDataSystem.Run();
+        _uiSystems.Run();
     }
     
-
     private void OnDestroy()
     {
         _updateSystems.Destroy();
         _savedDataSystem.Destroy();
+        _uiSystems.Destroy();
         _world.Destroy();
     }
 }

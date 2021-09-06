@@ -28,7 +28,7 @@ namespace Systems.Player
                     {
                         foreach (var k in _explosionDestroyableFilter)
                         {
-                            var pipeRingType = _explosionDestroyableFilter.Get1(k).PipeRingType;
+                            var pipeRingType = _explosionDestroyableFilter.Get1(k).PipeRingSettings.ringType;
                             if (pipeRingType != PipeRingType.Default)
                             {
                                 playerComponent.InContactWithPipe = true;

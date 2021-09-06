@@ -380,11 +380,13 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
+            <e p="CanvasUIComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="AddMoneyEvent.cs" t="Include" />
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
+              <e p="LevelCompleteEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
@@ -396,8 +398,11 @@
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="ForwardMovableComponent1.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
+            <e p="LevelComponent.cs" t="Include" />
+            <e p="LevelProgressBarUIComponent.cs" t="Include" />
             <e p="LocationComponent.cs" t="Include" />
             <e p="LocationPartsComponent.cs" t="Include" />
+            <e p="MoneyUIComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
             <e p="PipeComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
@@ -408,12 +413,14 @@
             <e p="DiveMoveData.cs" t="Include" />
             <e p="EncryptionData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
-            <e p="GameProgressData.cs" t="Include" />
+            <e p="GameProgressSavedData.cs" t="Include" />
+            <e p="LevelData.cs" t="Include" />
             <e p="LevelListData.cs" t="Include" />
             <e p="PlayerBoatData.cs" t="Include" />
             <e p="RingsGenerationData.cs" t="Include" />
             <e p="RingsListData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
+            <e p="UIData.cs" t="Include" />
           </e>
           <e p="Editors" t="Include">
             <e p="TagsLayersEnumBuilder.cs" t="Include" />
@@ -423,8 +430,7 @@
           </e>
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
-            <e p="ClearRubbishSystem.cs" t="Include" />
-            <e p="DestroyableObjectsSystem.cs" t="Include" />
+            <e p="GameStateSystem.cs" t="Include" />
             <e p="InputSystem.cs" t="Include" />
             <e p="LevelProgressSystem.cs" t="Include" />
             <e p="Location" t="Include">
@@ -436,6 +442,8 @@
               <e p="ForwardMoveSystem.cs" t="Include" />
             </e>
             <e p="PipeRing" t="Include">
+              <e p="ClearRubbishSystem.cs" t="Include" />
+              <e p="DestroyableObjectsSystem.cs" t="Include" />
               <e p="GenerationPipeRingsSystem.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
@@ -449,6 +457,7 @@
               <e p="WalletSystem.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
+              <e p="CanvasSystem.cs" t="Include" />
               <e p="LevelProgressUISystem.cs" t="Include" />
               <e p="MoneyUISystem.cs" t="Include" />
               <e p="PopUpRewardSystem.cs" t="Include" />
@@ -461,12 +470,47 @@
             <e p="Tags.cs" t="Include" />
           </e>
           <e p="UnityComponents" t="Include">
+            <e p="CanvasInformation.cs" t="Include" />
             <e p="DestroyableObject.cs" t="Include" />
             <e p="DestructiblePipeRingInformation.cs" t="Include" />
             <e p="LocationInformation.cs" t="Include" />
             <e p="PipeRingInformation.cs" t="Include" />
             <e p="PlayerInformation.cs" t="Include" />
+            <e p="ProgressBarInformation.cs" t="Include" />
             <e p="RubbishInformation.cs" t="Include" />
+            <e p="UITextInformation.cs" t="Include" />
+            <e p="UITextProInformation.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>

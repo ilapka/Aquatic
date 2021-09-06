@@ -4,7 +4,7 @@ using Leopotam.Ecs;
 using UnityComponents;
 using UnityEngine;
 
-namespace Systems
+namespace Systems.PipeRing
 {
     public sealed class ClearRubbishSystem : IEcsPreInitSystem, IEcsRunSystem
     {

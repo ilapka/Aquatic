@@ -11,6 +11,7 @@ namespace Data
     {
         public LocationInformation levelInformation;
         public RingsGenerationData ringsGenerationSettings;
+        public LevelData levelData;
     }
     
     [CreateAssetMenu(fileName = "LevelListData",menuName = "Aquatic/Level List Data")]

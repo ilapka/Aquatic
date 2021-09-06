@@ -15,7 +15,7 @@ namespace Systems.Saving
         private readonly EcsFilter<SavingComponent, SaveDataEvent> _dataToSaveFilter = null;
         
         private readonly SavingSettings _savingSettings = null;
-        private readonly GameProgressData _gameProgressData = null;
+        private readonly GameProgressSavedData _gameProgressData = null;
 
         public void Run()
         {

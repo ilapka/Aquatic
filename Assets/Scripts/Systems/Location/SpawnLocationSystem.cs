@@ -23,9 +23,9 @@ namespace Systems.Location
 
         private void SpawnLocation(int levelValue)
         {
-            var locationIndex = levelValue % _levelListData.levelList.Count;
-            var levelStruct = _levelListData.levelList[locationIndex];
-            var locationInformation = Object.Instantiate(levelStruct.levelInformation);
+            var locationIndex = levelValue % _levelListData.levelList.Count;    //TODO: переместить в StartGameSystem/StateGameSystem
+            var levelStruct = _levelListData.levelList[locationIndex];    //TODO: переместить в StartGameSystem/StateGameSystem
+            var locationInformation = Object.Instantiate(levelStruct.levelInformation);    //TODO: переместить в StartGameSystem/StateGameSystem
 
             var locationComponent = new LocationComponent()
             {
@@ -44,12 +44,12 @@ namespace Systems.Location
             {
                 LastRingEdge = locationInformation.pipeRingsContainer.position,
             };
-            
-            //var destroyableObectsComponent
-            
+
             var locationSpawnEvent = new LocationSpawnEvent() { };
             
             _world.NewEntity().Replace(locationComponent).Replace(partsComponent).Replace(pipeComponent).Replace(locationSpawnEvent);
+            
+            _world.NewEntity().Get<LevelComponent>().LevelData = levelStruct.levelData; //TODO: переместить в StartGameSystem/StateGameSystem
         }
     }
 }
