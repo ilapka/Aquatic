@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b63d30f8623da4eb14542d836da81a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameUIContainer: {fileID: 2286792947769908205}
+  uiContainer: {fileID: 2286792947769908205}
   popUpTextContainer: {fileID: 2147436776}
 --- !u!1 &2286792947769908206
 GameObject:

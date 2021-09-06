@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Components
 {
-    public struct CanvasUIComponent
+    public struct CanvasComponent
     {
         public CanvasInformation CanvasInformation;
     }

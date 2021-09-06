@@ -10,5 +10,6 @@ namespace Data
         public float fillingProgressBarSpeed;
         public ProgressBarInformation levelProgressBarPrefab;
         public UITextProInformation playerMoneyTextProPrefab;
+        public StartPanelInformation startPanelPrefab;
     }
 }

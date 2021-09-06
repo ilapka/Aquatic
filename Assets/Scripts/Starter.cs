@@ -4,6 +4,7 @@ using Systems;
 using Leopotam.Ecs;
 using System.Collections;
 using System.Collections.Generic;
+using Systems.Input;
 using Systems.Location;
 using Systems.Movement;
 using Systems.PipeRing;
@@ -61,10 +62,11 @@ public class Starter : MonoBehaviour
             .Add(new DestroyableObjectsSystem())
             .Add(new BoatStateSystem())
             .Add(new LevelProgressSystem())
+            .Add(new GameStateSystem())
 
             .Inject(playerBoatData)
             .Inject(levelList)
-
+            
             .Init();
 
         _savedDataSystem
@@ -83,6 +85,7 @@ public class Starter : MonoBehaviour
             .Add(new LevelProgressUISystem())
             .Add(new MoneyUISystem())
             .Add(new PopUpRewardSystem())
+            .Add(new StartPanelSystem())
             
             .Inject(uiData)
             

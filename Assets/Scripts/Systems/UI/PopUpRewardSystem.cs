@@ -10,7 +10,7 @@ namespace Systems.UI
     {
         private readonly EcsWorld _world = null;
         
-        private readonly EcsFilter<CanvasUIComponent> _canvasUIFilter = null;
+        private readonly EcsFilter<CanvasComponent> _canvasUIFilter = null;
         private readonly EcsFilter<ExplosionDestroyableObjectEvent> _explosionFilter = null;
         
         public void Run()

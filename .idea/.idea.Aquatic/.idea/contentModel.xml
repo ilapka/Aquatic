@@ -380,7 +380,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
-            <e p="CanvasUIComponent.cs" t="Include" />
+            <e p="CanvasComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="AddMoneyEvent.cs" t="Include" />
@@ -397,6 +397,7 @@
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="ForwardMovableComponent1.cs" t="Include" />
+            <e p="GameStateComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
             <e p="LevelComponent.cs" t="Include" />
             <e p="LevelProgressBarUIComponent.cs" t="Include" />
@@ -408,6 +409,7 @@
             <e p="PlayerComponent.cs" t="Include" />
             <e p="RubbishComponent.cs" t="Include" />
             <e p="SavingComponent.cs" t="Include" />
+            <e p="StartPanelComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
             <e p="DiveMoveData.cs" t="Include" />
@@ -431,7 +433,9 @@
           <e p="Starter.cs" t="Include" />
           <e p="Systems" t="Include">
             <e p="GameStateSystem.cs" t="Include" />
-            <e p="InputSystem.cs" t="Include" />
+            <e p="Input" t="Include">
+              <e p="InputSystem.cs" t="Include" />
+            </e>
             <e p="LevelProgressSystem.cs" t="Include" />
             <e p="Location" t="Include">
               <e p="ExtendLocationSystem.cs" t="Include" />
@@ -461,6 +465,7 @@
               <e p="LevelProgressUISystem.cs" t="Include" />
               <e p="MoneyUISystem.cs" t="Include" />
               <e p="PopUpRewardSystem.cs" t="Include" />
+              <e p="StartPanelSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Types" t="Include">
@@ -478,6 +483,7 @@
             <e p="PlayerInformation.cs" t="Include" />
             <e p="ProgressBarInformation.cs" t="Include" />
             <e p="RubbishInformation.cs" t="Include" />
+            <e p="StartPanelInformation.cs" t="Include" />
             <e p="UITextInformation.cs" t="Include" />
             <e p="UITextProInformation.cs" t="Include" />
           </e>

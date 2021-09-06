@@ -6,20 +6,26 @@ namespace Systems.Movement
 {
     public sealed class ForwardMoveSystem : IEcsRunSystem
     {
+        private readonly EcsFilter<GameStateComponent> _gameStateFilter = null;
         private readonly EcsFilter<MovableComponent, ForwardMovableComponent> _forwardMoveFilter = null;
 
         public void Run()
         {
-            foreach (var i in _forwardMoveFilter)
+            foreach (var i in _gameStateFilter)
             {
-                ref var movableTransform = ref  _forwardMoveFilter.Get1(i).Transform;
-                var forwardMoveComponent = _forwardMoveFilter.Get2(i);
-                var forwardMoveData = forwardMoveComponent.ForwardMoveData;
+                if(!_gameStateFilter.Get1(i).IsGamePlayProcess) return;;
                 
-                var offset = Vector3.Normalize(forwardMoveData.direction);
+                foreach (var j in _forwardMoveFilter)
+                {
+                    ref var movableTransform = ref  _forwardMoveFilter.Get1(j).Transform;
+                    var forwardMoveComponent = _forwardMoveFilter.Get2(j);
+                    var forwardMoveData = forwardMoveComponent.ForwardMoveData;
                 
-                movableTransform.position = Vector3.MoveTowards(movableTransform.position,
-                    movableTransform.position + offset, Time.deltaTime * forwardMoveData.speed);
+                    var offset = Vector3.Normalize(forwardMoveData.direction);
+                
+                    movableTransform.position = Vector3.MoveTowards(movableTransform.position,
+                        movableTransform.position + offset, Time.deltaTime * forwardMoveData.speed);
+                }
             }
         }
     }

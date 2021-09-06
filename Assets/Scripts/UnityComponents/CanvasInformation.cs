@@ -4,7 +4,7 @@ namespace UnityComponents
 {
     public class CanvasInformation : MonoBehaviour
     {
-        public RectTransform gameUIContainer;
+        public RectTransform uiContainer;
         public RectTransform popUpTextContainer;
     }
 }

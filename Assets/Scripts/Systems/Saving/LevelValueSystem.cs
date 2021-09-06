@@ -2,6 +2,7 @@ using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Systems.Saving
 {
@@ -15,9 +16,7 @@ namespace Systems.Saving
 
         public void Init()
         {
-            var startEntity = _world.NewEntity();
-            startEntity.Get<StartGameEvent>(); //TODO <------------------- переместить в гейм стейт систему, работающую с UI
-            startEntity.Get<UpdateLevelValueEvent>().CurrentLevel = _gameProgressData.levelValue;
+            _world.NewEntity().Get<UpdateLevelValueEvent>().CurrentLevel = _gameProgressData.levelValue;
         }
         
         public void Run()

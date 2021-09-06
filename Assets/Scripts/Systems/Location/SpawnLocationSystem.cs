@@ -11,21 +11,25 @@ namespace Systems.Location
     {
         private readonly EcsWorld _world = null;
         private readonly LevelListData _levelListData = null;
-        private readonly EcsFilter<StartGameEvent, UpdateLevelValueEvent> _updateLevelFilter = null;
+
+        private readonly EcsFilter<LocationComponent> _locationFilter = null;
+        private readonly EcsFilter<UpdateLevelValueEvent> _updateLevelValueEvent = null;
         
         public void Run()
         {
-            foreach (var i in _updateLevelFilter)
+            if(!_locationFilter.IsEmpty()) return;
+            
+            foreach (var i in _updateLevelValueEvent)
             {
-                SpawnLocation(_updateLevelFilter.Get2(i).CurrentLevel);
+                SpawnLocation(_updateLevelValueEvent.Get1(i).CurrentLevel);
             }
         }
 
         private void SpawnLocation(int levelValue)
         {
-            var locationIndex = levelValue % _levelListData.levelList.Count;    //TODO: переместить в StartGameSystem/StateGameSystem
-            var levelStruct = _levelListData.levelList[locationIndex];    //TODO: переместить в StartGameSystem/StateGameSystem
-            var locationInformation = Object.Instantiate(levelStruct.levelInformation);    //TODO: переместить в StartGameSystem/StateGameSystem
+            var locationIndex = levelValue % _levelListData.levelList.Count;    
+            var levelStruct = _levelListData.levelList[locationIndex];  
+            var locationInformation = Object.Instantiate(levelStruct.levelInformation);  
 
             var locationComponent = new LocationComponent()
             {
@@ -49,7 +53,7 @@ namespace Systems.Location
             
             _world.NewEntity().Replace(locationComponent).Replace(partsComponent).Replace(pipeComponent).Replace(locationSpawnEvent);
             
-            _world.NewEntity().Get<LevelComponent>().LevelData = levelStruct.levelData; //TODO: переместить в StartGameSystem/StateGameSystem
+            _world.NewEntity().Get<LevelComponent>().LevelData = levelStruct.levelData;
         }
     }
 }

@@ -16,3 +16,4 @@ MonoBehaviour:
   fillingProgressBarSpeed: 10
   levelProgressBarPrefab: {fileID: 4930505847068927965, guid: 95d7625ea4cadad4e9e0d35b27d8e682, type: 3}
   playerMoneyTextProPrefab: {fileID: 570961170708104509, guid: 76b6bbee242ad4849bb63a65dee5690c, type: 3}
+  startPanelPrefab: {fileID: 5841119348502499280, guid: 8aaf041ba9f6a0c4fbd87056b1232ad1, type: 3}
