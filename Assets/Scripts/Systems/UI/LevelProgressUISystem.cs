@@ -9,14 +9,25 @@ using Object = UnityEngine.Object;
 
 namespace Systems.UI
 {
-    public class LevelProgressUISystem : IEcsRunSystem
+    public class LevelProgressUISystem : IEcsInitSystem, IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
         private readonly UIData _uiData = null;
-        
+
+        private readonly EcsFilter<CanvasComponent> _canvasFilter = null;
+        private readonly EcsFilter<LevelProgressBarUIComponent> _uiFilter = null;
         private readonly EcsFilter<LevelComponent> _levelFilter = null;
         private readonly EcsFilter<UpdateMoneyValueEvent> _updateMoneyFilter = null;
-        private readonly EcsFilter<LevelProgressBarUIComponent> _uiFilter = null;
+        
+        public void Init()
+        {
+            foreach (var i in _canvasFilter)
+            {
+                ref var canvasComponent = ref _canvasFilter.Get1(i);
+                var levelProgressBarInformation = Object.Instantiate(_uiData.levelProgressBarPrefab, canvasComponent.CanvasInformation.uiContainer);
+                _canvasFilter.GetEntity(i).Get<LevelProgressBarUIComponent>().LevelProgressBarInformation = levelProgressBarInformation;
+            }
+        }
         
         public void Run()
         {

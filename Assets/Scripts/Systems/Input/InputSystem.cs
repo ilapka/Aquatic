@@ -18,11 +18,15 @@ namespace Systems.Input
         {
             foreach (var i in _gameStateFilter)
             {
-                if(!_gameStateFilter.Get1(i).IsGamePlayProcess) return;;
-                
                 foreach (var j in _inputFilter)
                 {
                     ref var inputComponent = ref _inputFilter.Get1(j);
+                    
+                    if (!_gameStateFilter.Get1(i).IsGamePlayProcess)
+                    {
+                        inputComponent.IsTouch = false;
+                        return;
+                    }
                     inputComponent.IsTouch = UnityEngine.Input.GetMouseButton(0);
                 }
             }

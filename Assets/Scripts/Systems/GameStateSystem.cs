@@ -28,6 +28,8 @@ namespace Systems
             foreach (var i in _levelCompleteFilter)
             {
                 SetGameState(false);
+                _world.NewEntity().Get<PlayConfettiEvent>();
+                _world.NewEntity().Get<LevelUpEvent>();
             }
         }
 

@@ -11,5 +11,7 @@ namespace Data
         public ProgressBarInformation levelProgressBarPrefab;
         public UITextProInformation playerMoneyTextProPrefab;
         public StartPanelInformation startPanelPrefab;
+        public CompletePanelInformation completePanelPrefab;
+        public DarkScreenInformation darkScreenPrefab;
     }
 }

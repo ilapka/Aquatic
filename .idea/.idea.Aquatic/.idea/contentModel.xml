@@ -33,6 +33,13 @@
                 <e p="SliderScripts.cs" t="Include" />
               </e>
             </e>
+            <e p="Flat Screen Transitions" t="Include">
+              <e p="Read Me.txt" t="Include" />
+              <e p="Scripts" t="Include">
+                <e p="FSTDemoManager.cs" t="Include" />
+                <e p="LaunchURL.cs" t="Include" />
+              </e>
+            </e>
             <e p="ZombiSoft" t="Include">
               <e p="TinyHealthSystem" t="Include">
                 <e p="Demo" t="Include">
@@ -381,6 +388,8 @@
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
             <e p="CanvasComponent.cs" t="Include" />
+            <e p="CompletePanelComponent.cs" t="Include" />
+            <e p="DarkScreenComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="AddMoneyEvent.cs" t="Include" />
@@ -388,7 +397,10 @@
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelCompleteEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
+              <e p="LoadSceneEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
+              <e p="PlayConfettiEvent.cs" t="Include" />
+              <e p="PlayDarkScreenEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
               <e p="SpendMoneyEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
@@ -401,6 +413,7 @@
             <e p="InputComponent.cs" t="Include" />
             <e p="LevelComponent.cs" t="Include" />
             <e p="LevelProgressBarUIComponent.cs" t="Include" />
+            <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocationComponent.cs" t="Include" />
             <e p="LocationPartsComponent.cs" t="Include" />
             <e p="MoneyUIComponent.cs" t="Include" />
@@ -427,6 +440,10 @@
           <e p="Editors" t="Include">
             <e p="TagsLayersEnumBuilder.cs" t="Include" />
           </e>
+          <e p="Extension" t="Include">
+            <e p="GInvoke.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+          </e>
           <e p="Managers" t="Include">
             <e p="EncryptionManager.cs" t="Include" />
           </e>
@@ -452,6 +469,7 @@
             </e>
             <e p="Player" t="Include">
               <e p="BoatStateSystem.cs" t="Include" />
+              <e p="PlayerParticlesSystem.cs" t="Include" />
               <e p="SpawnPlayerSystem.cs" t="Include" />
             </e>
             <e p="Saving" t="Include">
@@ -460,8 +478,11 @@
               <e p="SaveFileSystem.cs" t="Include" />
               <e p="WalletSystem.cs" t="Include" />
             </e>
+            <e p="SceneLoadSystem.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CanvasSystem.cs" t="Include" />
+              <e p="CompletePanelSystem.cs" t="Include" />
+              <e p="DarkScreenSystem.cs" t="Include" />
               <e p="LevelProgressUISystem.cs" t="Include" />
               <e p="MoneyUISystem.cs" t="Include" />
               <e p="PopUpRewardSystem.cs" t="Include" />
@@ -469,13 +490,17 @@
             </e>
           </e>
           <e p="Types" t="Include">
+            <e p="DarkScreenAnimatorKeys.cs" t="Include" />
             <e p="Layers.cs" t="Include" />
             <e p="PipeRingType.cs" t="Include" />
+            <e p="SceneType.cs" t="Include" />
             <e p="TagEnum.cs" t="Include" />
             <e p="Tags.cs" t="Include" />
           </e>
           <e p="UnityComponents" t="Include">
             <e p="CanvasInformation.cs" t="Include" />
+            <e p="CompletePanelInformation.cs" t="Include" />
+            <e p="DarkScreenInformation.cs" t="Include" />
             <e p="DestroyableObject.cs" t="Include" />
             <e p="DestructiblePipeRingInformation.cs" t="Include" />
             <e p="LocationInformation.cs" t="Include" />

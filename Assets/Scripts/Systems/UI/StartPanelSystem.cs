@@ -9,7 +9,9 @@ namespace Systems.UI
     public class StartPanelSystem : IEcsInitSystem
     {
         private readonly EcsWorld _world = null;
+        private readonly UIData _uiData = null;
         
+        private readonly EcsFilter<CanvasComponent> _canvasFilter = null;
         private readonly EcsFilter<StartPanelComponent> _startPanelFilter = null;
         private readonly EcsFilter<UpdateLevelValueEvent> _updateLevelEvent = null;
         
@@ -19,11 +21,13 @@ namespace Systems.UI
             {
                 var currentLevel = _updateLevelEvent.Get1(i).CurrentLevel + 1;
                 
-                foreach (var j in _startPanelFilter)
+                foreach (var j in _canvasFilter)
                 {
-                    var startPanelInformation = _startPanelFilter.Get1(j).StartPanelInformation;
+                    ref var canvasComponent = ref _canvasFilter.Get1(i);
+                    var startPanelInformation = Object.Instantiate(_uiData.startPanelPrefab, canvasComponent.CanvasInformation.uiContainer);
                     startPanelInformation.levelValueText.text = $"Level {currentLevel.ToString()}";
                     startPanelInformation.startGameButton.onClick.AddListener(OnStartButtonClick);
+                    _canvasFilter.GetEntity(i).Get<StartPanelComponent>().StartPanelInformation = startPanelInformation;
                 } 
             }
         }

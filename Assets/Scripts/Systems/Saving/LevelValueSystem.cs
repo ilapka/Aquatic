@@ -28,7 +28,6 @@ namespace Systems.Saving
                 {
                     _savingFilter.GetEntity(j).Get<SaveDataEvent>();
                 }
-                _world.NewEntity().Get<UpdateLevelValueEvent>().CurrentLevel = _gameProgressData.levelValue;
             }
         }
     }

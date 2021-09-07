@@ -63,6 +63,8 @@ public class Starter : MonoBehaviour
             .Add(new BoatStateSystem())
             .Add(new LevelProgressSystem())
             .Add(new GameStateSystem())
+            .Add(new PlayerParticlesSystem())
+            .Add(new SceneLoadSystem())
 
             .Inject(playerBoatData)
             .Inject(levelList)
@@ -86,6 +88,8 @@ public class Starter : MonoBehaviour
             .Add(new MoneyUISystem())
             .Add(new PopUpRewardSystem())
             .Add(new StartPanelSystem())
+            .Add(new CompletePanelSystem())
+            //.Add(new DarkScreenSystem())
             
             .Inject(uiData)
             
@@ -94,6 +98,9 @@ public class Starter : MonoBehaviour
             .OneFrame<AddNewDestroyableObjectEvent>()
             .OneFrame<ExplosionDestroyableObjectEvent>()
             .OneFrame<LevelCompleteEvent>()
+            .OneFrame<PlayConfettiEvent>()
+            .OneFrame<PlayDarkScreenEvent>()
+            .OneFrame<LoadSceneEvent>()
             
             .OneFrame<SaveDataEvent>()
             .OneFrame<LevelUpEvent>()
