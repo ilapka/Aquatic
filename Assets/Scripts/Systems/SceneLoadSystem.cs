@@ -1,8 +1,10 @@
 ﻿using Components;
 using Components.Events;
+using Data;
 using Extension;
 using Leopotam.Ecs;
 using Types;
+using UnityComponents;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +13,8 @@ namespace Systems
     public class SceneLoadSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
-        
+        private readonly SceneLoadData _sceneLoadData = null;
+
         private readonly EcsFilter<LoadSceneEvent> _loadSceneFilter = null;
         private readonly EcsFilter<LoadSceneComponent> _loadSceneComponent = null;
         
@@ -26,8 +29,11 @@ namespace Systems
                 
                 if (loadSceneEvent.UseDarkScreen)
                 {
-                    _world.NewEntity().Get<PlayDarkScreenEvent>().AnimatorKey = DarkScreenAnimatorKeys.ShowDarkScreen;
-                    _world.NewEntity().Get<LoadSceneComponent>().AsyncOperation = asyncOperation;
+                    GlobalObjectsContainer.Instance.globalCanvas.PlayDarkScreen(DarkScreenAnimatorKeys.ShowDarkScreen);
+                    GInvoke.Instance.Delay(() =>
+                    {
+                        _world.NewEntity().Get<LoadSceneComponent>().AsyncOperation = asyncOperation;
+                    }, _sceneLoadData.allowLoadDelay);
                 }
                 else
                 {
@@ -39,12 +45,12 @@ namespace Systems
             {
                 var asyncOperation = _loadSceneComponent.Get1(i).AsyncOperation;
                 
-                if (asyncOperation.isDone)
+                if (asyncOperation.progress >= 0.89f)
                 {
                     GInvoke.Instance.Delay(() =>
                     {
-                        _world.NewEntity().Get<PlayDarkScreenEvent>().AnimatorKey = DarkScreenAnimatorKeys.HideDarkScreen;
-                    }, 0.2f);
+                        GlobalObjectsContainer.Instance.globalCanvas.PlayDarkScreen(DarkScreenAnimatorKeys.HideDarkScreen);
+                    }, 0.1f);
                     asyncOperation.allowSceneActivation = true;
                     _loadSceneComponent.Destroy();
                 }

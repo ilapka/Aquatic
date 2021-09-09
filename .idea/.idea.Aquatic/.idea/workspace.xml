@@ -11,37 +11,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadSceneEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadSceneEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Types/DarkScreenAnimatorKeys.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Types/DarkScreenAnimatorKeys.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DarkScreenInformation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DarkScreenInformation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/GUI/Flat Screen Transitions/Animations/Style 7/Style 7.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/GUI/Flat Screen Transitions/Animations/Style 7/Style 7.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/UI/UIData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/UI/UIData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +49,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/StartPanelInformation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/ProgressBarInformation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,6 +76,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -101,7 +90,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestroyableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -109,23 +97,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/SpawnLocationEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/GameStateComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartingUISystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/StartingUIPanelInformation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/StartingUIComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Movement/ForwardMoveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayConfettiEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerParticlesSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
@@ -140,11 +116,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Types/DarkScreenAnimatorKeys.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extention/Singleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/Singleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" />
         <option value="$PROJECT_DIR$/Assets/CompletePanelInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/CompletePanelInformation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelCompletionSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/CompletePanelSystem.cs" />
@@ -155,10 +129,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadSceneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreenCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/UndestroyableCanvasInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/SingletonCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvasInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/GlobalObjectsContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" />
       </list>
     </option>
@@ -243,6 +231,7 @@
       <workItem from="1630956870840" duration="4056000" />
       <workItem from="1631014412070" duration="7372000" />
       <workItem from="1631029330826" duration="7815000" />
+      <workItem from="1631129952306" duration="6168000" />
     </task>
     <servers />
   </component>

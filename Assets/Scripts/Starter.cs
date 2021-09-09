@@ -13,7 +13,9 @@ using Systems.Saving;
 using Systems.UI;
 using Components;
 using Components.Events;
+using Extension;
 using Managers;
+using UnityComponents;
 using UnityEngine;
 
 public class Starter : MonoBehaviour
@@ -27,6 +29,7 @@ public class Starter : MonoBehaviour
     [SerializeField] private PlayerBoatData playerBoatData;
     [SerializeField] private LevelListData levelList;
     [SerializeField] private UIData uiData;
+    [SerializeField] private SceneLoadData sceneLoadData;
     [SerializeField] private SavingSettings savingSettings;
     [SerializeField] private EncryptionData encryptionData;
 
@@ -35,7 +38,7 @@ public class Starter : MonoBehaviour
 
     private void Start()
     {
-        InitializeManagers();
+        InitializeAssistants();
         
         _world = new EcsWorld();
         _updateSystems = new EcsSystems(_world);
@@ -68,15 +71,16 @@ public class Starter : MonoBehaviour
 
             .Inject(playerBoatData)
             .Inject(levelList)
+            .Inject(sceneLoadData)
             
             .Init();
 
         _savedDataSystem
-            .Add(new SaveFileSystem())
-            .Add(new LoadFileSystem())
             .Add(new LevelValueSystem())
             .Add(new WalletSystem())
-            
+            .Add(new SaveFileSystem())
+            .Add(new LoadFileSystem())
+
             .Inject(savingSettings)
             .Inject(gameProgressData)
             
@@ -89,7 +93,6 @@ public class Starter : MonoBehaviour
             .Add(new PopUpRewardSystem())
             .Add(new StartPanelSystem())
             .Add(new CompletePanelSystem())
-            //.Add(new DarkScreenSystem())
             
             .Inject(uiData)
             
@@ -99,7 +102,6 @@ public class Starter : MonoBehaviour
             .OneFrame<ExplosionDestroyableObjectEvent>()
             .OneFrame<LevelCompleteEvent>()
             .OneFrame<PlayConfettiEvent>()
-            .OneFrame<PlayDarkScreenEvent>()
             .OneFrame<LoadSceneEvent>()
             
             .OneFrame<SaveDataEvent>()
@@ -112,8 +114,9 @@ public class Starter : MonoBehaviour
             .Init();
     }
 
-    private void InitializeManagers()
+    private void InitializeAssistants()
     {
+        GlobalObjectsContainer.Instance.Init(uiData);
         EncryptionManager.Init(encryptionData);
     }
 

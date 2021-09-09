@@ -2,6 +2,7 @@
 using Components;
 using Components.Events;
 using Data;
+using Extension;
 using Leopotam.Ecs;
 using UnityEngine;
 using Object = UnityEngine.Object;
