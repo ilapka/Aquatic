@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using Types;
 using UnityComponents;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
     [Serializable]
     public struct PipeRingStruct
     {
-        public PipeRingType ringType;
+        public PipeContentType contentType;
         public PipeRingInformation pipeRingInformation;
-        public int reward;
+        public int price;
         public UITextInformation popupTextPrefab;
     }
 

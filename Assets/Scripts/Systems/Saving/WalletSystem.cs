@@ -1,3 +1,4 @@
+using System;
 using Components;
 using Components.Events;
 using Data;
@@ -11,8 +12,7 @@ namespace Systems.Saving
         private readonly EcsWorld _world = null;
         private readonly GameProgressSavedData _gameProgressData = null;
         
-        private readonly EcsFilter<SpendMoneyEvent> _spendMoneyFilter = null;
-        private readonly EcsFilter<AddMoneyEvent> _addMoneyFilter = null;
+        private readonly EcsFilter<MoneyTransactionEvent> _moneyTransactionEvent = null;
 
         public void Init()
         {
@@ -21,15 +21,14 @@ namespace Systems.Saving
         
         public void Run()
         {
-            foreach (var i in _spendMoneyFilter)
+            foreach (var i in _moneyTransactionEvent)
             {
-                _gameProgressData.playerMoney -= _spendMoneyFilter.Get1(i).Value;
-                _world.NewEntity().Get<UpdateMoneyValueEvent>().CurrentValue = _gameProgressData.playerMoney;
-            }
-            
-            foreach (var i in _addMoneyFilter)
-            {
-                _gameProgressData.playerMoney += _addMoneyFilter.Get1(i).Value;
+                if (_gameProgressData.playerMoney + _moneyTransactionEvent.Get1(i).Value < 0)
+                {
+                    throw new Exception("Not enough money. You can check the current amount of money with UpdateMoneyValueEvent");
+                }
+
+                _gameProgressData.playerMoney += _moneyTransactionEvent.Get1(i).Value;
                 _world.NewEntity().Get<UpdateMoneyValueEvent>().CurrentValue = _gameProgressData.playerMoney;
             }
         }

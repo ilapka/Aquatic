@@ -391,16 +391,15 @@
             <e p="CompletePanelComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
-              <e p="AddMoneyEvent.cs" t="Include" />
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelCompleteEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
               <e p="LoadSceneEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
+              <e p="MoneyTransactionEvent.cs" t="Include" />
               <e p="PlayConfettiEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
-              <e p="SpendMoneyEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
               <e p="UpdateMoneyValueEvent.cs" t="Include" />
@@ -411,7 +410,6 @@
             <e p="InputComponent.cs" t="Include" />
             <e p="LevelComponent.cs" t="Include" />
             <e p="LevelProgressBarUIComponent.cs" t="Include" />
-            <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocationComponent.cs" t="Include" />
             <e p="LocationPartsComponent.cs" t="Include" />
             <e p="MoneyUIComponent.cs" t="Include" />
@@ -461,10 +459,10 @@
               <e p="DiveMoveSystem.cs" t="Include" />
               <e p="ForwardMoveSystem.cs" t="Include" />
             </e>
-            <e p="PipeRing" t="Include">
+            <e p="PipeContent" t="Include">
               <e p="ClearRubbishSystem.cs" t="Include" />
               <e p="DestroyableObjectsSystem.cs" t="Include" />
-              <e p="GenerationPipeRingsSystem.cs" t="Include" />
+              <e p="GenerationPipeRingSystem.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="BoatStateSystem.cs" t="Include" />
@@ -490,7 +488,7 @@
           <e p="Types" t="Include">
             <e p="DarkScreenAnimatorKeys.cs" t="Include" />
             <e p="Layers.cs" t="Include" />
-            <e p="PipeRingType.cs" t="Include" />
+            <e p="PipeContentType.cs" t="Include" />
             <e p="SceneType.cs" t="Include" />
             <e p="TagEnum.cs" t="Include" />
             <e p="Tags.cs" t="Include" />
@@ -498,10 +496,10 @@
           <e p="UnityComponents" t="Include">
             <e p="CanvasInformation.cs" t="Include" />
             <e p="CompletePanelInformation.cs" t="Include" />
-            <e p="DarkScreenInformation.cs" t="Include" />
             <e p="DestroyableObject.cs" t="Include" />
             <e p="DestructiblePipeRingInformation.cs" t="Include" />
             <e p="GlobalCanvas.cs" t="Include" />
+            <e p="GlobalDarkScreen.cs" t="Include" />
             <e p="GlobalObjectsContainer.cs" t="Include" />
             <e p="LocationInformation.cs" t="Include" />
             <e p="PipeRingInformation.cs" t="Include" />

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using Systems.Input;
 using Systems.Location;
 using Systems.Movement;
+using Systems.PipeContent;
 using Systems.PipeRing;
 using Systems.Player;
 using Systems.Saving;
@@ -60,7 +61,7 @@ public class Starter : MonoBehaviour
             .Add(new SpawnLocationSystem())
             .Add(new ExtendLocationSystem())
             .Add(new SpawnPlayerSystem())
-            .Add(new GenerationPipeRingsSystem())
+            .Add(new GenerationPipeRingSystem())
             .Add(new ClearRubbishSystem())
             .Add(new DestroyableObjectsSystem())
             .Add(new BoatStateSystem())
@@ -107,16 +108,15 @@ public class Starter : MonoBehaviour
             .OneFrame<SaveDataEvent>()
             .OneFrame<LevelUpEvent>()
             .OneFrame<UpdateLevelValueEvent>()
-            .OneFrame<AddMoneyEvent>()
             .OneFrame<UpdateMoneyValueEvent>()
-            .OneFrame<SpendMoneyEvent>()
+            .OneFrame<MoneyTransactionEvent>()
             
             .Init();
     }
 
     private void InitializeAssistants()
     {
-        GlobalObjectsContainer.Instance.Init(uiData);
+        GlobalObjectsContainer.Instance.OnSceneLoaded(uiData);
         EncryptionManager.Init(encryptionData);
     }
 

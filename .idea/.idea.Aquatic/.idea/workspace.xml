@@ -11,24 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/GUI/Flat Screen Transitions/Animations/Style 7/Style 7.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/GUI/Flat Screen Transitions/Animations/Style 7/Style 7.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/UI/UIData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/UI/UIData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeContent/RingsList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeContent/RingsList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddMoneyEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/MoneyTransactionEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddMoneyEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/SpendMoneyEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/SpendMoneyEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/MoneyTransactionEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/StartPanelInformation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/ProgressBarInformation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -97,12 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayConfettiEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerParticlesSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/DarkScreenInformation.cs" />
@@ -146,8 +135,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeContentSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
       </list>
     </option>
   </component>
@@ -232,6 +227,7 @@
       <workItem from="1631014412070" duration="7372000" />
       <workItem from="1631029330826" duration="7815000" />
       <workItem from="1631129952306" duration="6168000" />
+      <workItem from="1631466457335" duration="2176000" />
     </task>
     <servers />
   </component>

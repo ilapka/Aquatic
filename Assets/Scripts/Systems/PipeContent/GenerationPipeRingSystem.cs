@@ -3,14 +3,13 @@ using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
-using Types;
 using UnityComponents;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
-namespace Systems.PipeRing
+namespace Systems.PipeContent
 {
-    public sealed class GenerationPipeRingsSystem : IEcsRunSystem
+    public sealed class GenerationPipeRingSystem : IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
         private readonly EcsFilter<LocationComponent, PipeComponent> _locationFilter  = null;
@@ -31,8 +30,8 @@ namespace Systems.PipeRing
             
                     if (playerTransform.position.x - ringsGenerationData.generationDistanceFromPlayer <= pipeComponent.LastRingEdge.x)
                     {
-                        var generationSettings = GetRandomRing(ringsGenerationData.generationRingSettings);
-                        var ringSettings = ringsGenerationData.ringsList.pipeRingsList.Find(ring => ring.ringType == generationSettings.pipeRingType);
+                        var generationSettings = GetRandomContent(ringsGenerationData.generationRingSettings);
+                        var ringSettings = ringsGenerationData.ringsList.pipeRingsList.Find(ring => ring.contentType == generationSettings.pipeContentType);
                         var prefab = ringSettings.pipeRingInformation;
 
                         var count = Random.Range(generationSettings.minCountInRow, generationSettings.maxCountInRow);
@@ -71,7 +70,7 @@ namespace Systems.PipeRing
             }
         } 
 
-        private GenerationRingSetting GetRandomRing(List<GenerationRingSetting> generationRingsSettings)
+        private GenerationRingSetting GetRandomContent(List<GenerationRingSetting> generationRingsSettings)
         {
             var maxRandomWeight = 0f;
             GenerationRingSetting randomGenerationRingSetting = default;
