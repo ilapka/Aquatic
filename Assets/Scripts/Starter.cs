@@ -116,7 +116,7 @@ public class Starter : MonoBehaviour
 
     private void InitializeAssistants()
     {
-        GlobalObjectsContainer.Instance.Init(uiData);
+        GlobalObjectsContainer.Instance.OnSceneLoaded(uiData);
         EncryptionManager.Init(encryptionData);
     }
 

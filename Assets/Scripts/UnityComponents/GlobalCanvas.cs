@@ -1,24 +1,24 @@
-﻿using Data;
+﻿using System;
+using Data;
+using Types;
 using UnityEngine;
 
 namespace UnityComponents
 {
     public class GlobalCanvas : MonoBehaviour
     {
-        private DarkScreenInformation _darkScreenInformation;
+        [HideInInspector] public GlobalDarkScreen darkScreen;
         private bool _init;
 
-        public void Init(UIData uiData)
+        public void OnSceneLoaded(UIData uiData)
         {
-            if(_init) return;
+            if (!_init)
+            {
+                darkScreen = Instantiate(uiData.globalDarkScreenPrefab, transform);
+                _init = true;
+            }
             
-            _init = true;
-            _darkScreenInformation = Instantiate(uiData.darkScreenPrefab, transform);
-        }
-
-        public void PlayDarkScreen(int animatorKey)
-        {
-            _darkScreenInformation.darkScreenAnimator.SetTrigger(animatorKey);   
+            darkScreen.OnSceneLoaded();
         }
     }
 }

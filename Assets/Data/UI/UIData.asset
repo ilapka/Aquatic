@@ -19,4 +19,4 @@ MonoBehaviour:
   startPanelPrefab: {fileID: 5841119348502499280, guid: 8aaf041ba9f6a0c4fbd87056b1232ad1, type: 3}
   completePanelPrefab: {fileID: 4181186185668237159, guid: e78577f34d3420045bb695bb3a2f5c38, type: 3}
   globalCanvasPrefab: {fileID: 6178091350433023587, guid: e4c4d9e5bfb676441bb3cd46cea87fc4, type: 3}
-  darkScreenPrefab: {fileID: 2694799994751722778, guid: e9d48ec75fde42d4696cd1f7736c2abf, type: 3}
+  globalDarkScreenPrefab: {fileID: 2694799994751722778, guid: e9d48ec75fde42d4696cd1f7736c2abf, type: 3}

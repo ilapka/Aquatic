@@ -410,7 +410,6 @@
             <e p="InputComponent.cs" t="Include" />
             <e p="LevelComponent.cs" t="Include" />
             <e p="LevelProgressBarUIComponent.cs" t="Include" />
-            <e p="LoadSceneComponent.cs" t="Include" />
             <e p="LocationComponent.cs" t="Include" />
             <e p="LocationPartsComponent.cs" t="Include" />
             <e p="MoneyUIComponent.cs" t="Include" />
@@ -497,10 +496,10 @@
           <e p="UnityComponents" t="Include">
             <e p="CanvasInformation.cs" t="Include" />
             <e p="CompletePanelInformation.cs" t="Include" />
-            <e p="DarkScreenInformation.cs" t="Include" />
             <e p="DestroyableObject.cs" t="Include" />
             <e p="DestructiblePipeRingInformation.cs" t="Include" />
             <e p="GlobalCanvas.cs" t="Include" />
+            <e p="GlobalDarkScreen.cs" t="Include" />
             <e p="GlobalObjectsContainer.cs" t="Include" />
             <e p="LocationInformation.cs" t="Include" />
             <e p="PipeRingInformation.cs" t="Include" />

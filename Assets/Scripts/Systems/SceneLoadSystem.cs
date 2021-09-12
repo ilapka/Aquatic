@@ -16,7 +16,6 @@ namespace Systems
         private readonly SceneLoadData _sceneLoadData = null;
 
         private readonly EcsFilter<LoadSceneEvent> _loadSceneFilter = null;
-        private readonly EcsFilter<LoadSceneComponent> _loadSceneComponent = null;
         
         public void Run()
         {
@@ -29,30 +28,15 @@ namespace Systems
                 
                 if (loadSceneEvent.UseDarkScreen)
                 {
-                    GlobalObjectsContainer.Instance.globalCanvas.PlayDarkScreen(DarkScreenAnimatorKeys.ShowDarkScreen);
+                    GlobalObjectsContainer.Instance.globalCanvas.darkScreen.Play(DarkScreenAnimatorKeys.ShowDarkScreen);
                     GInvoke.Instance.Delay(() =>
                     {
-                        _world.NewEntity().Get<LoadSceneComponent>().AsyncOperation = asyncOperation;
+                        asyncOperation.allowSceneActivation = true;
                     }, _sceneLoadData.allowLoadDelay);
                 }
                 else
                 {
                     asyncOperation.allowSceneActivation = true;
-                }
-            }
-
-            foreach (var i in _loadSceneComponent)
-            {
-                var asyncOperation = _loadSceneComponent.Get1(i).AsyncOperation;
-                
-                if (asyncOperation.progress >= 0.89f)
-                {
-                    GInvoke.Instance.Delay(() =>
-                    {
-                        GlobalObjectsContainer.Instance.globalCanvas.PlayDarkScreen(DarkScreenAnimatorKeys.HideDarkScreen);
-                    }, 0.1f);
-                    asyncOperation.allowSceneActivation = true;
-                    _loadSceneComponent.Destroy();
                 }
             }
         }
