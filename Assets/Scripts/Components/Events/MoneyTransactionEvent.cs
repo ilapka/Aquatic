@@ -1,6 +1,6 @@
 ﻿namespace Components.Events
 {
-    public struct SpendMoneyEvent
+    public struct MoneyTransactionEvent
     {
         public int Value;
     }

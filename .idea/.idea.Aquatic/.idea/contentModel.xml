@@ -391,16 +391,15 @@
             <e p="CompletePanelComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
-              <e p="AddMoneyEvent.cs" t="Include" />
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelCompleteEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
               <e p="LoadSceneEvent.cs" t="Include" />
               <e p="LocationSpawnEvent.cs" t="Include" />
+              <e p="MoneyTransactionEvent.cs" t="Include" />
               <e p="PlayConfettiEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
-              <e p="SpendMoneyEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
               <e p="UpdateMoneyValueEvent.cs" t="Include" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Types;
 using UnityComponents;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
@@ -11,7 +12,7 @@ namespace Data
     {
         public PipeContentType contentType;
         public PipeRingInformation pipeRingInformation;
-        public int reward;
+        public int price;
         public UITextInformation popupTextPrefab;
     }
 

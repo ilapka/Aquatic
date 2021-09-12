@@ -12,35 +12,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings/GenerationRingSetting_v1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings/GenerationRingSetting_v1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings/RingsList.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeRings/RingsList.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/GoldenPipeRing.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/GoldenPipeRing.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/SilverPipeRing 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/SilverPipeRing 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/SilverPipeRing.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PipeRings/SilverPipeRing.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeContent/RingsList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeContent/RingsList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddMoneyEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/MoneyTransactionEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddMoneyEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/SpendMoneyEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/SpendMoneyEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/MoneyTransactionEvent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/ClearRubbishSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/ClearRubbishSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/DestroyableObjectsSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/DestroyableObjectsSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/GenerationPipeRingsSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeRing/GenerationPipeRingsSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Player/BoatStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Player/BoatStateSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,9 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PopUpRewardSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/DarkScreenInformation.cs" />
@@ -160,6 +140,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeContentSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
       </list>
     </option>
   </component>
@@ -244,6 +227,7 @@
       <workItem from="1631014412070" duration="7372000" />
       <workItem from="1631029330826" duration="7815000" />
       <workItem from="1631129952306" duration="6168000" />
+      <workItem from="1631466457335" duration="2176000" />
     </task>
     <servers />
   </component>

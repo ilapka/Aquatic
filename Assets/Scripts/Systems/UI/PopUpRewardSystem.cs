@@ -23,7 +23,7 @@ namespace Systems.UI
                 {
                     var popupUIContainer = _canvasFilter.Get1(j).CanvasInformation.popUpTextContainer;
                     var popupInformation =  Object.Instantiate(ringSettings.popupTextPrefab, popupUIContainer);
-                    popupInformation.textValue.text = ringSettings.reward.ToString();
+                    popupInformation.textValue.text = ringSettings.price.ToString();
                     Object.Destroy(popupInformation.gameObject, 5f);
                 }
             }

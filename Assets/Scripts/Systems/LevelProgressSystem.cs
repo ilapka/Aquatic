@@ -22,10 +22,16 @@ namespace Systems
                 foreach (var j in _levelSettingsFilter)
                 {
                     ref var levelComponent = ref _levelSettingsFilter.Get1(j);
-                    levelComponent.CurrentLevelScore += ringSettings.reward;
+                    levelComponent.CurrentLevelScore += ringSettings.price;
+                    var moneyToTransaction = ringSettings.price;
+                    if (levelComponent.CurrentLevelScore < 0)
+                    {
+                        moneyToTransaction = ringSettings.price - levelComponent.CurrentLevelScore;
+                        levelComponent.CurrentLevelScore = 0;
+                    }
                     levelComponent.LevelProgress = (float) levelComponent.CurrentLevelScore / levelComponent.LevelData.scoreToWin;
 
-                    _world.NewEntity().Get<AddMoneyEvent>().Value = ringSettings.reward;
+                    _world.NewEntity().Get<MoneyTransactionEvent>().Value = moneyToTransaction;
 
                     if (levelComponent.CurrentLevelScore >= levelComponent.LevelData.scoreToWin)
                     {

@@ -108,9 +108,8 @@ public class Starter : MonoBehaviour
             .OneFrame<SaveDataEvent>()
             .OneFrame<LevelUpEvent>()
             .OneFrame<UpdateLevelValueEvent>()
-            .OneFrame<AddMoneyEvent>()
             .OneFrame<UpdateMoneyValueEvent>()
-            .OneFrame<SpendMoneyEvent>()
+            .OneFrame<MoneyTransactionEvent>()
             
             .Init();
     }
