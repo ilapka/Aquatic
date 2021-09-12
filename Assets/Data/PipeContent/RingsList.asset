@@ -13,15 +13,19 @@ MonoBehaviour:
   m_Name: RingsList
   m_EditorClassIdentifier: 
   pipeRingsList:
-  - ringType: 1
+  - contentType: 1
     pipeRingInformation: {fileID: 8915875433773929601, guid: 763a1cd4e643ee7488c145bb911795da, type: 3}
     reward: 500
     popupTextPrefab: {fileID: 3418931379392574486, guid: 4da0f5706f64d904c91a7744d68ba291, type: 3}
-  - ringType: 2
+  - contentType: 2
     pipeRingInformation: {fileID: 8915875433773929601, guid: 2dfd297bda6c84c45a7787657d3211c7, type: 3}
     reward: 100
     popupTextPrefab: {fileID: 3418931379392574486, guid: dd4a41ea5d43d934aa12d385af246ba2, type: 3}
-  - ringType: 3
+  - contentType: 3
     pipeRingInformation: {fileID: 8915875433773929601, guid: 855333df412b7f34cb172a137d6cb9e3, type: 3}
     reward: 1000
     popupTextPrefab: {fileID: 3418931379392574486, guid: 035f47fc41c949d448f29a1c18fcec1c, type: 3}
+  - contentType: 4
+    pipeRingInformation: {fileID: 8915875433773929601, guid: 298e6b9473d948144b63ca0960a511c2, type: 3}
+    reward: -5000
+    popupTextPrefab: {fileID: 3418931379392574486, guid: d35cf61cf4db3894c8d35d9eb5bd5411, type: 3}

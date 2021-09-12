@@ -461,10 +461,10 @@
               <e p="DiveMoveSystem.cs" t="Include" />
               <e p="ForwardMoveSystem.cs" t="Include" />
             </e>
-            <e p="PipeRing" t="Include">
+            <e p="PipeContent" t="Include">
               <e p="ClearRubbishSystem.cs" t="Include" />
               <e p="DestroyableObjectsSystem.cs" t="Include" />
-              <e p="GenerationPipeRingsSystem.cs" t="Include" />
+              <e p="GenerationPipeRingSystem.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="BoatStateSystem.cs" t="Include" />
@@ -490,7 +490,7 @@
           <e p="Types" t="Include">
             <e p="DarkScreenAnimatorKeys.cs" t="Include" />
             <e p="Layers.cs" t="Include" />
-            <e p="PipeRingType.cs" t="Include" />
+            <e p="PipeContentType.cs" t="Include" />
             <e p="SceneType.cs" t="Include" />
             <e p="TagEnum.cs" t="Include" />
             <e p="Tags.cs" t="Include" />

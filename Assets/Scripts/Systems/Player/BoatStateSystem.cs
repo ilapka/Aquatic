@@ -28,8 +28,8 @@ namespace Systems.Player
                     {
                         foreach (var k in _explosionDestroyableFilter)
                         {
-                            var pipeRingType = _explosionDestroyableFilter.Get1(k).PipeRingSettings.ringType;
-                            if (pipeRingType != PipeRingType.Default)
+                            var pipeRingType = _explosionDestroyableFilter.Get1(k).PipeRingSettings.contentType;
+                            if (pipeRingType != PipeContentType.Default)
                             {
                                 playerComponent.InContactWithPipe = true;
                                 playerComponent.PlayerInformation.playerAnimator.SetBool(ButtonStateKey, true);

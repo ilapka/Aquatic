@@ -1,10 +1,11 @@
 ﻿namespace Types
 {
-    public enum PipeRingType 
+    public enum PipeContentType 
     {
         Default,
         Golden,
         Silver,
         Brilliant,
+        SpikeObstacle,
     }
 }
