@@ -11,24 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/GUI/Flat Screen Transitions/Animations/Style 7/Style 7.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/GUI/Flat Screen Transitions/Animations/Style 7/Style 7.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/UI/UIData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/UI/UIData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/DarkScreenComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayDarkScreenEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/DarkScreen.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/DarkScreen.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/DarkScreenSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DarkScreenInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalDarkScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DarkScreenInformation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalDarkScreen.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayConfettiEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlayerParticlesSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" />
@@ -140,14 +136,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvasInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/GlobalObjectsContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalDarkScreen.cs" />
       </list>
     </option>
   </component>
@@ -232,6 +229,7 @@
       <workItem from="1631014412070" duration="7372000" />
       <workItem from="1631029330826" duration="7815000" />
       <workItem from="1631129952306" duration="6168000" />
+      <workItem from="1631450538315" duration="1456000" />
     </task>
     <servers />
   </component>

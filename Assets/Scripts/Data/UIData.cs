@@ -16,6 +16,6 @@ namespace Data
 
         [Header("Global canvas")]
         public GlobalCanvas globalCanvasPrefab;
-        public DarkScreenInformation darkScreenPrefab;
+        public GlobalDarkScreen globalDarkScreenPrefab;
     }
 }
