@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GenerationRingSetting_v1
   m_EditorClassIdentifier: 
   ringsList: {fileID: 11400000, guid: 5ee7efd0441223043b1fad576df4b1f8, type: 2}
-  generationDistanceFromPlayer: 15
+  generationDistanceFromPlayer: 25
   generationRingSettings:
   - pipeContentType: 3
     weightOfChanceToSpawn: 4
