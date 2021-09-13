@@ -1,8 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace UnityComponents
+namespace UnityComponents.Information
 {
     public class UITextProInformation : MonoBehaviour
     {

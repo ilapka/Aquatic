@@ -1,8 +1,6 @@
-﻿using System.Collections.Generic;
-using Data;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace UnityComponents
+namespace UnityComponents.Information
 {
     public class LocationInformation : MonoBehaviour
     {

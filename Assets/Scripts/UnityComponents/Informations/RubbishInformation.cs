@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityComponents
+namespace UnityComponents.Information
 {
     public class RubbishInformation : MonoBehaviour
     {

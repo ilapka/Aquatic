@@ -3,6 +3,7 @@ using Data;
 using Leopotam.Ecs;
 using Types;
 using UnityComponents;
+using UnityComponents.Information;
 using UnityEngine;
 
 namespace Systems.PipeRing

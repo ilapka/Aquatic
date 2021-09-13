@@ -418,6 +418,7 @@
             <e p="PlayerComponent.cs" t="Include" />
             <e p="RubbishComponent.cs" t="Include" />
             <e p="SavingComponent.cs" t="Include" />
+            <e p="SceneLoadingComponent.cs" t="Include" />
             <e p="StartPanelComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
@@ -444,13 +445,20 @@
           <e p="Managers" t="Include">
             <e p="EncryptionManager.cs" t="Include" />
           </e>
-          <e p="Starter.cs" t="Include" />
+          <e p="Starters" t="Include">
+            <e p="GameStarter.cs" t="Include" />
+            <e p="PreloadStarter.cs" t="Include" />
+          </e>
           <e p="Systems" t="Include">
-            <e p="GameStateSystem.cs" t="Include" />
+            <e p="Game" t="Include">
+              <e p="GameStateSystem.cs" t="Include" />
+              <e p="LevelProgressSystem.cs" t="Include" />
+              <e p="PreloadGameSystem.cs" t="Include" />
+              <e p="SceneLoadSystem.cs" t="Include" />
+            </e>
             <e p="Input" t="Include">
               <e p="InputSystem.cs" t="Include" />
             </e>
-            <e p="LevelProgressSystem.cs" t="Include" />
             <e p="Location" t="Include">
               <e p="ExtendLocationSystem.cs" t="Include" />
               <e p="SpawnLocationSystem.cs" t="Include" />
@@ -475,7 +483,6 @@
               <e p="SaveFileSystem.cs" t="Include" />
               <e p="WalletSystem.cs" t="Include" />
             </e>
-            <e p="SceneLoadSystem.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="CanvasSystem.cs" t="Include" />
               <e p="CompletePanelSystem.cs" t="Include" />
@@ -494,21 +501,26 @@
             <e p="Tags.cs" t="Include" />
           </e>
           <e p="UnityComponents" t="Include">
-            <e p="CanvasInformation.cs" t="Include" />
-            <e p="CompletePanelInformation.cs" t="Include" />
-            <e p="DestroyableObject.cs" t="Include" />
-            <e p="DestructiblePipeRingInformation.cs" t="Include" />
+            <e p="Emitters" t="Include">
+              <e p="PreloadUIEmitter.cs" t="Include" />
+            </e>
             <e p="GlobalCanvas.cs" t="Include" />
             <e p="GlobalDarkScreen.cs" t="Include" />
             <e p="GlobalObjectsContainer.cs" t="Include" />
-            <e p="LocationInformation.cs" t="Include" />
-            <e p="PipeRingInformation.cs" t="Include" />
-            <e p="PlayerInformation.cs" t="Include" />
-            <e p="ProgressBarInformation.cs" t="Include" />
-            <e p="RubbishInformation.cs" t="Include" />
-            <e p="StartPanelInformation.cs" t="Include" />
-            <e p="UITextInformation.cs" t="Include" />
-            <e p="UITextProInformation.cs" t="Include" />
+            <e p="Informations" t="Include">
+              <e p="CanvasInformation.cs" t="Include" />
+              <e p="CompletePanelInformation.cs" t="Include" />
+              <e p="DestroyableObject.cs" t="Include" />
+              <e p="DestructiblePipeRingInformation.cs" t="Include" />
+              <e p="LocationInformation.cs" t="Include" />
+              <e p="PipeRingInformation.cs" t="Include" />
+              <e p="PlayerInformation.cs" t="Include" />
+              <e p="ProgressBarInformation.cs" t="Include" />
+              <e p="RubbishInformation.cs" t="Include" />
+              <e p="StartPanelInformation.cs" t="Include" />
+              <e p="UITextInformation.cs" t="Include" />
+              <e p="UITextProInformation.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

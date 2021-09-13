@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Types;
 using UnityComponents;
+using UnityComponents.Information;
 using UnityEngine;
 using UnityEngine.Serialization;
 

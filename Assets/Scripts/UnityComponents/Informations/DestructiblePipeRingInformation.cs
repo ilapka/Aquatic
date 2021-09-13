@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace UnityComponents
+namespace UnityComponents.Information
 {
     [RequireComponent(typeof(DestroyableObject))]
     public class DestructiblePipeRingInformation : PipeRingInformation
