@@ -33,6 +33,7 @@ public class Starter : MonoBehaviour
     [SerializeField] private SceneLoadData sceneLoadData;
     [SerializeField] private SavingSettings savingSettings;
     [SerializeField] private EncryptionData encryptionData;
+    [SerializeField] private SoundData soundData;
 
     [Header("Saved Data")]
     [SerializeField] private GameProgressSavedData gameProgressData; 
@@ -104,7 +105,7 @@ public class Starter : MonoBehaviour
             .OneFrame<LevelCompleteEvent>()
             .OneFrame<PlayConfettiEvent>()
             .OneFrame<LoadSceneEvent>()
-            
+
             .OneFrame<SaveDataEvent>()
             .OneFrame<LevelUpEvent>()
             .OneFrame<UpdateLevelValueEvent>()
@@ -118,6 +119,7 @@ public class Starter : MonoBehaviour
     {
         GlobalObjectsContainer.Instance.OnSceneLoaded(uiData);
         EncryptionManager.Init(encryptionData);
+        SoundManager.Init(soundData);
     }
 
     private void Update()

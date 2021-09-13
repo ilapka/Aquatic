@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 1018806214972764717}
   - component: {fileID: 2428987944949437075}
   m_Layer: 8
-  m_Name: SilverPipeRing 1
+  m_Name: BrilliantPipeRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -740,6 +740,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   triggerTag: 5
+  destroySound: 3
   bodyPartLifeTime: 5
   bodyParts:
   - {fileID: 6077572768742010788}
