@@ -8,7 +8,7 @@ namespace Data
     [Serializable]
     public struct GenerationRingSetting
     {
-        public PipeContentType pipeContentType;
+        public PipeRingType pipeRingType;
         [Range(0f, 10f)]
         public float weightOfChanceToSpawn;
         public int maxCountInRow;

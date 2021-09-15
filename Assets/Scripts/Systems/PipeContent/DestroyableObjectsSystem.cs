@@ -34,11 +34,11 @@ namespace Systems.PipeContent
                 foreach (var bodyPart in destroyableObject.bodyParts)
                 {
                     if(bodyPart == null) continue;
-                    
                     bodyPart.transform.parent = null;
-                    Object.Destroy(bodyPart.gameObject, destroyableObject.bodyPartLifeTime);
-                    
                     bodyPart.isKinematic = false;
+                    bodyPart.AddExplosionForce(destroyableObject.explosionForce, destroyableObject.transform.position, destroyableObject.explosionRadius,
+                        0f, ForceMode.Acceleration);
+                    Object.Destroy(bodyPart.gameObject, destroyableObject.bodyPartLifeTime);
                 }
                 
                 var playSpatialEven = new PlayOneShootSpatialEvent()

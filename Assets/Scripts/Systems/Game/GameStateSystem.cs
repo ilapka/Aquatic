@@ -3,9 +3,8 @@ using Components.Events;
 using Leopotam.Ecs;
 using Managers;
 using Types;
-using UnityEngine;
 
-namespace Systems
+namespace Systems.Game
 {
     public class GameStateSystem : IEcsInitSystem, IEcsRunSystem
     {

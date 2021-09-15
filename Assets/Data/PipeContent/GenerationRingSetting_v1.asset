@@ -15,19 +15,19 @@ MonoBehaviour:
   ringsList: {fileID: 11400000, guid: 5ee7efd0441223043b1fad576df4b1f8, type: 2}
   generationDistanceFromPlayer: 25
   generationRingSettings:
-  - pipeContentType: 3
-    weightOfChanceToSpawn: 1
-    maxCountInRow: 3
+  - pipeRingType: 2
+    weightOfChanceToSpawn: 10
+    maxCountInRow: 1
     minCountInRow: 1
-  - pipeContentType: 2
-    weightOfChanceToSpawn: 5
-    maxCountInRow: 5
-    minCountInRow: 2
-  - pipeContentType: 1
-    weightOfChanceToSpawn: 5
-    maxCountInRow: 2
-    minCountInRow: 1
-  - pipeContentType: 4
+  - pipeRingType: 1
     weightOfChanceToSpawn: 2
-    maxCountInRow: 2
+    maxCountInRow: 1
+    minCountInRow: 1
+  - pipeRingType: 3
+    weightOfChanceToSpawn: 1
+    maxCountInRow: 1
+    minCountInRow: 1
+  - pipeRingType: 4
+    weightOfChanceToSpawn: 3
+    maxCountInRow: 1
     minCountInRow: 1

@@ -12,6 +12,8 @@ namespace UnityComponents.Informations
         
         public TagEnum triggerTag;
         public SoundType destroySound;
+        public float explosionForce;
+        public float explosionRadius;
         public float bodyPartLifeTime = 5f;
         public List<Rigidbody> bodyParts;
 

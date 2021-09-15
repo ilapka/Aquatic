@@ -419,6 +419,7 @@
             <e p="MoneyUIComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
             <e p="PipeComponent.cs" t="Include" />
+            <e p="PipeRingWeightsComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
             <e p="RubbishComponent.cs" t="Include" />
             <e p="SavingComponent.cs" t="Include" />
@@ -508,7 +509,7 @@
           <e p="Types" t="Include">
             <e p="DarkScreenAnimatorKeys.cs" t="Include" />
             <e p="Layers.cs" t="Include" />
-            <e p="PipeContentType.cs" t="Include" />
+            <e p="PipeRingType.cs" t="Include" />
             <e p="SceneType.cs" t="Include" />
             <e p="SoundType.cs" t="Include" />
             <e p="TagEnum.cs" t="Include" />

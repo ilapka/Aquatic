@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityComponents.Informations;
+using UnityEngine;
 
 namespace UnityComponents.Informations
 {

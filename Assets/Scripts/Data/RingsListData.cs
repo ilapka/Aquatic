@@ -11,7 +11,7 @@ namespace Data
     [Serializable]
     public struct PipeRingStruct
     {
-        public PipeContentType contentType;
+        public PipeRingType ringType;
         public PipeRingInformation pipeRingInformation;
         public int price;
         public UITextInformation popupTextPrefab;
