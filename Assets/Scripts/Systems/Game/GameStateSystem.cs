@@ -24,14 +24,14 @@ namespace Systems
         {
             foreach (var i in _startGameFilter)
             {
-                SoundManager.PlayOneShoot(SoundType.StartGame);
+                _world.NewEntity().Get<PlayOneShootFlatEvent>().SoundType = SoundType.StartGame;
                 SetGameState(true);
             }
 
             foreach (var i in _levelCompleteFilter)
             {
                 SetGameState(false);
-                SoundManager.PlayOneShoot(SoundType.Victory);
+                _world.NewEntity().Get<PlayOneShootFlatEvent>().SoundType = SoundType.Victory;
                 _world.NewEntity().Get<PlayConfettiEvent>();
                 _world.NewEntity().Get<LevelUpEvent>();
             }

@@ -1,4 +1,5 @@
 ﻿using Systems;
+using Systems.Audio;
 using Systems.Input;
 using Systems.Location;
 using Systems.Movement;
@@ -66,10 +67,12 @@ namespace Starters
                 .Add(new GameStateSystem())
                 .Add(new PlayerParticlesSystem())
                 .Add(new SceneLoadSystem())
+                .Add(new SoundSystem())
 
                 .Inject(playerBoatData)
                 .Inject(levelList)
                 .Inject(sceneLoadData)
+                .Inject(soundData)
             
                 .Init();
 
@@ -104,6 +107,8 @@ namespace Starters
                 .OneFrame<PlayConfettiEvent>()
                 .OneFrame<LoadSceneEvent>()
                 .OneFrame<PlayDarkScreenEvent>()
+                .OneFrame<PlayOneShootSpatialEvent>()
+                .OneFrame<PlayOneShootFlatEvent>()
 
                 .OneFrame<SaveDataEvent>()
                 .OneFrame<LevelUpEvent>()
@@ -117,7 +122,6 @@ namespace Starters
         private void InitializeAssistants()
         {
             EncryptionManager.Init(encryptionData);
-            SoundManager.Init(soundData);
         }
 
         private void Update()

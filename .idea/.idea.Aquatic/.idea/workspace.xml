@@ -11,37 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/GlobalCanvasComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/GlobalCanvasComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PlayDarkScreenEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PlayDarkScreenEvent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalCanvasInformation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalDarkScreenInformation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/AudioSourceComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/AudioSourceComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootFlatEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootFlatEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootSpatialEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootSpatialEvent.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/GlobalCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/GlobalCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/SceneLoadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/SceneLoadSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/PreloadGameSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/PreloadGameSystem.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeRingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeRingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalCanvasInformation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalDarkScreen.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalDarkScreen.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalDarkScreenInformation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/CanvasInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/CanvasInformation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/CompletePanelInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/CompletePanelInformation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestroyableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestroyableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestructiblePipeRingInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestructiblePipeRingInformation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,27 +83,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/GlobalObjectsContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeContentSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SoundData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SoundType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlaySoundEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlaySoundEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SoundSystem.cs" />
@@ -128,10 +98,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasComponent.cs" />
@@ -143,7 +110,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PlayDarkScreenEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/SceneLoadSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalCanvasInformation.cs" />
@@ -152,6 +118,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/CompletePanelInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestroyableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestructiblePipeRingInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/LocationInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/PipeRingInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/PlayerInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/ProgressBarInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/RubbishInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/StartPanelInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/UITextInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/UITextProInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Emitters/PreloadUIEmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/AudioSourceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/AudioSourceComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/PlayOneShootSpatialEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootSpatialEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/PlayOneShootFlatEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootFlatEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
       </list>
     </option>
   </component>
@@ -240,7 +227,7 @@
       <workItem from="1631550189434" duration="7155000" />
       <workItem from="1631615838571" duration="10713000" />
       <workItem from="1631697881022" duration="4046000" />
-      <workItem from="1631715023778" duration="2255000" />
+      <workItem from="1631715023778" duration="3892000" />
     </task>
     <servers />
   </component>
@@ -273,6 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="335" y="316" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1629908982658" />
+    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1631717686702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631717686702" />
     <state x="248" y="212" key="SettingsEditor" timestamp="1629909960024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

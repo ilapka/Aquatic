@@ -387,6 +387,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
+            <e p="AudioSourceComponent.cs" t="Include" />
             <e p="CanvasComponent.cs" t="Include" />
             <e p="CompletePanelComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
@@ -399,6 +400,8 @@
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="MoneyTransactionEvent.cs" t="Include" />
               <e p="PlayConfettiEvent.cs" t="Include" />
+              <e p="PlayOneShootFlatEvent.cs" t="Include" />
+              <e p="PlayOneShootSpatialEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
@@ -446,17 +449,18 @@
           </e>
           <e p="Managers" t="Include">
             <e p="EncryptionManager.cs" t="Include" />
-            <e p="SoundManager.cs" t="Include" />
           </e>
           <e p="Starters" t="Include">
             <e p="GameStarter.cs" t="Include" />
             <e p="PreloadStarter.cs" t="Include" />
           </e>
           <e p="Systems" t="Include">
+            <e p="Audio" t="Include">
+              <e p="SoundSystem.cs" t="Include" />
+            </e>
             <e p="Game" t="Include">
               <e p="GameStateSystem.cs" t="Include" />
               <e p="LevelProgressSystem.cs" t="Include" />
-              <e p="PreloadGameSystem.cs" t="Include" />
               <e p="SceneLoadSystem.cs" t="Include" />
             </e>
             <e p="Input" t="Include">
@@ -479,6 +483,9 @@
               <e p="BoatStateSystem.cs" t="Include" />
               <e p="PlayerParticlesSystem.cs" t="Include" />
               <e p="SpawnPlayerSystem.cs" t="Include" />
+            </e>
+            <e p="Preload" t="Include">
+              <e p="PreloadGameSystem.cs" t="Include" />
             </e>
             <e p="Saving" t="Include">
               <e p="LevelValueSystem.cs" t="Include" />
