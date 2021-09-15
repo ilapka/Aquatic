@@ -6,6 +6,5 @@ namespace Data
     public class SceneLoadData : ScriptableObject
     {
         public float allowLoadDelay;
-        
     }
 }

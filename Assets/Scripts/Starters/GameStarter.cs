@@ -19,7 +19,7 @@ using Managers;
 using UnityComponents;
 using UnityEngine;
 
-public class Starter : MonoBehaviour
+public class GameStarter : MonoBehaviour
 {
     private EcsWorld _world;
     private EcsSystems _updateSystems;
