@@ -16,18 +16,18 @@ MonoBehaviour:
   generationDistanceFromPlayer: 25
   generationRingSettings:
   - pipeContentType: 3
-    weightOfChanceToSpawn: 4
+    weightOfChanceToSpawn: 1
     maxCountInRow: 3
     minCountInRow: 1
   - pipeContentType: 2
-    weightOfChanceToSpawn: 7.69
+    weightOfChanceToSpawn: 5
     maxCountInRow: 5
     minCountInRow: 2
   - pipeContentType: 1
-    weightOfChanceToSpawn: 4.23
+    weightOfChanceToSpawn: 5
     maxCountInRow: 2
     minCountInRow: 1
   - pipeContentType: 4
-    weightOfChanceToSpawn: 6
+    weightOfChanceToSpawn: 2
     maxCountInRow: 2
     minCountInRow: 1

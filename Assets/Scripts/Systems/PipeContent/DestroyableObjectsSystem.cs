@@ -1,12 +1,12 @@
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
-using Types;
+using Managers;
 using UnityComponents;
 using UnityComponents.Information;
 using UnityEngine;
 
-namespace Systems.PipeRing
+namespace Systems.PipeContent
 {
     public sealed class DestroyableObjectsSystem : IEcsRunSystem
     {
@@ -41,8 +41,8 @@ namespace Systems.PipeRing
                     bodyPart.isKinematic = false;
                 }
 
+                SoundManager.PlayOneShoot(destroyableObject.destroySound, true ,destroyableObject.transform.position);
                 _world.NewEntity().Get<ExplosionDestroyableObjectEvent>().PipeRingSettings = pipeRingSettings;
-
                 Object.Destroy(destroyableObject.gameObject);
             }
         }

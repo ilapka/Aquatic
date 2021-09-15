@@ -740,6 +740,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   triggerTag: 5
+  destroySound: 2
   bodyPartLifeTime: 5
   bodyParts:
   - {fileID: 6077572768742010788}

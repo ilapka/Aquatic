@@ -8,17 +8,17 @@ namespace Managers
     public static class EncryptionManager
     {
         private static EncryptionData _encryptionData;
-        private static bool _initialized;
+        private static bool _init;
         
         public static void Init(EncryptionData encryptionData)
         {
             _encryptionData = encryptionData;
-            _initialized = true;
+            _init = true;
         }
 
         public static string AESEncryption(string inputData)
         {
-            if (!_initialized) throw new Exception("Manager must be initialized");
+            if (!_init) throw new Exception("Manager must be initialized");
 
             var AEScryptoProvider = GetAesCryptoServiceProvider();
             
@@ -31,7 +31,7 @@ namespace Managers
  
         public static string AESDecryption(string inputData)
         {
-            if (!_initialized) throw new Exception("Manager must be initialized");
+            if (!_init) throw new Exception("Manager must be initialized");
             
             var AEScryptoProvider = GetAesCryptoServiceProvider();
 

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStore/Water/Ultimate 10 Plus Shaders/Materials/Unique/Ocean1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStore/Water/Ultimate 10 Plus Shaders/Materials/Unique/Ocean1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeContent/GenerationRingSetting_v1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeContent/GenerationRingSetting_v1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Locations/Location_v1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Locations/Location_v1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerMoney.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerMoney.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ProgressBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ProgressBar.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/StartPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/StartPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProgressSavedData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/TagEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/GameStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Projects/Chop_Them_All/Assets/Scripts/GUA/Editor/TagsLayersEnumBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PipeComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/LevelCompleteEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/89/28e46297/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/LocationComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/LocationPartsComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/b3/e0f274a7/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/SavingComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayConfettiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsEntity.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent1.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Types/SceneType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadSceneEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreenCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/Singleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/UndestroyableCanvasInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/SingletonCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvasInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/GlobalObjectsContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeContentSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starter1.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/CanvasInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/CompletePanelInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/DestroyableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/DestructiblePipeRingInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/LocationInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/PipeRingInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/PlayerInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/ProgressBarInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/RubbishInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/StartPanelInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/UITextInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Information/UITextProInformation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Emitter/PreloadUIEmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PreloadSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadingComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PreloadStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneLoadSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PreloadGameSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SceneLoadData.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1saM0ltcJ4dyNeA6jgxErC2tbKE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Games" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="" />
+      <created>1621106032253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621106032253</updated>
+      <workItem from="1621106039155" duration="1061000" />
+      <workItem from="1621107167568" duration="5000" />
+      <workItem from="1621107718849" duration="317000" />
+      <workItem from="1621161519011" duration="9054000" />
+      <workItem from="1627849621590" duration="786000" />
+      <workItem from="1629211385848" duration="1000" />
+      <workItem from="1629903476557" duration="1601000" />
+      <workItem from="1629905294807" duration="1760000" />
+      <workItem from="1629907251585" duration="4663000" />
+      <workItem from="1630257822477" duration="438000" />
+      <workItem from="1630258714464" duration="5229000" />
+      <workItem from="1630273702322" duration="2593000" />
+      <workItem from="1630314745715" duration="2225000" />
+      <workItem from="1630332967154" duration="4788000" />
+      <workItem from="1630349452843" duration="2991000" />
+      <workItem from="1630357812715" duration="3046000" />
+      <workItem from="1630406124368" duration="41000" />
+      <workItem from="1630406377805" duration="1553000" />
+      <workItem from="1630424544975" duration="8771000" />
+      <workItem from="1630484573339" duration="8824000" />
+      <workItem from="1630512504330" duration="4665000" />
+      <workItem from="1630525059885" duration="2706000" />
+      <workItem from="1630563644255" duration="7103000" />
+      <workItem from="1630600058578" duration="11232000" />
+      <workItem from="1630671101310" duration="3756000" />
+      <workItem from="1630675923518" duration="26000" />
+      <workItem from="1630760123086" duration="5916000" />
+      <workItem from="1630777860389" duration="6475000" />
+      <workItem from="1630834446202" duration="1217000" />
+      <workItem from="1630838225818" duration="8639000" />
+      <workItem from="1630855365484" duration="3870000" />
+      <workItem from="1630875267153" duration="3486000" />
+      <workItem from="1630915179656" duration="3882000" />
+      <workItem from="1630929638303" duration="10905000" />
+      <workItem from="1630956870840" duration="4056000" />
+      <workItem from="1631014412070" duration="7372000" />
+      <workItem from="1631029330826" duration="7815000" />
+      <workItem from="1631129952306" duration="6168000" />
+      <workItem from="1631466457335" duration="2176000" />
+      <workItem from="1631528056388" duration="5298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="89" y="235" key="EditorConfigExporter" timestamp="1629909918178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="89" y="235" key="EditorConfigExporter/0.0.1920.1040@0.0.1920.1040" timestamp="1629909918178" />
+    <state x="335" y="316" key="FileChooserDialogImpl" timestamp="1629908982658">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="335" y="316" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1629908982658" />
+    <state x="248" y="212" key="SettingsEditor" timestamp="1629909960024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="248" y="212" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1629909960024" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1630944430845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1630944430845" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1630764035844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630764035844" />
+    <state x="577" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1631531036288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1631531036288" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1630844249153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630844249153" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1630336781487">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630336781487" />
+  </component>
+</project>

@@ -2,6 +2,8 @@
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using Managers;
+using Types;
 using UnityEngine;
 
 namespace Systems.UI
@@ -34,6 +36,8 @@ namespace Systems.UI
 
         private void OnStartButtonClick()
         {
+            SoundManager.PlayOneShoot(SoundType.ButtonClick);
+
             foreach (var i in _startPanelFilter)
             {
                 _startPanelFilter.Get1(i).StartPanelInformation.gameObject.SetActive(false);

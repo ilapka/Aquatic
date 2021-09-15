@@ -433,6 +433,7 @@
             <e p="RingsListData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
             <e p="SceneLoadData.cs" t="Include" />
+            <e p="SoundData.cs" t="Include" />
             <e p="UIData.cs" t="Include" />
           </e>
           <e p="Editors" t="Include">
@@ -444,6 +445,7 @@
           </e>
           <e p="Managers" t="Include">
             <e p="EncryptionManager.cs" t="Include" />
+            <e p="SoundManager.cs" t="Include" />
           </e>
           <e p="Starters" t="Include">
             <e p="GameStarter.cs" t="Include" />
@@ -497,6 +499,7 @@
             <e p="Layers.cs" t="Include" />
             <e p="PipeContentType.cs" t="Include" />
             <e p="SceneType.cs" t="Include" />
+            <e p="SoundType.cs" t="Include" />
             <e p="TagEnum.cs" t="Include" />
             <e p="Tags.cs" t="Include" />
           </e>

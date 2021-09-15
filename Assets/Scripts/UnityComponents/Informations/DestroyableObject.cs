@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Types;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +12,7 @@ namespace UnityComponents.Information
         [HideInInspector] public UnityEvent<DestroyableObject, Collider> triggerEvent;
         
         public TagEnum triggerTag;
+        public SoundType destroySound;
         public float bodyPartLifeTime = 5f;
         public List<Rigidbody> bodyParts;
 
