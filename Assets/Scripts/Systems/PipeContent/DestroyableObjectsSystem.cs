@@ -3,7 +3,7 @@ using Data;
 using Leopotam.Ecs;
 using Managers;
 using UnityComponents;
-using UnityComponents.Information;
+using UnityComponents.Informations;
 using UnityEngine;
 
 namespace Systems.PipeContent

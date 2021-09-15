@@ -407,6 +407,7 @@
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="ForwardMovableComponent1.cs" t="Include" />
             <e p="GameStateComponent.cs" t="Include" />
+            <e p="GlobalCanvasComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
             <e p="LevelComponent.cs" t="Include" />
             <e p="LevelProgressBarUIComponent.cs" t="Include" />
@@ -488,8 +489,11 @@
             <e p="UI" t="Include">
               <e p="CanvasSystem.cs" t="Include" />
               <e p="CompletePanelSystem.cs" t="Include" />
+              <e p="GlobalCanvasSystem.cs" t="Include" />
+              <e p="GlobalDarkScreenSystem.cs" t="Include" />
               <e p="LevelProgressUISystem.cs" t="Include" />
               <e p="MoneyUISystem.cs" t="Include" />
+              <e p="PlayDarkScreenEvent.cs" t="Include" />
               <e p="PopUpRewardSystem.cs" t="Include" />
               <e p="StartPanelSystem.cs" t="Include" />
             </e>
@@ -507,14 +511,13 @@
             <e p="Emitters" t="Include">
               <e p="PreloadUIEmitter.cs" t="Include" />
             </e>
-            <e p="GlobalCanvas.cs" t="Include" />
-            <e p="GlobalDarkScreen.cs" t="Include" />
-            <e p="GlobalObjectsContainer.cs" t="Include" />
             <e p="Informations" t="Include">
               <e p="CanvasInformation.cs" t="Include" />
               <e p="CompletePanelInformation.cs" t="Include" />
               <e p="DestroyableObject.cs" t="Include" />
               <e p="DestructiblePipeRingInformation.cs" t="Include" />
+              <e p="GlobalCanvasInformation.cs" t="Include" />
+              <e p="GlobalDarkScreenInformation.cs" t="Include" />
               <e p="LocationInformation.cs" t="Include" />
               <e p="PipeRingInformation.cs" t="Include" />
               <e p="PlayerInformation.cs" t="Include" />

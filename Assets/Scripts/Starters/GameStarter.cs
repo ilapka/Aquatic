@@ -7,12 +7,10 @@ using Systems.PipeRing;
 using Systems.Player;
 using Systems.Saving;
 using Systems.UI;
-using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
 using Managers;
-using UnityComponents;
 using UnityEngine;
 
 namespace Starters
@@ -93,6 +91,8 @@ namespace Starters
                 .Add(new PopUpRewardSystem())
                 .Add(new StartPanelSystem())
                 .Add(new CompletePanelSystem())
+                .Add(new GlobalCanvasSystem())
+                .Add(new GlobalDarkScreenSystem())
             
                 .Inject(uiData)
             
@@ -103,6 +103,7 @@ namespace Starters
                 .OneFrame<LevelCompleteEvent>()
                 .OneFrame<PlayConfettiEvent>()
                 .OneFrame<LoadSceneEvent>()
+                .OneFrame<PlayDarkScreenEvent>()
 
                 .OneFrame<SaveDataEvent>()
                 .OneFrame<LevelUpEvent>()
@@ -115,7 +116,6 @@ namespace Starters
 
         private void InitializeAssistants()
         {
-            GlobalObjectsContainer.Instance.OnSceneLoaded(uiData);
             EncryptionManager.Init(encryptionData);
             SoundManager.Init(soundData);
         }

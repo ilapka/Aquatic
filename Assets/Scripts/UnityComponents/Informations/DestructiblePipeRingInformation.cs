@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityComponents.Information
+namespace UnityComponents.Informations
 {
     [RequireComponent(typeof(DestroyableObject))]
     public class DestructiblePipeRingInformation : PipeRingInformation

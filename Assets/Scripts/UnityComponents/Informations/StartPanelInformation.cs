@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UnityComponents.Information
+namespace UnityComponents.Informations
 {
     public class StartPanelInformation : MonoBehaviour
     {

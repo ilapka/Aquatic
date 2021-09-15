@@ -1,11 +1,9 @@
-﻿using Components;
+﻿using Systems.UI;
 using Components.Events;
 using Data;
 using Extension;
 using Leopotam.Ecs;
 using Types;
-using UnityComponents;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Systems
@@ -28,7 +26,7 @@ namespace Systems
                 
                 if (loadSceneEvent.UseDarkScreen)
                 {
-                    GlobalObjectsContainer.Instance.globalCanvas.darkScreen.Play(DarkScreenAnimatorKeys.ShowDarkScreen);
+                    _world.NewEntity().Get<PlayDarkScreenEvent>().AnimatorKey = DarkScreenAnimatorKeys.ShowDarkScreen;
                 }
                 
                 GInvoke.Instance.Delay(() =>

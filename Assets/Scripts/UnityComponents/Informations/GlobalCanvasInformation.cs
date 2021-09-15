@@ -2,9 +2,8 @@
 
 namespace UnityComponents.Informations
 {
-    public class CanvasInformation : MonoBehaviour
+    public class GlobalCanvasInformation : MonoBehaviour
     {
         public RectTransform uiContainer;
-        public RectTransform popUpTextContainer;
     }
 }
