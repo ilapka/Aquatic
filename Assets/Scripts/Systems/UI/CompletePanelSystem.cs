@@ -35,8 +35,8 @@ namespace Systems.UI
         {
             foreach (var j in _completePanelComponent)
             {
-                SoundManager.PlayOneShoot(SoundType.ButtonClick);
-                
+                _world.NewEntity().Get<PlayOneShootFlatEvent>().SoundType = SoundType.ButtonClick;
+
                 _completePanelComponent.Get1(j).CompletePanelInformation.gameObject.SetActive(false);
                 var sceneLoadEvent = new LoadSceneEvent()
                 {

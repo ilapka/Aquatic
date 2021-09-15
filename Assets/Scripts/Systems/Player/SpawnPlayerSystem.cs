@@ -4,7 +4,7 @@ using Components;
 using Components.Events;
 using Data;
 using UnityComponents;
-using UnityComponents.Information;
+using UnityComponents.Informations;
 
 namespace Systems
 {

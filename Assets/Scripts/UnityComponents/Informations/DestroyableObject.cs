@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Types;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace UnityComponents.Information
+namespace UnityComponents.Informations
 {
     [RequireComponent(typeof(Collider))]
     public class DestroyableObject : MonoBehaviour

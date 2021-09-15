@@ -2,7 +2,7 @@
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
-using UnityComponents.Emitter;
+using UnityComponents.Emitters;
 using UnityEngine;
 
 namespace Starters

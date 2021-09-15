@@ -36,8 +36,8 @@ namespace Systems.UI
 
         private void OnStartButtonClick()
         {
-            SoundManager.PlayOneShoot(SoundType.ButtonClick);
-
+            _world.NewEntity().Get<PlayOneShootFlatEvent>().SoundType = SoundType.ButtonClick;
+            
             foreach (var i in _startPanelFilter)
             {
                 _startPanelFilter.Get1(i).StartPanelInformation.gameObject.SetActive(false);

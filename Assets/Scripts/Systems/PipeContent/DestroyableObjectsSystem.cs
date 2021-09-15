@@ -3,7 +3,7 @@ using Data;
 using Leopotam.Ecs;
 using Managers;
 using UnityComponents;
-using UnityComponents.Information;
+using UnityComponents.Informations;
 using UnityEngine;
 
 namespace Systems.PipeContent
@@ -40,8 +40,13 @@ namespace Systems.PipeContent
                     
                     bodyPart.isKinematic = false;
                 }
-
-                SoundManager.PlayOneShoot(destroyableObject.destroySound, true ,destroyableObject.transform.position);
+                
+                var playSpatialEven = new PlayOneShootSpatialEvent()
+                {
+                    SoundType = destroyableObject.destroySound,
+                    Position = destroyableObject.transform.position,
+                };
+                _world.NewEntity().Replace(playSpatialEven);
                 _world.NewEntity().Get<ExplosionDestroyableObjectEvent>().PipeRingSettings = pipeRingSettings;
                 Object.Destroy(destroyableObject.gameObject);
             }

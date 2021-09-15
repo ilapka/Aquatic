@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace UnityComponents.Information
+namespace UnityComponents.Informations
 {
     [RequireComponent(typeof(RubbishInformation))]
     public class PipeRingInformation : MonoBehaviour

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace UnityComponents.Emitter
+namespace UnityComponents.Emitters
 {
     public class PreloadUIEmitter : MonoBehaviour
     { 

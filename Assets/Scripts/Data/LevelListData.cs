@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityComponents;
-using UnityComponents.Information;
+using UnityComponents.Informations;
 using UnityEngine;
 using UnityEngine.Serialization;
 

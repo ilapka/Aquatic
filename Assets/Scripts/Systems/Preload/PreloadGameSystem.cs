@@ -1,7 +1,7 @@
 ﻿using Components.Events;
 using Leopotam.Ecs;
 using Types;
-using UnityComponents.Emitter;
+using UnityComponents.Emitters;
 using UnityEngine;
 
 namespace Systems
