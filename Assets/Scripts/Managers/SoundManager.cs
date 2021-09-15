@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using Data;
 using Types;
 using UnityEngine;
-using Object = System.Object;
+using Object = UnityEngine.Object;
 
 namespace Managers
 {
@@ -11,33 +12,54 @@ namespace Managers
         private static SoundData _soundData;
         private static bool _init;
 
-        private static AudioSource _oneShotAudioSource;
-
+        private static Dictionary<SoundType, float> _soundTimerDictionary;
+        private static AudioSource _spatialOneShootSource;
+        private static AudioSource _flatOneShootSource;
+        
         public static void Init(SoundData soundData)
         {
             _soundData = soundData;
-            _oneShotAudioSource = new GameObject().AddComponent<AudioSource>();
-            _oneShotAudioSource.outputAudioMixerGroup = _soundData.audioMixer.outputAudioMixerGroup;
+            _spatialOneShootSource = Object.Instantiate(_soundData.spatialOneShootSourcePrefab);
+            _flatOneShootSource = Object.Instantiate(_soundData.flatOneShootSourcePrefab);
+            _soundTimerDictionary = new Dictionary<SoundType, float>();
             
             _init = true;
         }
 
-        public static void PlaySound(SoundType soundType)
+        public static void PlayOneShoot(SoundType soundType, bool spatialSource = false, Vector3 spatialPosition = default)
         {
             if (!_init) throw new Exception("Manager must be initialized");
+
+            AudioSource oneShootSource;
+            if (spatialSource)
+            {
+                oneShootSource = _spatialOneShootSource;
+                oneShootSource.transform.position = spatialPosition;
+            }
+            else
+            {
+                oneShootSource = _flatOneShootSource;
+            }
             
-            _oneShotAudioSource.PlayOneShot(GetSound(soundType));
-            
-            //Это все нужно будет разложить на 3 сисетмы !!!
-            //Out put'ы всех сурсов выставлять на миксер из даты
-            
-            //Play one shot - все что нужно проиграть 1 раз - засовывать в один и тот же сурс и двигать его на координаты из ивента
-            
-            //Play - если дело касается долгих циклических звуков (музыка, амбиент и тд)
-            //- для него создать новый сурс и запихать под родителя из ивента
-            
-            //Subscribe button - надо подумать делать ли (чекнуть еще раз видос) (или сабскрайб в целом на ивент если так можно)
-            //Для звуков меню выставлять игнор паузы листенера !)))
+            oneShootSource.PlayOneShot(GetSound(soundType));
+        }
+
+        public static void Play(SoundType soundType, bool spatialSource = false, Vector3 spatialPosition = default)
+        {
+            if (!_init) throw new Exception("Manager must be initialized");
+
+            AudioSource musicSource;
+            if (spatialSource)
+            {
+                musicSource = Object.Instantiate(_soundData.spatialMusicSourcePrefab);
+                musicSource.transform.position = spatialPosition;
+            }
+            else
+            {
+                musicSource = Object.Instantiate(_soundData.flatMusicSourcePrefab);
+            }
+            musicSource.clip = GetSound(soundType);
+            musicSource.Play();
         }
 
         private static AudioClip GetSound(SoundType soundType)

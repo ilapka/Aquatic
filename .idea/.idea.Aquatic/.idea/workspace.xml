@@ -11,15 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/AudioMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/AudioMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Audio/SoundData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Audio/SoundData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeContent/GenerationRingSetting_v1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeContent/GenerationRingSetting_v1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +94,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/DarkScreenAnimatorKeys.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Extention/Singleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" />
         <option value="$PROJECT_DIR$/Assets/CompletePanelInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/CompletePanelInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelCompletionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/CompletePanelSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs" />
@@ -102,13 +104,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Types/SceneType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadSceneEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreen.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/LoadSceneComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreenCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/Singleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/UndestroyableCanvasInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/SingletonCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvasInformation.cs" />
@@ -126,19 +126,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeContentSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SoundData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SoundType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PlaySoundEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlaySoundEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/PlayerInformation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SoundSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestroyableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
       </list>
     </option>
   </component>
@@ -224,7 +230,9 @@
       <workItem from="1631029330826" duration="7815000" />
       <workItem from="1631129952306" duration="6168000" />
       <workItem from="1631466457335" duration="2176000" />
-      <workItem from="1631550189434" duration="4518000" />
+      <workItem from="1631550189434" duration="7155000" />
+      <workItem from="1631615838571" duration="10713000" />
+      <workItem from="1631697881022" duration="2757000" />
     </task>
     <servers />
   </component>
@@ -265,10 +273,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1630944430845" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1630764035844">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1631631435480">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1630764035844" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1631631435480" />
     <state x="577" y="157" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1630525775489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -277,9 +285,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1630844249153" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1631555748245">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1631630474356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631555748245" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1631630474356" />
   </component>
 </project>

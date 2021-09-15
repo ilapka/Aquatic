@@ -7,5 +7,7 @@
         GoldenCrackle,
         BrilliantCrackle,
         Spike,
+        Victory,
+        StartGame,
     }
 }

@@ -39,7 +39,8 @@ namespace Systems.PipeContent
                     
                     bodyPart.isKinematic = false;
                 }
-                SoundManager.PlaySound(destroyableObject.destroySound);
+
+                SoundManager.PlayOneShoot(destroyableObject.destroySound, true ,destroyableObject.transform.position);
                 _world.NewEntity().Get<ExplosionDestroyableObjectEvent>().PipeRingSettings = pipeRingSettings;
                 Object.Destroy(destroyableObject.gameObject);
             }

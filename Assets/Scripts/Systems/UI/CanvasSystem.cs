@@ -13,7 +13,7 @@ namespace Systems.UI
     {
         private readonly EcsWorld _world = null;
         private readonly UIData _uiData = null;
-        
+
         public void Init()
         {
             var canvasInformation = Object.Instantiate(_uiData.canvasPrefab);

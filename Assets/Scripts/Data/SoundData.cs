@@ -18,6 +18,10 @@ namespace Data
     public class SoundData : ScriptableObject
     {
         public AudioMixer audioMixer;
+        public AudioSource flatOneShootSourcePrefab;
+        public AudioSource flatMusicSourcePrefab;
+        public AudioSource spatialOneShootSourcePrefab;
+        public AudioSource spatialMusicSourcePrefab;
         public List<SoundStruct> soundList;
     }
 }

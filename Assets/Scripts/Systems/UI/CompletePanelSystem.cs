@@ -3,6 +3,7 @@ using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using Managers;
 using Types;
 using UnityEditor;
 using Object = UnityEngine.Object;
@@ -34,6 +35,8 @@ namespace Systems.UI
         {
             foreach (var j in _completePanelComponent)
             {
+                SoundManager.PlayOneShoot(SoundType.ButtonClick);
+                
                 _completePanelComponent.Get1(j).CompletePanelInformation.gameObject.SetActive(false);
                 var sceneLoadEvent = new LoadSceneEvent()
                 {

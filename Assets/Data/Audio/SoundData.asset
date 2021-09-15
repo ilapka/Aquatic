@@ -13,4 +13,22 @@ MonoBehaviour:
   m_Name: SoundData
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: f91415964f9f5944da4742d7db109cd2, type: 2}
-  soundList: []
+  flatOneShootSourcePrefab: {fileID: 5353578140607407161, guid: 34e0127828b2a4d44b2c503c3f2f837a, type: 3}
+  flatMusicSourcePrefab: {fileID: 5353578140607407161, guid: 4b0d35673815703439e49c614b9f1a8e, type: 3}
+  spatialOneShootSourcePrefab: {fileID: 5353578140607407161, guid: fa60fa16be0b9a24b9fa4378cf498462, type: 3}
+  spatialMusicSourcePrefab: {fileID: 5353578140607407161, guid: 78a8c22cddd295641b2c35f08c5ea617, type: 3}
+  soundList:
+  - soundType: 0
+    audioClip: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}
+  - soundType: 1
+    audioClip: {fileID: 8300000, guid: 2e0f1d8000baabc4ebe0698408a7ad67, type: 3}
+  - soundType: 2
+    audioClip: {fileID: 8300000, guid: 0696178e2ae0baa429c80b2b94bdcb05, type: 3}
+  - soundType: 3
+    audioClip: {fileID: 8300000, guid: 27c00188b267fc444bdceba87173d125, type: 3}
+  - soundType: 4
+    audioClip: {fileID: 8300000, guid: 657578e4be6b64dbf9b09deada272e55, type: 3}
+  - soundType: 5
+    audioClip: {fileID: 8300000, guid: 51587b1f1cda5514dbf0138ecb538b04, type: 3}
+  - soundType: 6
+    audioClip: {fileID: 8300000, guid: 3013e4b40cca35e4bba684c7e35c1c45, type: 3}
