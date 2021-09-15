@@ -18,7 +18,7 @@ namespace Systems
             foreach (var i in _explosionFilter)
             {
                 var ringSettings = _explosionFilter.Get1(i).PipeRingSettings;
-                if(ringSettings.contentType == PipeContentType.Default) return;
+                if(ringSettings.ringType == PipeRingType.Default) return;
                 
                 foreach (var j in _levelSettingsFilter)
                 {

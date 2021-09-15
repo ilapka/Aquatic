@@ -11,18 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/PipeRingWeightsComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/PipeRingWeightsComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/SpatialOneShotAudioSource.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/SpatialOneShotAudioSource.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Locations/Location_v1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Locations/Location_v1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/PlayerContainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CompletePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CompletePanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerMoney.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerMoney.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ProgressBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ProgressBar.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/StartPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/StartPanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeContent/GenerationRingSetting_v1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeContent/GenerationRingSetting_v1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PipeContent/RingsList.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PipeContent/RingsList.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/LevelProgressSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/LevelProgressSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeRingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeRingSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Player/BoatStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Player/BoatStateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +45,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeContentType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +69,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,18 +79,14 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalObjectsContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelCompletionSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/CompletePanelSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/CompletePanelComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SceneType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/SceneType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LoadSceneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadSceneEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Extension/DarkScreen.cs" />
@@ -133,6 +132,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/PipeRingWeightsComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/PipeRingWeightsComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeRingSystem.cs" />
       </list>
     </option>
   </component>

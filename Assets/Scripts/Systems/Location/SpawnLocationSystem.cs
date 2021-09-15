@@ -52,7 +52,6 @@ namespace Systems.Location
             var locationSpawnEvent = new LocationSpawnEvent() { };
             
             _world.NewEntity().Replace(locationComponent).Replace(partsComponent).Replace(pipeComponent).Replace(locationSpawnEvent);
-            
             _world.NewEntity().Get<LevelComponent>().LevelData = levelStruct.levelData;
         }
     }
