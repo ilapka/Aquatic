@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2691910828224809701}
   - component: {fileID: 5353578140607407161}
   m_Layer: 0
-  m_Name: OneShotAudioSource
+  m_Name: SpatialOneShotAudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,7 +52,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 35
+  MaxDistance: 25
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

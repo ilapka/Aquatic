@@ -5,50 +5,53 @@ using Leopotam.Ecs;
 using UnityComponents.Emitter;
 using UnityEngine;
 
-public class PreloadStarter : MonoBehaviour
+namespace Starters
 {
-    private EcsWorld _world;
-    private EcsSystems _updateSystems;
-    
-    [Header("Data")]
-    [SerializeField] private SceneLoadData sceneLoadData;
-
-    
-    [Header("Emitters")]
-    [SerializeField] private PreloadUIEmitter preloadUIEmitter;
-
-    private void Start()
+    public class PreloadStarter : MonoBehaviour
     {
-        _world = new EcsWorld();
-        _updateSystems = new EcsSystems(_world);
+        private EcsWorld _world;
+        private EcsSystems _updateSystems;
+    
+        [Header("Data")]
+        [SerializeField] private SceneLoadData sceneLoadData;
+
+    
+        [Header("Emitters")]
+        [SerializeField] private PreloadUIEmitter preloadUIEmitter;
+
+        private void Start()
+        {
+            _world = new EcsWorld();
+            _updateSystems = new EcsSystems(_world);
 
 
 #if UNITY_EDITOR
-        Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create(_world);
-        Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_updateSystems);
+            Leopotam.Ecs.UnityIntegration.EcsWorldObserver.Create(_world);
+            Leopotam.Ecs.UnityIntegration.EcsSystemsObserver.Create(_updateSystems);
 #endif
 
-        _updateSystems
-            .Add(new PreloadGameSystem())
-            .Add(new SceneLoadSystem())
+            _updateSystems
+                .Add(new PreloadGameSystem())
+                .Add(new SceneLoadSystem())
             
-            .Inject(preloadUIEmitter)
-            .Inject(sceneLoadData)
+                .Inject(preloadUIEmitter)
+                .Inject(sceneLoadData)
             
-            .OneFrame<LoadSceneEvent>()
+                .OneFrame<LoadSceneEvent>()
             
-            .Init();
-    }
+                .Init();
+        }
     
     
-    private void Update()
-    {
-        _updateSystems.Run();
-    }
+        private void Update()
+        {
+            _updateSystems.Run();
+        }
     
-    private void OnDestroy()
-    {
-        _updateSystems.Destroy();
-        _world.Destroy();
+        private void OnDestroy()
+        {
+            _updateSystems.Destroy();
+            _world.Destroy();
+        }
     }
 }
