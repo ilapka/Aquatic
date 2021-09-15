@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Types;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace UnityComponents.Information
+namespace UnityComponents.Informations
 {
     [RequireComponent(typeof(Collider))]
     public class DestroyableObject : MonoBehaviour
@@ -13,6 +12,8 @@ namespace UnityComponents.Information
         
         public TagEnum triggerTag;
         public SoundType destroySound;
+        public float explosionForce;
+        public float explosionRadius;
         public float bodyPartLifeTime = 5f;
         public List<Rigidbody> bodyParts;
 

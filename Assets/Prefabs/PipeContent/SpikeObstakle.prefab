@@ -746,6 +746,8 @@ MonoBehaviour:
       m_Calls: []
   triggerTag: 5
   destroySound: 4
+  explosionForce: 1500
+  explosionRadius: 5
   bodyPartLifeTime: 5
   bodyParts:
   - {fileID: 6077572768742010788}
