@@ -1,4 +1,5 @@
-﻿using Systems;
+﻿using System;
+using Systems;
 using Systems.Audio;
 using Systems.Game;
 using Systems.Input;
@@ -8,6 +9,7 @@ using Systems.PipeContent;
 using Systems.PipeRing;
 using Systems.Player;
 using Systems.Saving;
+using Systems.SDK;
 using Systems.UI;
 using Components.Events;
 using Data;
@@ -34,7 +36,11 @@ namespace Starters
         [SerializeField] private SoundData soundData;
 
         [Header("Saved Data")]
-        [SerializeField] private GameProgressSavedData gameProgressData; 
+        [SerializeField] private GameProgressSavedData gameProgressData;
+
+        [Header("SDK Data")]
+        [SerializeField] private AddMobData addMobData;
+        [SerializeField] private GameAnalyticsData gameAnalyticsDataData;
 
         private void Start()
         {
@@ -69,11 +75,15 @@ namespace Starters
                 .Add(new PlayerParticlesSystem())
                 .Add(new SceneLoadSystem())
                 .Add(new SoundSystem())
+                .Add(new AddMobSystem())
+                .Add(new GameAnalyticsSystem())
 
                 .Inject(playerBoatData)
                 .Inject(levelList)
                 .Inject(sceneLoadData)
                 .Inject(soundData)
+                .Inject(addMobData)
+                .Inject(gameAnalyticsDataData)
             
                 .Init();
 
@@ -106,10 +116,12 @@ namespace Starters
                 .OneFrame<ExplosionDestroyableObjectEvent>()
                 .OneFrame<LevelCompleteEvent>()
                 .OneFrame<PlayConfettiEvent>()
+                .OneFrame<ShowCompletePanelEvent>()
                 .OneFrame<LoadSceneEvent>()
                 .OneFrame<PlayDarkScreenEvent>()
                 .OneFrame<PlayOneShootSpatialEvent>()
                 .OneFrame<PlayOneShootFlatEvent>()
+                .OneFrame<ShowInterstitialEvent>()
 
                 .OneFrame<SaveDataEvent>()
                 .OneFrame<LevelUpEvent>()

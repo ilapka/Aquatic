@@ -1,4 +1,5 @@
-﻿using Components;
+﻿using Systems.Saving;
+using Components;
 using Components.Events;
 using Leopotam.Ecs;
 using Managers;
@@ -36,7 +37,7 @@ namespace Systems
 
                     if (levelComponent.CurrentLevelScore >= levelComponent.LevelData.scoreToWin)
                     {
-                        _world.NewEntity().Get<LevelCompleteEvent>();
+                        _world.NewEntity().Get<LevelCompleteEvent>().CurrentLevel = LevelValueSystem.CurrentLevel;
                     }
                 }
             }

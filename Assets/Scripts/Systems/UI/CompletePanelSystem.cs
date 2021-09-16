@@ -17,7 +17,7 @@ namespace Systems.UI
         
         private readonly EcsFilter<CanvasComponent> _canvasFilter = null;
         private readonly EcsFilter<CompletePanelComponent> _completePanelComponent = null;
-        private readonly EcsFilter<LevelCompleteEvent> _levelCompleteFilter = null;
+        private readonly EcsFilter<ShowCompletePanelEvent> _showCompletePanelFilter = null;
         
         public void Init()
         {
@@ -49,7 +49,7 @@ namespace Systems.UI
 
         public void Run()
         {
-            foreach (var i in _levelCompleteFilter)
+            foreach (var i in _showCompletePanelFilter)
             {
                 foreach (var j in _completePanelComponent)
                 {
