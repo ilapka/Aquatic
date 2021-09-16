@@ -1,4 +1,5 @@
-﻿using Components;
+﻿using Systems.Saving;
+using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
@@ -42,8 +43,8 @@ namespace Systems.UI
             {
                 _startPanelFilter.Get1(i).StartPanelInformation.gameObject.SetActive(false);
             }
-            
-            _world.NewEntity().Get<StartGameEvent>();
+
+            _world.NewEntity().Get<StartGameEvent>().CurrentLevel = LevelValueSystem.CurrentLevel;
         }
     }
 }

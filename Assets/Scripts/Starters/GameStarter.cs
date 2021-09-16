@@ -40,6 +40,7 @@ namespace Starters
 
         [Header("SDK Data")]
         [SerializeField] private AddMobData addMobData;
+        [SerializeField] private GameAnalyticsData gameAnalyticsDataData;
 
         private void Start()
         {
@@ -75,12 +76,14 @@ namespace Starters
                 .Add(new SceneLoadSystem())
                 .Add(new SoundSystem())
                 .Add(new AddMobSystem())
+                .Add(new GameAnalyticsSystem())
 
                 .Inject(playerBoatData)
                 .Inject(levelList)
                 .Inject(sceneLoadData)
                 .Inject(soundData)
                 .Inject(addMobData)
+                .Inject(gameAnalyticsDataData)
             
                 .Init();
 
