@@ -10,7 +10,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="" />
+    <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/ShowCompletePanelEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/ShowCompletePanelEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/ShowInterstitialEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/ShowInterstitialEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/AddMobData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/AddMobData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/StartPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/StartPanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,63 +35,56 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProgressSavedData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/TagEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/GameStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Projects/Chop_Them_All/Assets/Scripts/GUA/Editor/TagsLayersEnumBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PipeComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProgressSavedData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/LevelCompleteEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/89/28e46297/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/LocationComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/LocationPartsComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/b3/e0f274a7/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/SavingComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/TagEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayConfettiEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/GameStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Projects/Chop_Them_All/Assets/Scripts/GUA/Editor/TagsLayersEnumBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PipeComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/DestroyableObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SoundData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/GlobalCanvasComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenComponent.cs" />
@@ -110,9 +118,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/PlayOneShootFlatEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootFlatEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/PipeRingWeightsComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/PipeRingWeightsComponent.cs" />
@@ -120,6 +126,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/GenerationPipeRingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/DestroyableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/ShowInterstitialEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/ShowInterstitialEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/ShowCompletePanelEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/ShowCompletePanelEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/AddMobData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
       </list>
     </option>
   </component>
@@ -209,6 +225,7 @@
       <workItem from="1631615838571" duration="10713000" />
       <workItem from="1631697881022" duration="4046000" />
       <workItem from="1631715023778" duration="3892000" />
+      <workItem from="1631785381162" duration="4801000" />
     </task>
     <servers />
   </component>

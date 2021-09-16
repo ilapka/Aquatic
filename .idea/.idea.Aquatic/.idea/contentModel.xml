@@ -385,6 +385,25 @@
             </e>
           </e>
         </e>
+        <e p="ExternalDependencyManager" t="Include">
+          <e p="Editor" t="Include">
+            <e p="external-dependency-manager_version-1.2.165_manifest.txt" t="Include" />
+          </e>
+        </e>
+        <e p="GoogleMobileAds" t="Include">
+          <e p="Editor" t="Include">
+            <e p="BuildPreProcessor.cs" t="Include" />
+            <e p="GoogleMobileAds.Editor.asmdef" t="Include" />
+            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsSettings.cs" t="Include" />
+            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
+            <e p="GoogleMobileAdsSKAdNetworkItems.xml" t="Include" />
+            <e p="ManifestProcessor.cs" t="Include" />
+            <e p="PListProcessor.cs" t="Include" />
+          </e>
+          <e p="GoogleMobileAds_version-6.0.0_manifest.txt" t="Include" />
+          <e p="link.xml" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
             <e p="AudioSourceComponent.cs" t="Include" />
@@ -403,6 +422,8 @@
               <e p="PlayOneShootFlatEvent.cs" t="Include" />
               <e p="PlayOneShootSpatialEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
+              <e p="ShowCompletePanelEvent.cs" t="Include" />
+              <e p="ShowInterstitialEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
               <e p="UpdateLevelValueEvent.cs" t="Include" />
               <e p="UpdateMoneyValueEvent.cs" t="Include" />
@@ -427,6 +448,7 @@
             <e p="StartPanelComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
+            <e p="AddMobData.cs" t="Include" />
             <e p="DiveMoveData.cs" t="Include" />
             <e p="EncryptionData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
@@ -493,6 +515,9 @@
               <e p="LoadFileSystem.cs" t="Include" />
               <e p="SaveFileSystem.cs" t="Include" />
               <e p="WalletSystem.cs" t="Include" />
+            </e>
+            <e p="SDK" t="Include">
+              <e p="AddMobSystem.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="CanvasSystem.cs" t="Include" />
@@ -569,6 +594,7 @@
           </e>
         </e>
       </e>
+      <e p="GoogleMobileAds.Editor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

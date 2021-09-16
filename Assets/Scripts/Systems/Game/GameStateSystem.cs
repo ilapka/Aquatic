@@ -1,5 +1,7 @@
 ﻿using Components;
 using Components.Events;
+using Data;
+using Extension;
 using Leopotam.Ecs;
 using Managers;
 using Types;
@@ -9,6 +11,7 @@ namespace Systems.Game
     public class GameStateSystem : IEcsInitSystem, IEcsRunSystem
     {
         private readonly EcsWorld _world = null;
+        private readonly AddMobData _addMobData = null;
         
         private readonly EcsFilter<GameStateComponent> _gameStateFilter = null;
         private readonly EcsFilter<StartGameEvent> _startGameFilter = null;
@@ -33,6 +36,12 @@ namespace Systems.Game
                 _world.NewEntity().Get<PlayOneShootFlatEvent>().SoundType = SoundType.Victory;
                 _world.NewEntity().Get<PlayConfettiEvent>();
                 _world.NewEntity().Get<LevelUpEvent>();
+                
+                GInvoke.Instance.Delay(() =>
+                {
+                    _world.NewEntity().Get<ShowInterstitialEvent>();
+                    _world.NewEntity().Get<ShowCompletePanelEvent>();
+                }, _addMobData.showInterstitialDelay);
             }
         }
 
