@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityComponents.Informations;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace Data
@@ -7,5 +8,7 @@ namespace Data
     public class LevelData : ScriptableObject
     {
         public int scoreToWin;
+        public LocationInformation levelInformation;
+        public RingsGenerationData ringsGenerationSettings;
     }
 }

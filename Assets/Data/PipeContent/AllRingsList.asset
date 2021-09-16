@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 989490f96e75a3c469fd260582b08fe0, type: 3}
-  m_Name: RingsList
+  m_Name: AllRingsList
   m_EditorClassIdentifier: 
   pipeRingsList:
   - ringType: 1
