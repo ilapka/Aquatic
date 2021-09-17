@@ -56,7 +56,6 @@ namespace Systems.SDK
 
         private void ShowInterstitial()
         {
-            Debug.Log("ShowInterstitial");
             if(_bannerAd == null)
                 throw new Exception("Interstitial not loaded");
             _interstitialAd.Show();

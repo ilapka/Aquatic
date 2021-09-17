@@ -18,7 +18,6 @@ namespace Systems.Location
         {
             foreach (var i in _createLevelEvent)
             {
-                Debug.Log("Spawn location");
                 SpawnLocation(_createLevelEvent.Get1(i).LevelValue);
             }
         }

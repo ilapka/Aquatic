@@ -45,7 +45,6 @@ namespace Systems.Saving
                         dataToSave = EncryptionManager.AESEncryption(dataToSave);
                     }
                     File.WriteAllText(path, dataToSave);
-                    Debug.Log($"Data saved");
                 }
             }
         }

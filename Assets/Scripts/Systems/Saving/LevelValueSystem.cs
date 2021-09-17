@@ -22,7 +22,6 @@ namespace Systems.Saving
             {
                 CurrentLevel = _gameProgressData.levelValue;
                 _world.NewEntity().Get<CreateLevelEvent>().LevelValue = _gameProgressData.levelValue;
-                Debug.Log("Create Level Event");
             }
         }
         
@@ -33,7 +32,6 @@ namespace Systems.Saving
                 _gameProgressData.levelValue++;
                 CurrentLevel = _gameProgressData.levelValue;
                 _world.NewEntity().Get<SaveDataEvent>();
-                Debug.Log($"New level value - {_gameProgressData.levelValue}");
             }
         }
     }

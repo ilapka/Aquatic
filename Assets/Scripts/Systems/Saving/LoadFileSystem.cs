@@ -27,7 +27,6 @@ namespace Systems.Saving
                 _gameProgressData.levelValue = 0;
                 _gameProgressData.playerMoney = 0;
                 _world.NewEntity().Get<PlayerSavesLoadedEvent>();
-                Debug.Log("Saves file not exist - player progress - zero");
                 return;
             }
             
@@ -38,7 +37,6 @@ namespace Systems.Saving
             }
             JsonUtility.FromJsonOverwrite(dataToLoad, _gameProgressData);
             _world.NewEntity().Get<PlayerSavesLoadedEvent>();
-            Debug.Log($"From Json Overwrite, level value - {_gameProgressData.levelValue}");
         }
     }
 }

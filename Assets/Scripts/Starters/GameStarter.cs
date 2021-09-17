@@ -75,8 +75,8 @@ namespace Starters
                 .Add(new PlayerParticlesSystem())
                 .Add(new SceneLoadSystem())
                 .Add(new SoundSystem())
-                //.Add(new AddMobSystem())
-                //.Add(new GameAnalyticsSystem())
+                .Add(new AddMobSystem())
+                .Add(new GameAnalyticsSystem())
 
                 .Inject(playerBoatData)
                 .Inject(levelList)
