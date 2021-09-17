@@ -11,9 +11,178 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a610737e-1913-4510-ae81-c46dc924b650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayerSavesLoadedEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayerSavesLoadedEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/build_info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/build_info.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Editor/ReporterEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Editor/ReporterEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/ComputerIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/ComputerIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/Save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/Save.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/UnityIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/UnityIcon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/back.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/bar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/bar.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/buildFrom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/buildFrom.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/button_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/button_active.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/chart.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/clear.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/clearOnSceneLoaded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/clearOnSceneLoaded.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/close.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/collapse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/collapse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/copy.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/date.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/date.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/error_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/error_icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/even_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/even_log.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/fps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/fps.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/graphicCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/graphicCard.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/info.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/log_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/log_icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/memory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/memory.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/odd_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/odd_log.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/reporterScrollerSkin.guiskin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/reporterScrollerSkin.guiskin.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_down_arraw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_down_arraw.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_horizental_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_horizental_back.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_horizental_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_horizental_thumb.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_left_arraw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_left_arraw.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_right_arraw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_right_arraw.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_up_arraw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_up_arraw.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_vertical_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_vertical_back.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_vertical_thumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/scroller_vertical_thumb.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/search.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/selected.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/software.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/software.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/timer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/timer_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/user.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/warning_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Images/warning_icon.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/MultiKeyDictionary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/MultiKeyDictionary.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Reporter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Reporter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/ReporterGUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/ReporterGUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/ReporterMessageReceiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/ReporterMessageReceiver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/ReporterScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/ReporterScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/Rotate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/Rotate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/TestReporter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/TestReporter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/test1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/test1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/test2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Test/test2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/GCMem.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/GCMem.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/clear.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/clear.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/clearOnNewScene.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/clearOnNewScene.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/collapse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/collapse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/error.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/fps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/fps.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/index.htm.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/info.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/log.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/scene.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/scene.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/screenShot11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/screenShot11.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/screenShot21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/screenShot21.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/screenShot3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/screenShot3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/style.css.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/time.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/warning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/ReporterDocumentation/warning.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aquatic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/EncryptedGameProgress.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/EncryptedGameProgress.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/README.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/EncryptionData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/EncryptionData.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/SaveSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Json/SaveSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/SavedData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/SavedData/GameProgressData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/SavedData/GameProgressData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/SceneLoad/SceneLoadData (Preloading).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/SceneLoad/SceneLoadData (Preloading).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/CreateLevelEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/Events/CreateLevelEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/SavingComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/SavingPathComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Components/SavingComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Components/SavingPathComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Player/SpawnPlayerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Player/SpawnPlayerSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/GameAnalyticsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/GameAnalyticsSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,71 +193,63 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/UIData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProgressSavedData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/TagEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/GameStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Projects/Chop_Them_All/Assets/Scripts/GUA/Editor/TagsLayersEnumBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PipeComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/MoneyUISystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/LevelCompleteEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/89/28e46297/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/LocationComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/WalletSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/AddNewDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Input/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.1/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A4D5436-EA7D-4A82-94F2-3953CA7D8C25/f9/b35c8257/InterstitialAd.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/LocationPartsComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/DiveMovableComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F9A7EA3-47A4-4FFD-AD6C-91B550598CCD/c4/1f37ffff/ASCIIEncoding.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/PipeRingType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/MoneyUIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A4D5436-EA7D-4A82-94F2-3953CA7D8C25/fb/dd2fbbd7/BannerView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/ExplosionDestroyableObjectEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsWorld.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/StartPanelComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extension/GInvoke.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/UpdateLevelValueEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/SaveDataEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/CreateLevelEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/LevelProgressUISystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Player/PlayerParticlesSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6F5A6EF7-EBB6-48A7-A079-646FCF94CC31/3f/54aac1b3/AdRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E8645A79-B079-4E0E-9A2B-5BBFF081B88A/b3/e0f274a7/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AssetStore/Water/#NVJOB Water Shaders V2/#NVJOB Water Shaders V2/NVWaterShaders.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/SavingComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Types/TagEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/SavingPathComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayConfettiEvent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/GameStateComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Projects/Chop_Them_All/Assets/Scripts/GUA/Editor/TagsLayersEnumBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/CanvasComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Unity/Hub/Editor/2020.1.4f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.leopotam.ecs@97a605bc57/src/EcsEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/RingsListData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/PipeComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/PlayerBoatData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/EncryptionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ForwardMovableComponent1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CanvasSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/CompletePanelSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Types/SoundType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/LevelProgressSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/GameStateSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/GlobalCanvasComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Components/GlobalDarkScreenComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalCanvasInformation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/GlobalDarkScreenInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/PlayDarkScreenEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalCanvasSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/SceneLoadSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalCanvasInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/GlobalDarkScreenInformation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityComponents/Informations/CanvasInformation.cs" />
@@ -111,7 +272,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/SoundSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Audio/PlayOneShootFlatEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/PlayOneShootFlatEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/RingsGenerationData.cs" />
@@ -122,8 +282,21 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/PipeContent/DestroyableObjectsSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/LevelListData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/GameAnalyticsSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/SpawnPlayerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadingFilesCompleteEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadingFilesCompleteEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" />
       </list>
     </option>
   </component>
@@ -213,6 +386,10 @@
       <workItem from="1631615838571" duration="10713000" />
       <workItem from="1631697881022" duration="4046000" />
       <workItem from="1631715023778" duration="3892000" />
+      <workItem from="1631814437224" duration="1477000" />
+      <workItem from="1631816982182" duration="2547000" />
+      <workItem from="1631825401354" duration="3139000" />
+      <workItem from="1631863381557" duration="8326000" />
     </task>
     <servers />
   </component>

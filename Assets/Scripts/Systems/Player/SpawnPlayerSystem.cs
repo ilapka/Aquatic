@@ -18,6 +18,8 @@ namespace Systems
         {
             foreach (var i in _locationSpawnEvent)
             {
+                Debug.Log("Spawn player");
+                
                 var spawnPosition = _locationSpawnEvent.Get1(i).LocationInformation.playerSpawnPoint.position;
                 var playerInformation = Object.Instantiate(_playerBoatData.playerInformationPrefab, spawnPosition, Quaternion.identity);
             

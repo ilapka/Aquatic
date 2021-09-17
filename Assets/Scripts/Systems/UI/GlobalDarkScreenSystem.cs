@@ -28,7 +28,6 @@ namespace Systems.UI
                 if (_globalDarkScreenInstance == null)
                 {
                     _globalDarkScreenInstance = Object.Instantiate(_uiData.globalDarkScreenPrefab, globalCanvasInformation.uiContainer);
-                    Object.DontDestroyOnLoad(_globalDarkScreenInstance);
                 }
 
                 if (_darkScreenIsShown)

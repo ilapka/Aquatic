@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2ee50cb8d6c48b48353483f230f36b4, type: 3}
   m_Name: SceneLoadData (Preloading)
   m_EditorClassIdentifier: 
-  allowLoadDelay: 0
+  allowLoadDelay: 0.5

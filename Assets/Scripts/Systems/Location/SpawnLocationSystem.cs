@@ -11,17 +11,15 @@ namespace Systems.Location
     {
         private readonly EcsWorld _world = null;
         private readonly LevelListData _levelListData = null;
-
-        private readonly EcsFilter<LocationComponent> _locationFilter = null;
-        private readonly EcsFilter<UpdateLevelValueEvent> _updateLevelValueEvent = null;
+        
+        private readonly EcsFilter<CreateLevelEvent> _createLevelEvent = null;
         
         public void Run()
         {
-            if(!_locationFilter.IsEmpty()) return;
-            
-            foreach (var i in _updateLevelValueEvent)
+            foreach (var i in _createLevelEvent)
             {
-                SpawnLocation(_updateLevelValueEvent.Get1(i).CurrentLevel);
+                Debug.Log("Spawn location");
+                SpawnLocation(_createLevelEvent.Get1(i).LevelValue);
             }
         }
 
