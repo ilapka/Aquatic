@@ -1,11 +1,12 @@
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
-using Types;
+using Managers;
 using UnityComponents;
+using UnityComponents.Informations;
 using UnityEngine;
 
-namespace Systems.PipeRing
+namespace Systems.PipeContent
 {
     public sealed class DestroyableObjectsSystem : IEcsRunSystem
     {
@@ -33,15 +34,20 @@ namespace Systems.PipeRing
                 foreach (var bodyPart in destroyableObject.bodyParts)
                 {
                     if(bodyPart == null) continue;
-                    
                     bodyPart.transform.parent = null;
-                    Object.Destroy(bodyPart.gameObject, destroyableObject.bodyPartLifeTime);
-                    
                     bodyPart.isKinematic = false;
+                    bodyPart.AddExplosionForce(destroyableObject.explosionForce, destroyableObject.transform.position, destroyableObject.explosionRadius,
+                        0f, ForceMode.Acceleration);
+                    Object.Destroy(bodyPart.gameObject, destroyableObject.bodyPartLifeTime);
                 }
-
+                
+                var playSpatialEven = new PlayOneShootSpatialEvent()
+                {
+                    SoundType = destroyableObject.destroySound,
+                    Position = destroyableObject.transform.position,
+                };
+                _world.NewEntity().Replace(playSpatialEven);
                 _world.NewEntity().Get<ExplosionDestroyableObjectEvent>().PipeRingSettings = pipeRingSettings;
-
                 Object.Destroy(destroyableObject.gameObject);
             }
         }

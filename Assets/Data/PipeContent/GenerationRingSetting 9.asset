@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6273ecd2b46440942add15f810f7c657, type: 3}
+  m_Name: GenerationRingSetting 9
+  m_EditorClassIdentifier: 
+  ringsList: {fileID: 11400000, guid: 5ee7efd0441223043b1fad576df4b1f8, type: 2}
+  generationDistanceFromPlayer: 25
+  generationRingSettings:
+  - pipeRingType: 2
+    weightOfChanceToSpawn: 10
+    maxCountInRow: 1
+    minCountInRow: 1
+  - pipeRingType: 1
+    weightOfChanceToSpawn: 5
+    maxCountInRow: 1
+    minCountInRow: 1
+  - pipeRingType: 3
+    weightOfChanceToSpawn: 3
+    maxCountInRow: 1
+    minCountInRow: 1
+  - pipeRingType: 4
+    weightOfChanceToSpawn: 3
+    maxCountInRow: 1
+    minCountInRow: 1

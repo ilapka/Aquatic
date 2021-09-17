@@ -2,6 +2,7 @@
 using Data;
 using Types;
 using UnityComponents;
+using UnityComponents.Informations;
 
 namespace Components.Events
 {

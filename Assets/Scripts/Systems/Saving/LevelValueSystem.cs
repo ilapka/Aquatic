@@ -12,11 +12,17 @@ namespace Systems.Saving
         private readonly GameProgressSavedData _gameProgressData = null;
 
         private readonly EcsFilter<LevelUpEvent> _levelUpFilter = null;
-        private readonly EcsFilter<SavingComponent> _savingFilter = null;
+        private readonly EcsFilter<PlayerSavesLoadedEvent> _savesLoadedFilter = null;
+
+        public static int CurrentLevel { get; private set; }
 
         public void Init()
         {
-            _world.NewEntity().Get<UpdateLevelValueEvent>().CurrentLevel = _gameProgressData.levelValue;
+            foreach (var i in _savesLoadedFilter)
+            {
+                CurrentLevel = _gameProgressData.levelValue;
+                _world.NewEntity().Get<CreateLevelEvent>().LevelValue = _gameProgressData.levelValue;
+            }
         }
         
         public void Run()
@@ -24,10 +30,8 @@ namespace Systems.Saving
             foreach (var i in _levelUpFilter)
             {
                 _gameProgressData.levelValue++;
-                foreach (var j in _savingFilter)
-                {
-                    _savingFilter.GetEntity(j).Get<SaveDataEvent>();
-                }
+                CurrentLevel = _gameProgressData.levelValue;
+                _world.NewEntity().Get<SaveDataEvent>();
             }
         }
     }

@@ -385,13 +385,134 @@
             </e>
           </e>
         </e>
+        <e p="ExternalDependencyManager" t="Include">
+          <e p="Editor" t="Include">
+            <e p="external-dependency-manager_version-1.2.165_manifest.txt" t="Include" />
+          </e>
+        </e>
+        <e p="GameAnalytics" t="Include">
+          <e p="Editor" t="Include">
+            <e p="GA_AssetPostprocessor.cs" t="Include" />
+            <e p="GA_AutoRun.cs" t="Include" />
+            <e p="GA_ContinuationManager.cs" t="Include" />
+            <e p="GA_EditorUtilities.cs" t="Include" />
+            <e p="GA_Menu.cs" t="Include" />
+            <e p="GA_PostprocessBuild.cs" t="Include" />
+            <e p="GA_SettingsInspector.cs" t="Include" />
+            <e p="GA_SignUp.cs" t="Include" />
+            <e p="GA_UpdateWindow.cs" t="Include" />
+            <e p="GameAnalyticsInspector.cs" t="Include" />
+            <e p="Playmaker" t="Include">
+              <e p="PlayMakerPresenceCheck.cs" t="Include" />
+              <e p="SendProgressionEventActionEditor.cs" t="Include" />
+              <e p="SendResourceEventActionEditor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="Playmaker" t="Include">
+              <e p="GAInitialize.cs" t="Include" />
+              <e p="GetABTestingId.cs" t="Include" />
+              <e p="GetABTestingVariantId.cs" t="Include" />
+              <e p="GetRemoteConfigsValueAsString.cs" t="Include" />
+              <e p="IsRemoteConfigsReady.cs" t="Include" />
+              <e p="SendAdEvent.cs" t="Include" />
+              <e p="SendBusinessEvent.cs" t="Include" />
+              <e p="SendDesignEvent.cs" t="Include" />
+              <e p="SendErrorEvent.cs" t="Include" />
+              <e p="SendProgressionEvent.cs" t="Include" />
+              <e p="SendResourceEvent.cs" t="Include" />
+              <e p="SetCustomDimension.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="ATT" t="Include">
+                <e p="GameAnalyticsATTClient.cs" t="Include" />
+                <e p="GameAnalyticsATTObjCBridge.cs" t="Include" />
+              </e>
+              <e p="Enums.cs" t="Include" />
+              <e p="Events" t="Include">
+                <e p="GA_Ads.cs" t="Include" />
+                <e p="GA_Business.cs" t="Include" />
+                <e p="GA_Debug.cs" t="Include" />
+                <e p="GA_Design.cs" t="Include" />
+                <e p="GA_Error.cs" t="Include" />
+                <e p="GA_Progression.cs" t="Include" />
+                <e p="GA_Resource.cs" t="Include" />
+                <e p="GA_Setup.cs" t="Include" />
+                <e p="GA_SpecialEvents.cs" t="Include" />
+                <e p="GAValidator.cs" t="Include" />
+              </e>
+              <e p="GameAnalytics.cs" t="Include" />
+              <e p="IGameAnalyticsATTListener.cs" t="Include" />
+              <e p="ILRD" t="Include">
+                <e p="Aequus" t="Include">
+                  <e p="GAAequusIntegration.cs" t="Include" />
+                </e>
+                <e p="Fyber" t="Include">
+                  <e p="GAFyberIntegration.cs" t="Include" />
+                </e>
+                <e p="GameAnalyticsILRD.cs" t="Include" />
+                <e p="HyperBid" t="Include">
+                  <e p="GAHyperBidIntegration.cs" t="Include" />
+                </e>
+                <e p="IronSource" t="Include">
+                  <e p="GAIronSourceIntegration.cs" t="Include" />
+                </e>
+                <e p="Max" t="Include">
+                  <e p="GAMaxIntegration.cs" t="Include" />
+                </e>
+                <e p="Mopub" t="Include">
+                  <e p="GAMopubIntegration.cs" t="Include" />
+                </e>
+                <e p="TopOn" t="Include">
+                  <e p="GATopOnIntegration.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Setup" t="Include">
+                <e p="Settings.cs" t="Include" />
+              </e>
+              <e p="State" t="Include">
+                <e p="GAState.cs" t="Include" />
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="GA_MiniJson.cs" t="Include" />
+              </e>
+              <e p="Wrapper" t="Include">
+                <e p="GA_AndroidWrapper.cs" t="Include" />
+                <e p="GA_iOSWrapper.cs" t="Include" />
+                <e p="GA_MonoWrapper.cs" t="Include" />
+                <e p="GA_TizenWrapper.cs" t="Include" />
+                <e p="GA_tvOSWrapper.cs" t="Include" />
+                <e p="GA_UWPWrapper.cs" t="Include" />
+                <e p="GA_WebGLWrapper.cs" t="Include" />
+                <e p="GA_Wrapper.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="readme.txt" t="Include" />
+        </e>
+        <e p="GoogleMobileAds" t="Include">
+          <e p="Editor" t="Include">
+            <e p="BuildPreProcessor.cs" t="Include" />
+            <e p="GoogleMobileAds.Editor.asmdef" t="Include" />
+            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsSettings.cs" t="Include" />
+            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
+            <e p="GoogleMobileAdsSKAdNetworkItems.xml" t="Include" />
+            <e p="ManifestProcessor.cs" t="Include" />
+            <e p="PListProcessor.cs" t="Include" />
+          </e>
+          <e p="GoogleMobileAds_version-6.0.0_manifest.txt" t="Include" />
+          <e p="link.xml" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
+            <e p="AudioSourceComponent.cs" t="Include" />
             <e p="CanvasComponent.cs" t="Include" />
             <e p="CompletePanelComponent.cs" t="Include" />
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
+              <e p="CreateLevelEvent.cs" t="Include" />
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelCompleteEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
@@ -399,14 +520,19 @@
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="MoneyTransactionEvent.cs" t="Include" />
               <e p="PlayConfettiEvent.cs" t="Include" />
+              <e p="PlayerSavesLoadedEvent.cs" t="Include" />
+              <e p="PlayOneShootFlatEvent.cs" t="Include" />
+              <e p="PlayOneShootSpatialEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
+              <e p="ShowCompletePanelEvent.cs" t="Include" />
+              <e p="ShowInterstitialEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
-              <e p="UpdateLevelValueEvent.cs" t="Include" />
               <e p="UpdateMoneyValueEvent.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
             <e p="ForwardMovableComponent1.cs" t="Include" />
             <e p="GameStateComponent.cs" t="Include" />
+            <e p="GlobalCanvasComponent.cs" t="Include" />
             <e p="InputComponent.cs" t="Include" />
             <e p="LevelComponent.cs" t="Include" />
             <e p="LevelProgressBarUIComponent.cs" t="Include" />
@@ -415,15 +541,19 @@
             <e p="MoneyUIComponent.cs" t="Include" />
             <e p="MovableComponent.cs" t="Include" />
             <e p="PipeComponent.cs" t="Include" />
+            <e p="PipeRingWeightsComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
             <e p="RubbishComponent.cs" t="Include" />
-            <e p="SavingComponent.cs" t="Include" />
+            <e p="SavingPathComponent.cs" t="Include" />
+            <e p="SceneLoadingComponent.cs" t="Include" />
             <e p="StartPanelComponent.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
+            <e p="AddMobData.cs" t="Include" />
             <e p="DiveMoveData.cs" t="Include" />
             <e p="EncryptionData.cs" t="Include" />
             <e p="ForwardMoveData.cs" t="Include" />
+            <e p="GameAnalyticsData.cs" t="Include" />
             <e p="GameProgressSavedData.cs" t="Include" />
             <e p="LevelData.cs" t="Include" />
             <e p="LevelListData.cs" t="Include" />
@@ -432,6 +562,7 @@
             <e p="RingsListData.cs" t="Include" />
             <e p="SavingSettings.cs" t="Include" />
             <e p="SceneLoadData.cs" t="Include" />
+            <e p="SoundData.cs" t="Include" />
             <e p="UIData.cs" t="Include" />
           </e>
           <e p="Editors" t="Include">
@@ -444,13 +575,22 @@
           <e p="Managers" t="Include">
             <e p="EncryptionManager.cs" t="Include" />
           </e>
-          <e p="Starter.cs" t="Include" />
+          <e p="Starters" t="Include">
+            <e p="GameStarter.cs" t="Include" />
+            <e p="PreloadStarter.cs" t="Include" />
+          </e>
           <e p="Systems" t="Include">
-            <e p="GameStateSystem.cs" t="Include" />
+            <e p="Audio" t="Include">
+              <e p="SoundSystem.cs" t="Include" />
+            </e>
+            <e p="Game" t="Include">
+              <e p="GameStateSystem.cs" t="Include" />
+              <e p="LevelProgressSystem.cs" t="Include" />
+              <e p="SceneLoadSystem.cs" t="Include" />
+            </e>
             <e p="Input" t="Include">
               <e p="InputSystem.cs" t="Include" />
             </e>
-            <e p="LevelProgressSystem.cs" t="Include" />
             <e p="Location" t="Include">
               <e p="ExtendLocationSystem.cs" t="Include" />
               <e p="SpawnLocationSystem.cs" t="Include" />
@@ -469,18 +609,27 @@
               <e p="PlayerParticlesSystem.cs" t="Include" />
               <e p="SpawnPlayerSystem.cs" t="Include" />
             </e>
+            <e p="Preload" t="Include">
+              <e p="PreloadGameSystem.cs" t="Include" />
+            </e>
             <e p="Saving" t="Include">
               <e p="LevelValueSystem.cs" t="Include" />
               <e p="LoadFileSystem.cs" t="Include" />
               <e p="SaveFileSystem.cs" t="Include" />
               <e p="WalletSystem.cs" t="Include" />
             </e>
-            <e p="SceneLoadSystem.cs" t="Include" />
+            <e p="SDK" t="Include">
+              <e p="AddMobSystem.cs" t="Include" />
+              <e p="GameAnalyticsSystem.cs" t="Include" />
+            </e>
             <e p="UI" t="Include">
               <e p="CanvasSystem.cs" t="Include" />
               <e p="CompletePanelSystem.cs" t="Include" />
+              <e p="GlobalCanvasSystem.cs" t="Include" />
+              <e p="GlobalDarkScreenSystem.cs" t="Include" />
               <e p="LevelProgressUISystem.cs" t="Include" />
               <e p="MoneyUISystem.cs" t="Include" />
+              <e p="PlayDarkScreenEvent.cs" t="Include" />
               <e p="PopUpRewardSystem.cs" t="Include" />
               <e p="StartPanelSystem.cs" t="Include" />
             </e>
@@ -488,27 +637,32 @@
           <e p="Types" t="Include">
             <e p="DarkScreenAnimatorKeys.cs" t="Include" />
             <e p="Layers.cs" t="Include" />
-            <e p="PipeContentType.cs" t="Include" />
+            <e p="PipeRingType.cs" t="Include" />
             <e p="SceneType.cs" t="Include" />
+            <e p="SoundType.cs" t="Include" />
             <e p="TagEnum.cs" t="Include" />
             <e p="Tags.cs" t="Include" />
           </e>
           <e p="UnityComponents" t="Include">
-            <e p="CanvasInformation.cs" t="Include" />
-            <e p="CompletePanelInformation.cs" t="Include" />
-            <e p="DestroyableObject.cs" t="Include" />
-            <e p="DestructiblePipeRingInformation.cs" t="Include" />
-            <e p="GlobalCanvas.cs" t="Include" />
-            <e p="GlobalDarkScreen.cs" t="Include" />
-            <e p="GlobalObjectsContainer.cs" t="Include" />
-            <e p="LocationInformation.cs" t="Include" />
-            <e p="PipeRingInformation.cs" t="Include" />
-            <e p="PlayerInformation.cs" t="Include" />
-            <e p="ProgressBarInformation.cs" t="Include" />
-            <e p="RubbishInformation.cs" t="Include" />
-            <e p="StartPanelInformation.cs" t="Include" />
-            <e p="UITextInformation.cs" t="Include" />
-            <e p="UITextProInformation.cs" t="Include" />
+            <e p="Emitters" t="Include">
+              <e p="PreloadUIEmitter.cs" t="Include" />
+            </e>
+            <e p="Informations" t="Include">
+              <e p="CanvasInformation.cs" t="Include" />
+              <e p="CompletePanelInformation.cs" t="Include" />
+              <e p="DestroyableObject.cs" t="Include" />
+              <e p="DestructiblePipeRingInformation.cs" t="Include" />
+              <e p="GlobalCanvasInformation.cs" t="Include" />
+              <e p="GlobalDarkScreenInformation.cs" t="Include" />
+              <e p="LocationInformation.cs" t="Include" />
+              <e p="PipeRingInformation.cs" t="Include" />
+              <e p="PlayerInformation.cs" t="Include" />
+              <e p="ProgressBarInformation.cs" t="Include" />
+              <e p="RubbishInformation.cs" t="Include" />
+              <e p="StartPanelInformation.cs" t="Include" />
+              <e p="UITextInformation.cs" t="Include" />
+              <e p="UITextProInformation.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -542,7 +696,23 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="Unity-Logs-Viewer" t="Include">
+          <e p="Reporter" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReporterEditor.cs" t="Include" />
+            </e>
+            <e p="MultiKeyDictionary.cs" t="Include" />
+            <e p="Reporter.cs" t="Include" />
+            <e p="ReporterGUI.cs" t="Include" />
+            <e p="ReporterMessageReceiver.cs" t="Include" />
+            <e p="Test" t="Include">
+              <e p="Rotate.cs" t="Include" />
+              <e p="TestReporter.cs" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
+      <e p="GoogleMobileAds.Editor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

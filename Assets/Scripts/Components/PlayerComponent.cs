@@ -1,5 +1,6 @@
 ﻿using Data;
 using UnityComponents;
+using UnityComponents.Informations;
 using UnityEngine;
 
 namespace Components

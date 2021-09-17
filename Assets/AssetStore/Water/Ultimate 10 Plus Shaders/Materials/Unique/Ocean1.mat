@@ -34,7 +34,7 @@ Material:
     - _NormalStrength1: 0.17
     - _NormalStrength2: 0.8
     m_Colors:
-    - _Color: {r: 0.06786222, g: 0.36528966, b: 0.5754717, a: 0.3764706}
+    - _Color: {r: 0.06786222, g: 0.36528966, b: 0.5754717, a: 0.34117648}
     - _FlowDirection1: {r: 0.05, g: 0.05, b: 0, a: 1}
     - _FlowDirection2: {r: 0, g: 0.05, b: 0, a: 1}
   m_BuildTextureStacks: []

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Types;
 using UnityComponents;
+using UnityComponents.Informations;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -10,7 +11,7 @@ namespace Data
     [Serializable]
     public struct PipeRingStruct
     {
-        public PipeContentType contentType;
+        public PipeRingType ringType;
         public PipeRingInformation pipeRingInformation;
         public int price;
         public UITextInformation popupTextPrefab;

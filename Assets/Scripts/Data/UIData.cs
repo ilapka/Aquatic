@@ -1,4 +1,5 @@
 ﻿using UnityComponents;
+using UnityComponents.Informations;
 using UnityEngine;
 
 namespace Data
@@ -15,7 +16,7 @@ namespace Data
         public CompletePanelInformation completePanelPrefab;
 
         [Header("Global canvas")]
-        public GlobalCanvas globalCanvasPrefab;
-        public GlobalDarkScreen globalDarkScreenPrefab;
+        public GlobalCanvasInformation globalCanvasPrefab;
+        public GlobalDarkScreenInformation globalDarkScreenPrefab;
     }
 }

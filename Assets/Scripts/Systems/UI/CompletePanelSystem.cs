@@ -3,6 +3,7 @@ using Components;
 using Components.Events;
 using Data;
 using Leopotam.Ecs;
+using Managers;
 using Types;
 using UnityEditor;
 using Object = UnityEngine.Object;
@@ -16,7 +17,7 @@ namespace Systems.UI
         
         private readonly EcsFilter<CanvasComponent> _canvasFilter = null;
         private readonly EcsFilter<CompletePanelComponent> _completePanelComponent = null;
-        private readonly EcsFilter<LevelCompleteEvent> _levelCompleteFilter = null;
+        private readonly EcsFilter<ShowCompletePanelEvent> _showCompletePanelFilter = null;
         
         public void Init()
         {
@@ -34,6 +35,8 @@ namespace Systems.UI
         {
             foreach (var j in _completePanelComponent)
             {
+                _world.NewEntity().Get<PlayOneShootFlatEvent>().SoundType = SoundType.ButtonClick;
+
                 _completePanelComponent.Get1(j).CompletePanelInformation.gameObject.SetActive(false);
                 var sceneLoadEvent = new LoadSceneEvent()
                 {
@@ -46,7 +49,7 @@ namespace Systems.UI
 
         public void Run()
         {
-            foreach (var i in _levelCompleteFilter)
+            foreach (var i in _showCompletePanelFilter)
             {
                 foreach (var j in _completePanelComponent)
                 {

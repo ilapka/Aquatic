@@ -11,30 +11,27 @@ namespace Systems.Location
     {
         private readonly EcsWorld _world = null;
         private readonly LevelListData _levelListData = null;
-
-        private readonly EcsFilter<LocationComponent> _locationFilter = null;
-        private readonly EcsFilter<UpdateLevelValueEvent> _updateLevelValueEvent = null;
+        
+        private readonly EcsFilter<CreateLevelEvent> _createLevelEvent = null;
         
         public void Run()
         {
-            if(!_locationFilter.IsEmpty()) return;
-            
-            foreach (var i in _updateLevelValueEvent)
+            foreach (var i in _createLevelEvent)
             {
-                SpawnLocation(_updateLevelValueEvent.Get1(i).CurrentLevel);
+                SpawnLocation(_createLevelEvent.Get1(i).LevelValue);
             }
         }
 
         private void SpawnLocation(int levelValue)
         {
             var locationIndex = levelValue % _levelListData.levelList.Count;    
-            var levelStruct = _levelListData.levelList[locationIndex];  
-            var locationInformation = Object.Instantiate(levelStruct.levelInformation);  
+            var levelData = _levelListData.levelList[locationIndex];  
+            var locationInformation = Object.Instantiate(levelData.levelInformation);  
 
             var locationComponent = new LocationComponent()
             {
                 LocationInformation = locationInformation,
-                RingsGenerationData = levelStruct.ringsGenerationSettings
+                RingsGenerationData = levelData.ringsGenerationSettings
             };
             
             var partsComponent = new LocationPartsComponent()
@@ -52,8 +49,7 @@ namespace Systems.Location
             var locationSpawnEvent = new LocationSpawnEvent() { };
             
             _world.NewEntity().Replace(locationComponent).Replace(partsComponent).Replace(pipeComponent).Replace(locationSpawnEvent);
-            
-            _world.NewEntity().Get<LevelComponent>().LevelData = levelStruct.levelData;
+            _world.NewEntity().Get<LevelComponent>().LevelData = levelData;
         }
     }
 }
