@@ -16,13 +16,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Preload.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Preload.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Starters/PreloadStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/LevelProgressSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Game/LevelProgressSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Preload/PreloadGameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Preload/PreloadGameSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/build_info" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/build_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/AndroidResolverDependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,21 +119,21 @@
         <option value="$PROJECT_DIR$/Assets/Data/Json/GameProgress.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/GlobalDarkScreenSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/GameAnalyticsSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/SpawnPlayerSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadingFilesCompleteEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Components/Events/LoadingFilesCompleteEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/UI/StartPanelSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/SavingSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/LevelProgressSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Starters/GameStarter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Preload/PreloadGameSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LoadFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/LevelValueSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Location/SpawnLocationSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Player/SpawnPlayerSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Game/GameStateSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Saving/SaveFileSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/SDK/AddMobSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/GoogleMobileAdsPlugin.androidlib/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -230,7 +227,7 @@
       <workItem from="1631816982182" duration="2547000" />
       <workItem from="1631825401354" duration="3139000" />
       <workItem from="1631863381557" duration="8496000" />
-      <workItem from="1631873978119" duration="1250000" />
+      <workItem from="1631873978119" duration="3245000" />
     </task>
     <servers />
   </component>
