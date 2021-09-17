@@ -88,10 +88,10 @@ namespace Starters
                 .Init();
 
             _savedDataSystem
+                .Add(new LoadFileSystem())
                 .Add(new LevelValueSystem())
                 .Add(new WalletSystem())
                 .Add(new SaveFileSystem())
-                .Add(new LoadFileSystem())
 
                 .Inject(savingSettings)
                 .Inject(gameProgressData)
@@ -123,9 +123,10 @@ namespace Starters
                 .OneFrame<PlayOneShootFlatEvent>()
                 .OneFrame<ShowInterstitialEvent>()
 
+                .OneFrame<PlayerSavesLoadedEvent>()
                 .OneFrame<SaveDataEvent>()
                 .OneFrame<LevelUpEvent>()
-                .OneFrame<UpdateLevelValueEvent>()
+                .OneFrame<CreateLevelEvent>()
                 .OneFrame<UpdateMoneyValueEvent>()
                 .OneFrame<MoneyTransactionEvent>()
             

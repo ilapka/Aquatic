@@ -512,6 +512,7 @@
             <e p="DiveMovableComponent.cs" t="Include" />
             <e p="Events" t="Include">
               <e p="AddNewDestroyableObjectEvent.cs" t="Include" />
+              <e p="CreateLevelEvent.cs" t="Include" />
               <e p="ExplosionDestroyableObjectEvent.cs" t="Include" />
               <e p="LevelCompleteEvent.cs" t="Include" />
               <e p="LevelUpEvent.cs" t="Include" />
@@ -519,13 +520,13 @@
               <e p="LocationSpawnEvent.cs" t="Include" />
               <e p="MoneyTransactionEvent.cs" t="Include" />
               <e p="PlayConfettiEvent.cs" t="Include" />
+              <e p="PlayerSavesLoadedEvent.cs" t="Include" />
               <e p="PlayOneShootFlatEvent.cs" t="Include" />
               <e p="PlayOneShootSpatialEvent.cs" t="Include" />
               <e p="SaveDataEvent.cs" t="Include" />
               <e p="ShowCompletePanelEvent.cs" t="Include" />
               <e p="ShowInterstitialEvent.cs" t="Include" />
               <e p="StartGameEvent.cs" t="Include" />
-              <e p="UpdateLevelValueEvent.cs" t="Include" />
               <e p="UpdateMoneyValueEvent.cs" t="Include" />
             </e>
             <e p="ForwardMovableComponent.cs" t="Include" />
@@ -543,7 +544,7 @@
             <e p="PipeRingWeightsComponent.cs" t="Include" />
             <e p="PlayerComponent.cs" t="Include" />
             <e p="RubbishComponent.cs" t="Include" />
-            <e p="SavingComponent.cs" t="Include" />
+            <e p="SavingPathComponent.cs" t="Include" />
             <e p="SceneLoadingComponent.cs" t="Include" />
             <e p="StartPanelComponent.cs" t="Include" />
           </e>
@@ -693,6 +694,21 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Unity-Logs-Viewer" t="Include">
+          <e p="Reporter" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReporterEditor.cs" t="Include" />
+            </e>
+            <e p="MultiKeyDictionary.cs" t="Include" />
+            <e p="Reporter.cs" t="Include" />
+            <e p="ReporterGUI.cs" t="Include" />
+            <e p="ReporterMessageReceiver.cs" t="Include" />
+            <e p="Test" t="Include">
+              <e p="Rotate.cs" t="Include" />
+              <e p="TestReporter.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

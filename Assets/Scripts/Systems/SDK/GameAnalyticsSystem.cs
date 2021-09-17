@@ -36,14 +36,14 @@ namespace Systems.SDK
         
         private void OnLevelStart(int level)
         {
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, $"Level: {level}");
-            if(_gameAnalyticsData.debug) Debug.Log($"Level: {level} start");
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, $"Level {level}");
+            if(_gameAnalyticsData.debug) Debug.Log($"Level {level} start");
         }
 
         private void OnLevelComplete(int level)
         {
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, $"Level: {level}");
-            if(_gameAnalyticsData.debug) Debug.Log($"Level: {level} complete");
+            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, $"Level {level}");
+            if(_gameAnalyticsData.debug) Debug.Log($"Level {level} complete");
         }
     }
 }

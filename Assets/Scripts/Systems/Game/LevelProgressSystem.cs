@@ -13,11 +13,17 @@ namespace Systems
         private readonly EcsWorld _world = null;
         private readonly EcsFilter<LevelComponent> _levelSettingsFilter = null;
         private readonly EcsFilter<ExplosionDestroyableObjectEvent> _explosionFilter = null;
-        
+        private readonly EcsFilter<GameStateComponent> _gameStateFilter = null;
+
         public void Run()
         {
             foreach (var i in _explosionFilter)
             {
+                foreach (var j in _gameStateFilter)
+                {
+                    if(!_gameStateFilter.Get1(j).IsGamePlayProcess) return;
+                }
+                
                 var ringSettings = _explosionFilter.Get1(i).PipeRingSettings;
                 if(ringSettings.ringType == PipeRingType.Default) return;
                 

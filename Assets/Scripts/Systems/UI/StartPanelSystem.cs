@@ -16,13 +16,13 @@ namespace Systems.UI
         
         private readonly EcsFilter<CanvasComponent> _canvasFilter = null;
         private readonly EcsFilter<StartPanelComponent> _startPanelFilter = null;
-        private readonly EcsFilter<UpdateLevelValueEvent> _updateLevelEvent = null;
+        private readonly EcsFilter<CreateLevelEvent> _createLevelEvent = null;
         
         public void Init()
         {
-            foreach (var i in _updateLevelEvent)
+            foreach (var i in _createLevelEvent)
             {
-                var currentLevel = _updateLevelEvent.Get1(i).CurrentLevel + 1;
+                var currentLevel = _createLevelEvent.Get1(i).LevelValue + 1;
                 
                 foreach (var j in _canvasFilter)
                 {

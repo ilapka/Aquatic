@@ -4,7 +4,7 @@ using Types;
 using UnityComponents.Emitters;
 using UnityEngine;
 
-namespace Systems
+namespace Systems.Preload
 {
     public class PreloadGameSystem : IEcsInitSystem, IEcsRunSystem
     {
